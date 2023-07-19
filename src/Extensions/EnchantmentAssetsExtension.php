@@ -12,7 +12,7 @@ class EnchantmentAssetsExtension extends Extension
 {
     public function init()
     {
-        if (Environment::getEnv('SS_THEME_ENCHANTMENT') && is_dir(Director::baseFolder() . '/public/enchantment-build'))
+        if (Environment::getEnv('SS_THEME_ENCHANTMENT') && is_dir(Director::baseFolder() . '/public/build/enchantment'))
         {
             $cfg = SiteConfig::current_site_config();
 
@@ -35,18 +35,18 @@ class EnchantmentAssetsExtension extends Extension
                 if ($production)
                 {
                     // silverstripe-cms
-                    Requirements::css('/enchantment-build/assets/bundle-silverstripe-cms.css');
+                    Requirements::css('/build/enchantment/assets/bundle-silverstripe-cms.css');
                     // silverstripe-admin
                     // Requirements::css('silverstripe/admin: dist/css/LeftAndMain_printable.css');
-                    Requirements::css('/enchantment-build/assets/bundle-silverstripe-admin.css');
+                    Requirements::css('/build/enchantment/assets/bundle-silverstripe-admin.css');
                     // silverstripe-asset-admin
-                    Requirements::css('/enchantment-build/assets/bundle-silverstripe-asset-admin.css');
+                    Requirements::css('/build/enchantment/assets/bundle-silverstripe-asset-admin.css');
                     // silverstripe-versioned-admin
-                    Requirements::css('/enchantment-build/assets/bundle-silverstripe-versioned-admin.css');
+                    Requirements::css('/build/enchantment/assets/bundle-silverstripe-versioned-admin.css');
                     // silverstripe-campaign-admin
-                    Requirements::css('/enchantment-build/assets/bundle-silverstripe-campaign-admin.css');
+                    Requirements::css('/build/enchantment/assets/bundle-silverstripe-campaign-admin.css');
                     // Extend
-                    Requirements::css('/enchantment-build/assets/enchantment.css');
+                    Requirements::css('/build/enchantment/assets/enchantment.css');
                 }
                 else
                 {

@@ -66,6 +66,12 @@ export default defineConfig({
             src: './silverstripe-admin/thirdparty/*',
             dest: '../dist/assets/silverstripe-admin/thirdparty',
           },
+
+          // lost assets (in .css files with no relative path)
+          {
+            src: './silverstripe-asset-admin/client/src/images/chosen-sprite.png',
+            dest: '../dist/assets',
+          },
           // silverstripe-asset-admin
           {
             src: './silverstripe-asset-admin/client/src/images/*',
