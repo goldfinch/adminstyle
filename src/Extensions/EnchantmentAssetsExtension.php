@@ -39,19 +39,19 @@ class EnchantmentAssetsExtension extends Extension
 
                 if ($production)
                 {
-                    // silverstripe-cms
-                    Requirements::css('/build-cms/enchantment/assets/bundle-silverstripe-cms.css');
                     // silverstripe-admin
                     // Requirements::css('silverstripe/admin: dist/css/LeftAndMain_printable.css');
                     Requirements::css('/build-cms/enchantment/assets/bundle-silverstripe-admin.css');
-                    // silverstripe-asset-admin
-                    Requirements::css('/build-cms/enchantment/assets/bundle-silverstripe-asset-admin.css');
-                    // silverstripe-versioned-admin
-                    Requirements::css('/build-cms/enchantment/assets/bundle-silverstripe-versioned-admin.css');
-                    // silverstripe-campaign-admin
-                    Requirements::css('/build-cms/enchantment/assets/bundle-silverstripe-campaign-admin.css');
+                    // silverstripe-cms
+                    Requirements::css('/build-cms/enchantment/assets/bundle-silverstripe-cms.css');
                     // silverstripe-session-manager
                     Requirements::css('/build-cms/enchantment/assets/bundle-silverstripe-session-manager.css');
+                    // silverstripe-versioned-admin
+                    Requirements::css('/build-cms/enchantment/assets/bundle-silverstripe-versioned-admin.css');
+                    // silverstripe-asset-admin
+                    Requirements::css('/build-cms/enchantment/assets/bundle-silverstripe-asset-admin.css');
+                    // silverstripe-campaign-admin
+                    Requirements::css('/build-cms/enchantment/assets/bundle-silverstripe-campaign-admin.css');
                     // silverstripe-mfa (TODO: if installed)
                     Requirements::css('/build-cms/enchantment/assets/bundle-silverstripe-mfa.css');
                     Requirements::css('/build-cms/enchantment/assets/bundle-silverstripe-totp-authenticator.css');
@@ -65,15 +65,15 @@ class EnchantmentAssetsExtension extends Extension
 
                     Requirements::insertHeadTags('
                     <script type="module" src="' . $host . '/@vite/client"></script>
-                    <link rel="stylesheet" href="' . $host . '/extra/sass/enchantment.scss">
                     <link rel="stylesheet" href="' . $host . '/silverstripe-admin/client/src/styles/bundle-silverstripe-admin.scss">
-                    <link rel="stylesheet" href="' . $host . '/silverstripe-asset-admin/client/src/styles/bundle-silverstripe-asset-admin.scss">
                     <link rel="stylesheet" href="' . $host . '/silverstripe-cms/client/src/styles/bundle-silverstripe-cms.scss">
-                    <link rel="stylesheet" href="' . $host . '/silverstripe-versioned-admin/client/src/styles/bundle-silverstripe-versioned-admin.scss">
-                    <link rel="stylesheet" href="' . $host . '/silverstripe-campaign-admin/client/src/styles/bundle-silverstripe-campaign-admin.scss">
                     <link rel="stylesheet" href="' . $host . '/silverstripe-session-manager/client/src/styles/bundle-silverstripe-session-manager.scss">
+                    <link rel="stylesheet" href="' . $host . '/silverstripe-versioned-admin/client/src/styles/bundle-silverstripe-versioned-admin.scss">
+                    <link rel="stylesheet" href="' . $host . '/silverstripe-asset-admin/client/src/styles/bundle-silverstripe-asset-admin.scss">
+                    <link rel="stylesheet" href="' . $host . '/silverstripe-campaign-admin/client/src/styles/bundle-silverstripe-campaign-admin.scss">
                     <link rel="stylesheet" href="' . $host . '/silverstripe-mfa/client/src/styles/bundle-silverstripe-mfa.scss">
                     <link rel="stylesheet" href="' . $host . '/silverstripe-totp-authenticator/client/src/styles/bundle-silverstripe-totp-authenticator.scss">
+                    <link rel="stylesheet" href="' . $host . '/extra/sass/enchantment.scss">
                     ');
                 }
             }
