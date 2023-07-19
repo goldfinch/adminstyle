@@ -45,7 +45,7 @@ export default defineConfig({
               // - silverstripe-campaign-admin
               'silverstripe-campaign-admin/client/src/styles/bundle-silverstripe-campaign-admin.scss',
 
-              'extra/sass/main.scss',
+              'extra/sass/enchantment.scss',
               'extra/sass/wysiwyg.scss',
           ],
           refresh: true,
@@ -76,6 +76,16 @@ export default defineConfig({
             src: './silverstripe-cms/client/src/images/*',
             dest: '../dist/assets/silverstripe-cms/client/src/images',
           },
+          // silverstripe-campaign-admin
+          {
+            src: './silverstripe-campaign-admin/client/src/components/IntroScreen/images/*',
+            dest: '../dist/assets/silverstripe-campaign-admin/client/src/images',
+          },
+          {
+            src: './silverstripe-campaign-admin/client/src/containers/CampaignAdmin/images/*',
+            dest: '../dist/assets/silverstripe-campaign-admin/client/src/images',
+          },
+
           // bootstrap-icons
           {
             src: './node_modules/bootstrap-icons/font/fonts/*',

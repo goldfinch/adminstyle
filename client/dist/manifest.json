@@ -1,8 +1,8 @@
 {
-  "extra/sass/main.scss": {
-    "file": "assets/main.css",
+  "extra/sass/enchantment.scss": {
+    "file": "assets/enchantment.css",
     "isEntry": true,
-    "src": "extra/sass/main.scss"
+    "src": "extra/sass/enchantment.scss"
   },
   "extra/sass/wysiwyg.scss": {
     "file": "assets/wysiwyg.css",

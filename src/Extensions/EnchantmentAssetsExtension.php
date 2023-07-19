@@ -27,6 +27,8 @@ class EnchantmentAssetsExtension extends Extension
                 Requirements::block('silverstripe/asset-admin:client/dist/styles/bundle.css');
                 // silverstripe-versioned-admin
                 Requirements::block('silverstripe/versioned-admin:client/dist/styles/bundle.css');
+                // silverstripe-campaign-admin
+                Requirements::block('silverstripe/campaign-admin: client/dist/styles/bundle.css');
 
                 $production = true;
 
@@ -44,7 +46,7 @@ class EnchantmentAssetsExtension extends Extension
                     // silverstripe-campaign-admin
                     Requirements::css('/enchantment-build/assets/bundle-silverstripe-campaign-admin.css');
                     // Extend
-                    Requirements::css('/enchantment-build/assets/main.css');
+                    Requirements::css('/enchantment-build/assets/enchantment.css');
                 }
                 else
                 {
@@ -53,7 +55,7 @@ class EnchantmentAssetsExtension extends Extension
 
                     Requirements::insertHeadTags('
                     <script type="module" src="' . $host . '/@vite/client"></script>
-                    <link rel="stylesheet" href="' . $host . '/extra/sass/main.scss">
+                    <link rel="stylesheet" href="' . $host . '/extra/sass/enchantment.scss">
                     <link rel="stylesheet" href="' . $host . '/silverstripe-admin/client/src/styles/bundle-silverstripe-admin.scss">
                     <link rel="stylesheet" href="' . $host . '/silverstripe-asset-admin/client/src/styles/bundle-silverstripe-asset-admin.scss">
                     <link rel="stylesheet" href="' . $host . '/silverstripe-cms/client/src/styles/bundle-silverstripe-cms.scss">
