@@ -13,6 +13,7 @@ silverstripe-versioned-admin (fc60dac)
 silverstripe-campaign-admin (9e5e00b)
 silverstripe-session-manager (246c5ec)
 silverstripe-mfa (29260f1)
+silverstripe-totp-authenticator (9ea9c5e)
 
 TODO
 - remove previous dist before build

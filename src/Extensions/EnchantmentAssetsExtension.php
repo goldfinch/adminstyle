@@ -33,6 +33,7 @@ class EnchantmentAssetsExtension extends Extension
                 Requirements::block('silverstripe/session-manager: client/dist/styles/bundle.css');
                 // silverstripe-mfa (TODO: if installed)
                 Requirements::block('silverstripe/mfa:client/dist/styles/bundle-cms.css');
+                Requirements::block('silverstripe/totp-authenticator: client/dist/styles/bundle.css');
 
                 $production = true;
 
@@ -53,6 +54,7 @@ class EnchantmentAssetsExtension extends Extension
                     Requirements::css('/build/enchantment/assets/bundle-silverstripe-session-manager.css');
                     // silverstripe-mfa (TODO: if installed)
                     Requirements::css('/build/enchantment/assets/bundle-silverstripe-mfa.css');
+                    Requirements::css('/build/enchantment/assets/bundle-silverstripe-totp-authenticator.css');
                     // Extend
                     Requirements::css('/build/enchantment/assets/enchantment.css');
                 }
@@ -69,8 +71,9 @@ class EnchantmentAssetsExtension extends Extension
                     <link rel="stylesheet" href="' . $host . '/silverstripe-cms/client/src/styles/bundle-silverstripe-cms.scss">
                     <link rel="stylesheet" href="' . $host . '/silverstripe-versioned-admin/client/src/styles/bundle-silverstripe-versioned-admin.scss">
                     <link rel="stylesheet" href="' . $host . '/silverstripe-campaign-admin/client/src/styles/bundle-silverstripe-campaign-admin.scss">
-                    <link rel="stylesheet" href="' . $host . '/silverstripe-campaign-admin/client/src/styles/bundle-silverstripe-session-manager.scss">
-                    <link rel="stylesheet" href="' . $host . '/silverstripe-campaign-admin/client/src/styles/bundle-silverstripe-mfa.scss">
+                    <link rel="stylesheet" href="' . $host . '/silverstripe-session-manager/client/src/styles/bundle-silverstripe-session-manager.scss">
+                    <link rel="stylesheet" href="' . $host . '/silverstripe-mfa/client/src/styles/bundle-silverstripe-mfa.scss">
+                    <link rel="stylesheet" href="' . $host . '/silverstripe-totp-authenticator/client/src/styles/bundle-silverstripe-totp-authenticator.scss">
                     ');
                 }
             }

@@ -103,6 +103,11 @@
     "isEntry": true,
     "src": "silverstripe-session-manager/client/src/bundles/bundle-silverstripe-session-manager.scss"
   },
+  "silverstripe-totp-authenticator/client/src/bundles/bundle-silverstripe-totp-authenticator.scss": {
+    "file": "enchantment/assets/bundle-silverstripe-totp-authenticator.css",
+    "isEntry": true,
+    "src": "silverstripe-totp-authenticator/client/src/bundles/bundle-silverstripe-totp-authenticator.scss"
+  },
   "silverstripe-versioned-admin/client/src/styles/bundle-silverstripe-versioned-admin.scss": {
     "file": "enchantment/assets/bundle-silverstripe-versioned-admin.css",
     "isEntry": true,

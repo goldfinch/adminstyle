@@ -49,6 +49,7 @@ export default defineConfig({
               // - silverstripe-tfa (TODO: if installed)
               'silverstripe-mfa/client/src/bundles/bundle-cms-silverstripe-mfa.scss',
               'silverstripe-mfa/client/src/bundles/bundle-silverstripe-mfa.scss',
+              'silverstripe-totp-authenticator/client/src/bundles/bundle-silverstripe-totp-authenticator.scss',
 
               'extra/sass/enchantment.scss',
               'extra/sass/wysiwyg.scss',
