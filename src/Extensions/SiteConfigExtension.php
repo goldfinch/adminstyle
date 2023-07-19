@@ -7,6 +7,8 @@ use LeKoala\Encrypt\EncryptHelper;
 use SilverStripe\ORM\DataExtension;
 use SilverStripe\Forms\CheckboxField;
 use SilverStripe\ORM\ValidationResult;
+use SilverStripe\Control\Director;
+use SilverStripe\Core\Environment;
 
 class SiteConfigExtension extends DataExtension
 {
@@ -16,11 +18,14 @@ class SiteConfigExtension extends DataExtension
 
     public function updateCMSFields(FieldList $fields)
     {
-        $fields->addFieldsToTab('Root.Main', [
+        if (Environment::getEnv('SS_THEME_ENCHANTMENT') && is_dir(Director::baseFolder() . '/public/enchantment-build'))
+        {
+            $fields->addFieldsToTab('Root.Main', [
 
-            CheckboxField::create('ThemeEnchantment', 'Enchant admin theme')
+                CheckboxField::create('ThemeEnchantment', 'Enchant admin theme')
 
-        ]);
+            ]);
+        }
     }
 
     public function validate(ValidationResult $validationResult)

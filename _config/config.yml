@@ -7,3 +7,7 @@ After:
 SilverStripe\SiteConfig\SiteConfig:
   extensions:
     - Goldfinch\Enchantment\Extensions\SiteConfigExtension
+
+SilverStripe\Admin\LeftAndMain:
+  extensions:
+    - Goldfinch\Enchantment\Extensions\EnchantmentAssetExtension
