@@ -3,7 +3,7 @@
 use SilverStripe\View\Requirements;
 use SilverStripe\SiteConfig\SiteConfig;
 
-if (SiteConfig::current_site_config()->SSRestyle)
+if (SiteConfig::current_site_config()->ThemeEnchantment)
 {
     // silverstripe-cms
     Requirements::block('silverstripe/cms: client/dist/styles/bundle.css');
@@ -18,14 +18,14 @@ if (SiteConfig::current_site_config()->SSRestyle)
     if ($production)
     {
         // silverstripe-cms
-        Requirements::css('/ssrestyle-build/assets/bundle-silverstripe-cms.css');
+        Requirements::css('/enchantment-build/assets/bundle-silverstripe-cms.css');
         // silverstripe-admin
         // Requirements::css('silverstripe/admin: dist/css/LeftAndMain_printable.css');
-        Requirements::css('/ssrestyle-build/assets/bundle-silverstripe-admin.css');
+        Requirements::css('/enchantment-build/assets/bundle-silverstripe-admin.css');
         // silverstripe-asset-admin
-        Requirements::css('/ssrestyle-build/assets/bundle-silverstripe-asset-admin.css');
+        Requirements::css('/enchantment-build/assets/bundle-silverstripe-asset-admin.css');
         // Extend
-        Requirements::css('/ssrestyle-build/assets/main.css');
+        Requirements::css('/enchantment-build/assets/main.css');
     }
     else
     {

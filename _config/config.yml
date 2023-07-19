@@ -1,9 +1,9 @@
 ---
-Name: goldfinch-ssrestyle
+Name: goldfinch-enchantment
 After:
   - '#goldfinch-basement'
 ---
 
 SilverStripe\SiteConfig\SiteConfig:
   extensions:
-    - Goldfinch\SSRestyle\Extensions\SiteConfigExtension
+    - Goldfinch\Enchantment\Extensions\SiteConfigExtension

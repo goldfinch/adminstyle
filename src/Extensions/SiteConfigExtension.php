@@ -1,6 +1,6 @@
 <?php
 
-namespace Goldfinch\SSRestyle\Extensions;
+namespace Goldfinch\Enchantment\Extensions;
 
 use SilverStripe\Forms\FieldList;
 use LeKoala\Encrypt\EncryptHelper;
@@ -11,14 +11,14 @@ use SilverStripe\ORM\ValidationResult;
 class SiteConfigExtension extends DataExtension
 {
     private static $db = [
-        'SSRestyle' => 'Boolean',
+        'ThemeEnchantment' => 'Boolean',
     ];
 
     public function updateCMSFields(FieldList $fields)
     {
         $fields->addFieldsToTab('Root.Main', [
 
-            CheckboxField::create('SSRestyle', 'Restyled admin theme')
+            CheckboxField::create('ThemeEnchantment', 'Enchant admin theme')
 
         ]);
     }

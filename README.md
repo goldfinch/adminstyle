@@ -1,3 +1,3 @@
 ```
-cp -r vendor/goldfinch/ssrestyle/client/dist public/ssrestyle-build
+cp -r vendor/goldfinch/enchantment/client/dist public/enchantment-build
 ```

@@ -1,5 +1,5 @@
 {
-    "name": "goldfinch/ssrestyle",
+    "name": "goldfinch/enchantment",
     "description": "",
     "type": "silverstripe-vendormodule",
     "keywords": [
@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Goldfinch\\SSRestyle\\": "src/"
+            "Goldfinch\\Enchantment\\": "src/"
         }
     },
     "minimum-stability": "dev",
