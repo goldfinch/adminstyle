@@ -12,13 +12,16 @@
         <% if $SiteConfig.ThemeEnchantment %>
             <% require css("/build-cms/enchantment/assets/bundle-silverstripe-admin.css") %>
             <% require css("/build-cms/enchantment/assets/bundle-silverstripe-login-forms.css") %>
+            <% if $darkModeIsEnabled() %>
+                <% require css("/build-cms/enchantment/assets/dark-mode-silverstripe-login-forms.css") %>
+            <% end_if %>
             <% require css("/build-cms/enchantment/assets/enchantment.css") %>
         <% else %>
             <% require css("silverstripe/admin: client/dist/styles/bundle.css") %>
             <% require css("silverstripe/login-forms: client/dist/styles/bundle.css") %>
-        <% end_if %>
-        <% if $darkModeIsEnabled() %>
-            <% require css("silverstripe/login-forms: client/dist/styles/darkmode.css") %>
+            <% if $darkModeIsEnabled() %>
+                <% require css("silverstripe/login-forms: client/dist/styles/darkmode.css") %>
+            <% end_if %>
         <% end_if %>
         <% require javascript("silverstripe/login-forms: client/dist/js/bundle.js") %>
     </head>

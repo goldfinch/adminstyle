@@ -93,6 +93,11 @@
     "isEntry": true,
     "src": "silverstripe-login-forms/client/src/styles/bundle-silverstripe-login-forms.scss"
   },
+  "silverstripe-login-forms/client/src/styles/dark-mode-silverstripe-login-forms.scss": {
+    "file": "enchantment/assets/dark-mode-silverstripe-login-forms.css",
+    "isEntry": true,
+    "src": "silverstripe-login-forms/client/src/styles/dark-mode-silverstripe-login-forms.scss"
+  },
   "silverstripe-mfa/client/src/bundles/bundle-cms-silverstripe-mfa.scss": {
     "file": "enchantment/assets/bundle-cms-silverstripe-mfa.css",
     "isEntry": true,

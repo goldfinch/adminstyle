@@ -53,6 +53,7 @@ export default defineConfig({
 
               // - silverstripe-login-forms
               'silverstripe-login-forms/client/src/styles/bundle-silverstripe-login-forms.scss',
+              'silverstripe-login-forms/client/src/styles/dark-mode-silverstripe-login-forms.scss',
 
               'extra/sass/enchantment.scss',
               'extra/sass/wysiwyg.scss',

@@ -6,3 +6,6 @@ SilverStripe\LoginForms\EnablerExtension:
   login_themes:
     - '$default'
     - 'goldfinch/enchantment:login-forms'
+
+SilverStripe\Security\Security:
+  enable_dark_mode: false
