@@ -2,6 +2,7 @@
 Name: goldfinch-enchantment
 After:
   - '#goldfinch-basement'
+  - '#goldfinch-seokit'
 ---
 
 SilverStripe\SiteConfig\SiteConfig:
@@ -10,4 +11,4 @@ SilverStripe\SiteConfig\SiteConfig:
 
 SilverStripe\Admin\LeftAndMain:
   extensions:
-    - Goldfinch\Enchantment\Extensions\EnchantmentAssetExtension
+    - Goldfinch\Enchantment\Extensions\EnchantmentAssetsExtension
