@@ -1,0 +1,46 @@
+.mfa-verify-select-method {
+  &__container {
+    @media (min-width: $viewport-medium) {
+      display: grid;
+      grid-template-columns: 50% 50%;
+    }
+  }
+
+  &__content {
+    padding-top: calc(#{$content-spacing} - #{$header-spacing});
+    grid-column: 1;
+  }
+
+  &__image {
+    @media (max-width: $viewport-medium) {
+      display: none;
+    }
+    height: $method-image-dimensions;
+    width: $method-image-dimensions;
+    grid-column: 2;
+
+    // Position on the right
+    margin-left: auto;
+  }
+
+  &__method-list {
+    list-style: none;
+    margin-bottom: $content-spacing;
+    padding-left: 0;
+  }
+
+  &__method {
+    &:not(:first-child) {
+      margin-top: $content-spacing / 2;
+    }
+  }
+
+  &__method-message {
+    display: block;
+    font-style: italic;
+  }
+
+  &__actions {
+    margin-top: $content-spacing;
+  }
+}

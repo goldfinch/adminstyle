@@ -1,0 +1,24 @@
+.help-block {
+  color: var(--color-message-error);
+  margin: 0.2em 0;
+}
+
+.mfa-method {
+  text-align: center;
+}
+
+.mfa-method-icon {
+  margin-bottom: $content-spacing;
+
+  &--unavailable {
+    color: var(--color-blue);
+
+    .mfa-icon-circle-warning {
+      color: var(--color-unavailable-icon);
+    }
+  }
+}
+
+.mfa-method-options {
+  margin-top: $content-spacing;
+}

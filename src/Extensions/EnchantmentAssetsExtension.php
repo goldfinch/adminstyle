@@ -29,6 +29,10 @@ class EnchantmentAssetsExtension extends Extension
                 Requirements::block('silverstripe/versioned-admin:client/dist/styles/bundle.css');
                 // silverstripe-campaign-admin
                 Requirements::block('silverstripe/campaign-admin: client/dist/styles/bundle.css');
+                // silverstripe-session-manager
+                Requirements::block('silverstripe/session-manager: client/dist/styles/bundle.css');
+                // silverstripe-mfa (TODO: if installed)
+                Requirements::block('silverstripe/mfa:client/dist/styles/bundle-cms.css');
 
                 $production = true;
 
@@ -45,6 +49,10 @@ class EnchantmentAssetsExtension extends Extension
                     Requirements::css('/build/enchantment/assets/bundle-silverstripe-versioned-admin.css');
                     // silverstripe-campaign-admin
                     Requirements::css('/build/enchantment/assets/bundle-silverstripe-campaign-admin.css');
+                    // silverstripe-session-manager
+                    Requirements::css('/build/enchantment/assets/bundle-silverstripe-session-manager.css');
+                    // silverstripe-mfa (TODO: if installed)
+                    Requirements::css('/build/enchantment/assets/bundle-silverstripe-mfa.css');
                     // Extend
                     Requirements::css('/build/enchantment/assets/enchantment.css');
                 }
@@ -61,6 +69,8 @@ class EnchantmentAssetsExtension extends Extension
                     <link rel="stylesheet" href="' . $host . '/silverstripe-cms/client/src/styles/bundle-silverstripe-cms.scss">
                     <link rel="stylesheet" href="' . $host . '/silverstripe-versioned-admin/client/src/styles/bundle-silverstripe-versioned-admin.scss">
                     <link rel="stylesheet" href="' . $host . '/silverstripe-campaign-admin/client/src/styles/bundle-silverstripe-campaign-admin.scss">
+                    <link rel="stylesheet" href="' . $host . '/silverstripe-campaign-admin/client/src/styles/bundle-silverstripe-session-manager.scss">
+                    <link rel="stylesheet" href="' . $host . '/silverstripe-campaign-admin/client/src/styles/bundle-silverstripe-mfa.scss">
                     ');
                 }
             }

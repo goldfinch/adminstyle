@@ -1,0 +1,9 @@
+// Import core variables from silverstripe/admin
+@import "variables";
+
+// Import all of your SCSS stylesheets using relative paths from "components"
+@import "../components/LoginSession/LoginSession.scss";
+@import "../components/SessionManagerField/SessionManagerField.scss";
+
+// Import any legacy SCSS stylesheets
+// e.g. @import '../styles/MyComponent-ModelAdmin-legacy.scss

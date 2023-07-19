@@ -1,0 +1,65 @@
+// We provide our own dynamic title so remove 'Log in'
+.login-form__title {
+  display: none;
+}
+
+.mfa-app {
+  color: var(--color-text);
+  font-size: $font-content-size;
+  font-weight: $font-content-weight;
+  margin: auto;
+  max-width: $container-width;
+  min-width: 100%;
+
+  @media (min-width: $viewport-medium) {
+    min-width: 600px;
+  }
+
+  .mfa-app-title {
+    color: var(--color-text);
+    display: block;
+    font-size: $font-app-title-size;
+    font-weight: $font-app-title-weight;
+    margin-bottom: 8px;
+  }
+
+  .mfa-section-title {
+    margin-top: 0;
+    margin-bottom: $header-spacing;
+    font-size: $font-section-title-size;
+    color: var(--color-text);
+    font-weight: $font-section-title-weight;
+  }
+
+  .mfa-block-heading {
+    font-size: $font-block-heading-size;
+    font-weight: $font-block-heading-weight;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  // Override font weight settings on labels
+  label {
+    font-weight: normal;
+  }
+
+  pre {
+    color: var(--color-text);
+  }
+
+  .btn-secondary,
+  .btn-link {
+    color: var(--color-text);
+  }
+
+  .btn-primary:focus {
+    box-shadow: 0 0 0 2px var(--color-primary-button-focus-outline);
+  }
+
+  .btn-link:focus,
+  .btn-link:hover {
+    color: var(--color-text);
+  }
+}

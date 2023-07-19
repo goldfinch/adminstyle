@@ -1,0 +1,122 @@
+.mfa-method-tile {
+  display: flex;
+  flex: 1;
+  margin-bottom: $tile-spacing;
+  min-width: 100%;
+  position: relative; // Allows the 'unsupported' message to overlay the top of the tile
+
+  // Medium / large size
+  @media (min-width: $viewport-small) {
+    margin-right: $tile-spacing;
+    min-width: calc(50% - #{$tile-spacing / 2});
+
+    // Two per row, margin should only exist in the center
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  // Inner content section
+  &__content {
+    border-radius: $tile-border-radius;
+    box-shadow: var(--tile-box-shadow);
+    padding: $tile-padding;
+    width: 100%;
+
+    // Remove default focus state (we have our own)
+    &:focus {
+      outline: none;
+    }
+
+    // When the method is hovered or tabbed into
+    &:hover,
+    &:focus {
+      background: var(--color-tile-border-hover);
+      cursor: pointer;
+    }
+  }
+
+  // When the method is highlighted (via clicking it)
+  &--active .mfa-method-tile__content {
+    box-shadow: var(--tile-box-shadow-active);
+  }
+
+  &__description {
+    margin: 0;
+  }
+
+  &__thumbnail-container {
+    margin-bottom: $tile-spacing;
+    text-align: center;
+
+    &--unsupported {
+      opacity: 0.3;
+    }
+  }
+
+  &__thumbnail {
+    height: $tile-thumbnail-size;
+    width: $tile-thumbnail-size;
+  }
+
+  &__title {
+    font-size: $font-size-h1;
+  }
+
+  // When the method is not available
+  &--unsupported {
+    .mfa-method-tile__content {
+      &:hover,
+      &:focus {
+        background: inherit;
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  // Styles for the dark banner over unsupported methods
+  &__unavailable {
+    &-mask {
+      background: var(--tile-mask-background);
+      border-top-left-radius: $tile-border-radius;
+      border-top-right-radius: $tile-border-radius;
+      color: $color-tile-mask-text;
+      left: 0;
+      padding: $tile-padding/2 $tile-padding;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+
+    &-title {
+      font-size: $font-size-h1;
+      display: inline;
+    }
+
+    &-text {
+      display: inline;
+    }
+  }
+}
+
+// Fit three authenticators across on large displays if a multiple of 3 are present
+@media (min-width: $viewport-medium) {
+  .mfa-method-tile-group--three-columns .mfa-method-tile {
+    min-width: calc(33% - #{$tile-spacing / 1.5});
+    width: calc(33% - #{$tile-spacing});
+
+    // Remove right margin on each end of the row
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+
+    // Restore third item margins removed by previous media queries
+    &:nth-child(2n) {
+      margin-right: $tile-spacing;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+// Core variables
+@import 'variables';
+
+@import '../styles/mfa-variables';
+
+// Base style
+@import '../styles/mfa';
+@import '../containers/Login';
+
+// Components
+@import '../components/LoadingIndicator';
+@import '../components/Verify/SelectMethod';
+@import '../components/Register';
+@import '../components/Verify';
+
+// Backup codes
+@import '../components/BackupCodes/Register';
+@import '../components/BackupCodes/Verify';

@@ -1,0 +1,18 @@
+@import 'Register/Introduction';
+@import 'Register/MethodTile';
+@import 'Register/SelectMethod';
+
+.mfa-register-confirmation {
+  text-align: center;
+  margin: 3em auto 3em;
+
+  &__icon {
+    line-height: 1;
+    color: var(--color-green);
+    font-size: 76px;
+  }
+
+  &__continue {
+    margin-top: 2.5em;
+  }
+}

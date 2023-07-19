@@ -18,9 +18,9 @@ export default defineConfig({
     outDir: '../dist',
     rollupOptions: {
       output: {
-        entryFileNames: `assets/[name].js`,
-        chunkFileNames: `assets/[name].js`,
-        assetFileNames: `assets/[name].[ext]`
+        entryFileNames: `enchantment/assets/[name].js`,
+        chunkFileNames: `enchantment/assets/[name].js`,
+        assetFileNames: `enchantment/assets/[name].[ext]`
       }
     }
   },
@@ -44,6 +44,11 @@ export default defineConfig({
               'silverstripe-versioned-admin/client/src/styles/bundle-silverstripe-versioned-admin.scss',
               // - silverstripe-campaign-admin
               'silverstripe-campaign-admin/client/src/styles/bundle-silverstripe-campaign-admin.scss',
+              // - silverstripe-session-manager
+              'silverstripe-session-manager/client/src/bundles/bundle-silverstripe-session-manager.scss',
+              // - silverstripe-tfa (TODO: if installed)
+              'silverstripe-mfa/client/src/bundles/bundle-cms-silverstripe-mfa.scss',
+              'silverstripe-mfa/client/src/bundles/bundle-silverstripe-mfa.scss',
 
               'extra/sass/enchantment.scss',
               'extra/sass/wysiwyg.scss',
@@ -56,55 +61,55 @@ export default defineConfig({
           // silverstripe-admin
           {
             src: './silverstripe-admin/client/src/images/*',
-            dest: '../dist/assets/silverstripe-admin/client/src/images',
+            dest: '../dist/enchantment/assets/silverstripe-admin/client/src/images',
           },
           {
             src: './silverstripe-admin/client/src/font/*',
-            dest: '../dist/assets/silverstripe-admin/client/src/font',
+            dest: '../dist/enchantment/assets/silverstripe-admin/client/src/font',
           },
           {
             src: './silverstripe-admin/thirdparty/*',
-            dest: '../dist/assets/silverstripe-admin/thirdparty',
+            dest: '../dist/enchantment/assets/silverstripe-admin/thirdparty',
           },
 
           // lost assets (in .css files with no relative path)
-          {
-            src: './silverstripe-asset-admin/client/src/images/chosen-sprite.png',
-            dest: '../dist/assets',
-          },
+          // {
+          //   src: './silverstripe-asset-admin/client/src/images/chosen-sprite.png',
+          //   dest: '../dist/enchantment/assets',
+          // },
           // silverstripe-asset-admin
           {
             src: './silverstripe-asset-admin/client/src/images/*',
-            dest: '../dist/assets/silverstripe-asset-admin/client/src/images',
+            dest: '../dist/enchantment/assets/silverstripe-asset-admin/client/src/images',
           },
           // silverstripe-cms
           {
             src: './silverstripe-cms/client/src/images/*',
-            dest: '../dist/assets/silverstripe-cms/client/src/images',
+            dest: '../dist/enchantment/assets/silverstripe-cms/client/src/images',
           },
           // silverstripe-campaign-admin
           {
             src: './silverstripe-campaign-admin/client/src/components/IntroScreen/images/*',
-            dest: '../dist/assets/silverstripe-campaign-admin/client/src/images',
+            dest: '../dist/enchantment/assets/silverstripe-campaign-admin/client/src/images',
           },
           {
             src: './silverstripe-campaign-admin/client/src/containers/CampaignAdmin/images/*',
-            dest: '../dist/assets/silverstripe-campaign-admin/client/src/images',
+            dest: '../dist/enchantment/assets/silverstripe-campaign-admin/client/src/images',
           },
 
           // bootstrap-icons
           {
             src: './node_modules/bootstrap-icons/font/fonts/*',
-            dest: '../dist/assets/extra/fonts/bootstrap-icons',
+            dest: '../dist/enchantment/assets/extra/fonts/bootstrap-icons',
           },
           // extra
           {
             src: './extra/fonts/*',
-            dest: '../dist/assets/extra/fonts',
+            dest: '../dist/enchantment/assets/extra/fonts',
           },
           {
             src: './extra/images/*',
-            dest: '../dist/assets/extra/images',
+            dest: '../dist/enchantment/assets/extra/images',
           }
         ],
       })
