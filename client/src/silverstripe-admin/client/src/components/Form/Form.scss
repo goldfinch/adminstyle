@@ -187,7 +187,7 @@ input:not(.form-check-input).radio {
 .form__fieldgroup > .form__fieldgroup-item {
   display: inline-block;
   margin-right: map_get($spacers, 2);
-  margin-top: 25px;
+  margin-top: 15px;
   min-width: 166px;
   vertical-align: bottom; // Align fields with no labels
 }

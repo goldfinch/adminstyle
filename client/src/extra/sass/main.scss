@@ -66,16 +66,28 @@
 
   @extend .bi, .bi-check2-circle;
   // @extend .bi, .bi-check-lg;
+
+  &:before {
+    top: 2px;
+  }
 }
 
 .action.font-icon-save {
 
   @extend .bi, .bi-check-circle-fill;
+
+  &:before {
+    top: 2px;
+  }
 }
 
 .action--delete.font-icon-trash-bin {
 
   @extend .bi, .bi-trash3-fill;
+
+  &:before {
+    top: 2px;
+  }
 }
 
 .cms-login-status__logout-link.font-icon-logout {
@@ -266,7 +278,7 @@ input[type=radio]:checked {
 // --
 
 .form__field-holder.form__field-holder--no-label {
-  margin-top: 15px;
+  margin-top: 5px;
 }
 
 b, strong {
@@ -284,6 +296,6 @@ b, strong {
 }
 
 .form-group {
-  margin-bottom: 3px;
-  padding-bottom: 26px;
+  margin-bottom: 4px;
+  padding-bottom: 12px;
 }
