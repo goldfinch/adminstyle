@@ -1,0 +1,16 @@
+// Custom styles that override the defaults from Bootstrap
+.popover {
+  .popover-header {
+    border-bottom: 0;
+    font-size: $h4-font-size;
+  }
+
+  // Remove top padding from body elements that are following a header
+  .popover-header + .popover-body {
+    padding-top: 0;
+  }
+
+  .popover-body p:last-child {
+    margin-bottom: 0;
+  }
+}

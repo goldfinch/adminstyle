@@ -1,0 +1,36 @@
+// Tabs, styles built on top of Bootstrap 4 tab functionality
+.nav-tabs {
+  margin-bottom: $panel-padding-y;
+  border-radius: 0; //  TODO remove once JQueryUI is removed
+
+  // Spacing between items
+  .nav-item + .nav-item {
+    margin-left: 20px; // map_get($spacers, 2);
+  }
+
+  .nav-link {
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-radius: 0;
+    color: $text-muted;
+    padding: $nav-link-padding;
+    border-bottom-width: 0; // $nav-tabs-link-border-width;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      color: $body-color;
+      border-bottom-color: $nav-tabs-link-hover-border-color;
+    }
+
+    &.active,
+    &.active:active,
+    &.active:focus,
+    &.active:hover {
+      border-bottom-color: $nav-tabs-link-active-border-color;
+      cursor: default;
+      color: $body-color;
+    }
+  }
+}

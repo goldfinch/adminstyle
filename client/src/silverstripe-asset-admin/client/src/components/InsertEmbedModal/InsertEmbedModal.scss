@@ -1,0 +1,194 @@
+.insert-embed-modal {
+  .modal-content {
+    height: auto;
+    max-height: 100%;
+  }
+
+  .modal-body {
+    display: flex;
+    justify-items: stretch;
+    flex-direction: column;
+    background-color: $white;
+  }
+}
+
+.insert-embed-modal--edit {
+  width: 100%;
+
+  .btn-toolbar {
+    @include media-breakpoint-up(md) {
+      margin-left: 30%;
+    }
+  }
+}
+
+.insert-embed-modal--create {
+  flex: 1;
+  width: 100%;
+
+  .alert + & {
+    padding-top: 0;
+  }
+}
+
+.insert-embed-modal__url-create {
+  .form-control.text {
+    padding: $input-padding-y-lg $input-padding-x-lg;
+    font-size: $font-size-lg;
+    line-height: $line-height-lg;
+    border-radius: $input-border-radius-lg;
+  }
+}
+
+.insert-embed-modal__fields--fill-width {
+  @include media-breakpoint-up(md) {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.insert-embed-modal__preview-container {
+  padding-bottom: $spacer;
+
+  @include media-breakpoint-up(md) {
+    order: 2;
+    padding-left: $spacer;
+    width: 30%;
+  }
+}
+
+.insert-embed-modal__preview {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+  max-height: $gallery-thumb-height * 1.5;
+}
+
+.insert-embed-modal__placement {
+  .form__field-holder > div {
+    display: flex;
+    flex-direction: row;
+    justify-items: stretch;
+  }
+
+  .form-check {
+    flex: 1;
+    margin-bottom: 0;
+    padding-left: 0;
+
+    &:first-of-type .form-check-label span:before {
+      border-top-left-radius: $border-radius;
+      border-bottom-left-radius: $border-radius;
+    }
+
+    &:last-of-type .form-check-label span:before {
+      border-top-right-radius: $border-radius;
+      border-bottom-right-radius: $border-radius;
+    }
+
+    $placement-image-width: 40px;
+    $placement-image-height: 36px;
+
+    &-label {
+      display: block;
+      cursor: pointer;
+
+      span {
+        display: block;
+
+        color: rgba($body-color, 0);
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+        text-align: center;
+        text-transform: uppercase;
+
+        transition: color .1s ease-out;
+
+        &:before {
+          content: " ";
+          display: block;
+          box-sizing: content-box;
+          height: $placement-image-height;
+          padding: 5px 0;
+          border: 1px solid $border-color-light;
+          background: url("placement.png") center top no-repeat content-box;
+          transition: background-color .1s ease-out;
+        }
+      }
+
+
+      &:hover span,
+      &:focus span {
+        color: $body-color;
+      }
+    }
+
+    &-input {
+      position: absolute;
+      left: -9999px;
+
+      &.checked + span {
+        color: $component-active-border-color;
+
+        &:before {
+          border: 1px solid $component-active-border-color;
+          background: url("placement.png") center top no-repeat content-box,
+          $component-active-bg-light padding-box;
+        }
+      }
+    }
+
+    .option-val {
+      &--leftAlone { // sass-lint:disable-line class-name-format
+        + span:before {
+          background-position-y: -$placement-image-height;
+        }
+
+        &.checked + span:before {
+          background-position-y: 0;
+        }
+      }
+
+      &--center {
+        + span:before {
+          background-position-y: 3 * -$placement-image-height;
+        }
+
+        &.checked + span:before {
+          background-position-y: 2 * -$placement-image-height;
+        }
+      }
+
+      &--rightAlone { // sass-lint:disable-line class-name-format
+        + span:before {
+          background-position-y: 5 * -$placement-image-height;
+        }
+
+        &.checked + span:before {
+          background-position-y: 4 * -$placement-image-height;
+        }
+      }
+
+      &--left {
+        + span:before {
+          background-position-y: 7 * -$placement-image-height;
+        }
+
+        &.checked + span:before {
+          background-position-y: 6 * -$placement-image-height;
+        }
+      }
+
+      &--right {
+        + span:before {
+          background-position-y: 9 * -$placement-image-height;
+        }
+
+        &.checked + span:before {
+          background-position-y: 8 * -$placement-image-height;
+        }
+      }
+    }
+  }
+}

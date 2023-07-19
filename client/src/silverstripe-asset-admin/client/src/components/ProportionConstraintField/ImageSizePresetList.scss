@@ -1,0 +1,20 @@
+.image-size-preset-list {
+  display: block;
+  padding-left: 0;
+  margin-bottom: 0;
+  width: 100%;
+
+  &__list-item {
+    display: inline-block;
+    list-style: none;
+
+    .btn {
+      padding-left: 0;
+    }
+
+    .btn:disabled {
+      text-decoration: none;
+      pointer-events: all;
+    }
+  }
+}

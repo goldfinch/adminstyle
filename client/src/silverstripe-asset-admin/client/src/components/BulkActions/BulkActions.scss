@@ -1,0 +1,118 @@
+// Change width depending on the amount of actions inside
+$bulk-actions-width: 300px;
+
+.bulk-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  padding: $spacer * .625 $grid-gutter-width-half;
+  margin: 0 auto;
+  position: absolute;
+  height: $toolbar-total-height;
+  z-index: 2;
+  bottom: 0;
+  background-color: $body-bg-dark;
+  transition: top 0.5s ease-in-out, transform 0.5s ease-in-out;
+  transform: scale(1);
+  min-width: 160px;
+  border-top: 1px solid $border-color-light;
+
+  &-enter {
+    bottom: -$toolbar-total-height;
+  }
+
+  &-enter-active {
+    bottom: 0;
+    transition: bottom .2s ease-out;
+  }
+
+  &-leave {
+    bottom: 0;
+  }
+
+  &-leave-active {
+    bottom: -$toolbar-total-height;
+    transition: bottom .2s ease-in-out .1s;
+  }
+
+  .bulk-actions-counter {
+    vertical-align: middle;
+    min-width: 28px;
+    padding: 6px;
+    margin-right: 8px;
+    line-height: $line-height-base;
+    color: $white;
+    text-align: center;
+    background-color: $component-active-bg;
+    border-radius: $btn-border-radius;
+    font-weight: bold;
+  }
+
+  .bulk-actions__action.ss-ui-button {
+    line-height: $line-height-base;
+    margin-bottom: 0;
+    height: 32px;
+
+    &[class*="font-icon-"]::before {
+      font-size: 20px;
+      line-height: 18px;
+      position: relative;
+      top: -1px;
+      vertical-align: middle;
+    }
+  }
+
+  .chosen-single {
+    border-radius: 5px 0 0 5px;
+    border: 0;
+    filter: none; //IE9
+    background: none;
+    box-shadow: none;
+    color: inherit;
+
+    &:focus {
+      box-shadow: $dropdown-shadow;
+    }
+
+    > span {
+      text-align: left;
+      display: inline-block;
+      margin-right: 0;
+    }
+
+    > div {
+      position: static;
+      display: inline-block;
+    }
+  }
+
+  .chosen-drop {
+    border-radius: 3px;
+    box-shadow: $dropdown-shadow;
+    border: 0;
+  }
+
+  .search-choice-close {
+    display: none;
+  }
+
+  .chosen-results li {
+    padding-left: 22px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      font-family: silverstripe;
+      left: 4px;
+      font-size: 14px;
+      vertical-align: middle;
+      margin-right: 4px;
+    }
+
+    &:nth-child(1)::before {
+      content: "g";
+    }
+  }
+}

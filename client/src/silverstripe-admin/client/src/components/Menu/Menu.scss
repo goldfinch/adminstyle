@@ -1,0 +1,724 @@
+// sass-lint:disable no-css-comments
+/**
+ * Styles for the left hand side menu and header for the admin panels.
+ *
+ * Take into consideration CSS selector performance.
+ *
+ * @package admin
+ */
+// sass-lint:enable no-css-comments
+
+.cms-menu {
+  z-index: $zindex-menu;
+  background: $base-menu-bg;
+  // Add `!important` to ignore width set in `.cms-panel` entwine`
+  width: $cms-menu-width !important; // sass-lint:disable-line no-important
+  overflow: hidden;
+
+  @include media-breakpoint-down(sm) {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: calc(100% - 59px) !important; // sass-lint:disable-line no-important
+    transition: left $transition-speed-fast ease-in;
+
+    &--open {
+      left: 0;
+      height: 100% !important; // sass-lint:disable-line no-important
+      box-shadow: 1px 0 10px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .cms-panel-content {
+    box-shadow: inset $border-color -1px 0 0;
+    overflow-x: hidden;
+    // Account for logo, logout and south bar
+    height: calc(100% - #{$toolbar-total-height * 3}) !important; // sass-lint:disable-line no-important
+  }
+
+  @include media-breakpoint-up(md) {
+    &.collapsed {
+      // Using important because JavaScript is overriding this value
+      width: $cms-menu-width-collapsed !important; // sass-lint:disable-line no-important
+      flex: 0 0 auto; // Prevents shrinkage
+      cursor: auto;
+      z-index: 50;
+
+      .cms-panel-header {
+        width: 30px;
+
+        span {
+          display: none;
+        }
+      }
+
+      .cms-menu__list {
+        overflow-x: hidden;
+        overflow-y: auto;
+
+        li {
+          width: 100%;
+          float: left;
+
+          ul {
+            display: none;
+          }
+
+          a {
+            padding-left: 18px;
+            padding-right: 18px;
+          }
+        }
+      }
+
+      span.text {
+        display: none;
+      }
+
+      .cms-sitename {
+        .cms-sitename__link {
+          color: $color-brand;
+          font-size: $h1-font-size;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: $cms-menu-width-collapsed;
+          height: $toolbar-height; // IE fix
+        }
+
+        .cms-sitename__title {
+          display: none;
+        }
+      }
+
+      .cms-login-status {
+        .cms-login-status__profile-link {
+          width: auto;
+          right: 0;
+
+          > span {
+            opacity: 0;
+          }
+
+          i {
+            padding-left: 8px;
+          }
+        }
+
+        .cms-login-status__logout-link {
+          display: none;
+        }
+      }
+
+      .sticky-toggle {
+        background-position: center center;
+      }
+
+      .cms-help__menu,
+      .cms-help__toggle {
+        display: none;
+      }
+    }
+  }
+
+  .cms-panel-toggle {
+    height: $toolbar-total-height;
+    background-color: $base-menu-bg;
+    box-shadow: inset $border-color -1px 0 0;
+    position: relative;
+    padding-right: 1px;
+    border-top: 1px solid rgba($border-color, .5);
+
+    @include media-breakpoint-down(sm) {
+      .toggle-collapse,
+      .toggle-expand,
+      .sticky-toggle {
+        display: none;
+      }
+    }
+  }
+
+  .sticky-toggle {
+    position: relative;
+  }
+
+  .sticky-toggle__button {
+    position: relative;
+    text-indent: -999em;
+    background-color: transparent;
+    border: 0;
+    transition: position $transition-speed-fast;
+    width: 28px;
+    height: 54px;
+    padding: 0 8px;
+
+    &:before,
+    &:after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      border-radius: 50%;
+      content: "";
+      transform: translate(-50%, -50%);
+    }
+
+    &:before {
+      width: 14px;
+      height: 14px;
+      border: solid 1px $gray-600;
+    }
+
+    &:after {
+      display: none;
+      width: 8px;
+      height: 8px;
+      background: $gray-600;
+      border-radius: 50%;
+    }
+
+    &:hover {
+      background-color: $base-menu;
+      box-shadow: 0 0 0;
+      cursor: pointer;
+
+      // When the button is hovered, show the status indicator
+      + .sticky-toggle__status {
+        display: block;
+      }
+    }
+
+    &.active {
+      &:after {
+        display: block;
+      }
+    }
+  }
+
+  .sticky-toggle__status {
+    display: none;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 100%;
+    font-size: 9px;
+    color: $gray-600;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  // Sub menu (will also be available for profile)
+  .toggle-children {
+    display: inline-block;
+    float: right;
+    width: 20px;
+    height: 100%;
+    cursor: pointer;
+    padding-top: 17px;
+  }
+
+  .toggle-children-icon {
+    background-image: none;
+    border-color: darken(#ccdce6, 25%);
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    margin-top: 3px;
+    right: 8px;
+    z-index: 2;
+    -ms-transform: rotate(-45deg); // IE 9
+    -webkit-transform: rotate(-45deg); // Chrome, Safari, Opera
+    transform: rotate(-45deg);
+    // display: none;  // To be shown by javascript, see LeftAndMain.Panel.js
+  }
+
+  .opened .toggle-children-icon {
+    margin-top: 1px;
+  }
+}
+
+.cms-menu-mobile-overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.05);
+  z-index: $zindex-cms-content-header + 1;
+  border: 0;
+}
+
+.cms-menu + .cms-menu-mobile-overlay {
+  display: none;
+}
+
+.cms-menu.cms-menu--open + .cms-menu-mobile-overlay {
+  @include media-breakpoint-down(sm) {
+    display: block;
+  }
+}
+
+.cms-menu__header {
+  padding: 0;
+  background-color: $brand-secondary;
+  min-height: $toolbar-total-height*2;
+
+  span {
+    color: $white;
+    display: block;
+    padding-left: 26px;
+
+    a {
+      color: white;
+      display: inline;
+    }
+  }
+}
+
+.cms-sitename {
+  border-bottom: 1px solid darken($brand-secondary, 4%);
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  transition: padding $transition-speed-fast;
+  height: $toolbar-total-height;
+  font-weight: 600;
+  display: flex;
+  justify-content: flex-start;
+
+  &:hover,
+  &:focus {
+    background-color: $brand-secondary-hover;
+  }
+
+  @include media-breakpoint-down(sm) {
+    text-align: center;
+  }
+
+  .cms-sitename__link {
+    display: none;
+  }
+
+  .cms-sitename__title {
+    color: $white;
+    margin: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    &:hover {
+      opacity: .9;
+    }
+
+    @include media-breakpoint-down(sm) {
+      margin-left: $toolbar-total-height;
+      margin-right: $toolbar-total-height;
+    }
+  }
+}
+
+.cms-login-status {
+  position: relative;
+  line-height: 16px;
+  font-size: $font-size-sm;
+  transition: padding $transition-speed-fast;
+  min-height: $toolbar-total-height;
+
+  .cms-login-status__logout-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: $font-size-root + 2px;
+    width: 40px;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover,
+    &:focus {
+      opacity: .9;
+      text-decoration: none;
+      background-color: $brand-secondary-hover;
+    }
+  }
+
+  .cms-login-status__profile-link {
+    position: absolute;
+    left: 0;
+    right: 36px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 0 0 8px;
+    color: $white;
+
+    &:hover,
+    &:focus {
+      background-color: $brand-secondary-hover;
+    }
+
+    i {
+      position: absolute;
+      top: 17px;
+      left: 13px;
+      font-size: 18px;
+      vertical-align: middle;
+      margin-right: 6px;
+      padding-left: 0;
+      transition: padding $transition-speed-fast;
+
+      @include media-breakpoint-down(sm) {
+        left: 18px;
+      }
+    }
+
+    span {
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      padding-left: 34px;
+
+      @include media-breakpoint-down(sm) {
+        padding-left: 36px;
+      }
+    }
+  }
+}
+
+// SS4 menu font icons
+.menu__icon {
+  position: absolute;
+  margin-top: -1px;
+  left: 13px;
+  font-size: $h3-font-size;
+  min-width: 16px;
+  background-repeat: no-repeat;
+  background-position: 50% 2px;
+  transition: all $transition-speed-fast;
+  color: $brand-primary; // darken($base-menu-bg, 44%);
+
+  @include media-breakpoint-up(md) {
+    .collapsed & {
+      left: 22px;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    left: 20px;
+  }
+}
+
+.cms-menu__list {
+  margin: 0;
+  list-style-type: none;
+  padding-left: 0;
+  box-shadow: inset $border-color -1px 0 0;
+
+  a:focus,
+  a:active {
+    text-decoration: none;
+  }
+
+  li {
+
+    a {
+      display: block;
+      min-height: 50px;
+      color: $body-color;
+      padding: $spacer 5px $spacer 8px;
+      background-color: $base-menu-bg;
+      cursor: pointer;
+      position: relative;
+      transition: padding $transition-speed-fast;
+      text-decoration: none;
+      box-shadow: inset $border-color -1px 0 0;
+
+      &:hover {
+        text-decoration: none;
+        background-color: #f5f5f5; // $base-menu;
+        color: darken($body-color, 10%);
+      }
+
+      &:focus,
+      &:active {
+        background-color: $base-menu;
+        text-decoration: none;
+      }
+
+      // External links
+      &[href^="//"],
+      &[href^="http://"],
+      &[href^="https://"] {
+        .text::after {
+          content: "@";
+          position: relative;
+          top: 2px;
+          font-family: silverstripe;
+          display: inline-block;
+          opacity: 0;
+          font-size: 10px;
+          margin-left: 6px;
+          color: darken($base-menu-bg, 44%);
+          transition: opacity $transition-speed-fast ease-in-out;
+        }
+
+        &:hover .text::after {
+          opacity: 1;
+        }
+      }
+
+      .text {
+        display: block;
+        margin-left: 34px;
+
+        @include media-breakpoint-down(sm) {
+          margin-left: 38px;
+        }
+      }
+
+      span.toggle-children {
+        top: 0;
+      }
+
+    }
+
+    &.current { //need to apply current stlye to children also (at least line height)
+
+      &>a {
+        background-color: $base-menu;
+
+        .toggle-children {
+          .toggle-children-icon {
+            @include icon-sprites(32x32);
+            @include sprite($sprites-32x32-menu-arrow-down);
+          }
+        }
+      }
+
+      a {
+        background-color: #f4f4f4; // $base-menu;
+      }
+
+      ul {
+        border-top: 0;
+        display: block;
+      }
+
+      li {
+        background-color: $base-menu-bg;
+
+        a {
+          &.current,
+          &:hover {
+            background-color: $base-menu;
+          }
+        }
+
+      }
+    }
+
+    // Has sub menu
+    &.children {
+
+      .no-icon.text {
+        margin-left: 30px;
+      }
+
+      // Sub menu
+      ul li a {
+        font-size: 12px;
+        line-height: 18px;
+        height: 18px;
+        padding-top: 11px;
+        padding-bottom: 11px;
+        color: lighten($body-color, 10%);
+        background-color: $base-menu-bg;
+
+        span.text {
+          margin-left: 23px;
+        }
+      }
+
+      &.current {
+        > a {
+          background-color: transparent;
+
+          &:hover {
+            background-color: lighten($base-menu, 3%);
+          }
+        }
+      }
+
+      &.opened {
+        a:hover {
+          background-color: lighten($base-menu, 3%);
+        }
+
+        .current a {
+          background-color: #f7f7f7; // $base-menu;
+        }
+
+        .opened .toggle-children-icon {
+          transform: rotate(45deg);
+        }
+      }
+    }
+  }
+
+  &.collapsed {
+    .toggle-children {
+      display: none;
+    }
+  }
+}
+
+// Mobile menu toggle
+.cms-mobile-menu-toggle-wrapper {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: $zindex-menu + 1;
+
+  @include media-breakpoint-down(sm) {
+    display: block;
+  }
+}
+
+.cms-help {
+  &__menu {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    padding: 1rem $spacer-sm;
+    border: 0;
+
+    &:hover {
+      cursor: pointer;
+
+      .cms-help__logo {
+        background-color: darken($brand-secondary, 5);
+      }
+    }
+  }
+
+  &__logo {
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    background: $brand-secondary;
+    border-radius: 50%;
+    height: 26px;
+    width: 26px;
+    padding: 0;
+    margin-right: 4px;
+    font-size: $font-size-lg;
+    flex-shrink: 0;
+  }
+
+  &__caret {
+    color: $gray-700;
+    margin-left: -3px;
+    margin-top: 2px;
+  }
+
+  &__toggle-title,
+  &__badge {
+    display: none;
+  }
+
+  &__toggle-title {
+    color: $gray-700;
+  }
+
+  &__links a.cms-help__link {
+    display: none;
+    color: $gray-700;
+    padding: 4px 12px;
+
+    &:hover {
+      color: $gray-800;
+    }
+  }
+
+  &__badge {
+    margin-left: 4px;
+    margin-right: 2px;
+  }
+
+  &__toggle {
+    position: absolute;
+    padding: 0 0 20px 0;
+    background: $base-menu-bg;
+    top: -$toolbar-total-height;
+    left: 0;
+    transform: translateY($toolbar-total-height);
+    transition: transform $transition-speed-fast;
+
+    &--show {
+      transform: none;
+      top: auto;
+      bottom: 0;
+      z-index: 3;
+      right: 1px;
+      border-top: 1px solid rgba($border-color, .5);
+
+      .cms-help__menu {
+        width: 100%;
+      }
+
+      a.cms-help__link {
+        display: block;
+      }
+
+      .cms-help__caret {
+        display: block;
+        margin-left: auto;
+        margin-top: -6px;
+        transform: rotate(180deg);
+      }
+
+      .cms-help__toggle-title,
+      .cms-help__badge {
+        display: block;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-between(sm, sm) {
+  .cms-help {
+    &__links a.cms-help__link {
+      display: none;
+      padding: 0 6px;
+    }
+
+    &__toggle {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      box-shadow: inset -1px 0 0 #ced5e1;
+
+      &--show {
+        .cms-help__menu {
+          width: auto;
+        }
+
+        a.cms-help__link {
+          display: inline-flex;
+        }
+
+        .cms-help__caret {
+          margin-left: 4px;
+        }
+      }
+    }
+  }
+}

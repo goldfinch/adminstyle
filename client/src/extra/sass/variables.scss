@@ -1,0 +1,22 @@
+// - silverstripe-admin
+
+// $theme-path-silverstripe-admin: '../'; // for vite dev only
+$theme-path-silverstripe-admin: 'silverstripe-admin/client/src/';
+$theme-path-silverstripe-admin-thirdparty: 'silverstripe-admin/thirdparty/';
+
+// - silverstripe-asset-admin
+
+$theme-path-silverstripe-asset-admin: './silverstripe-asset-admin/client/src/';
+
+// - silverstripe-cms
+
+$theme-path-silverstripe-cms: 'silverstripe-cms/client/src/';
+
+// - extra
+
+// $theme-path-extra: '../'; // for vite dev only
+$theme-path-extra: 'extra/';
+
+// $bootstrap-icons-font-dir: '/node_modules/bootstrap-icons/font/fonts/';  // for vite dev only
+$bootstrap-icons-font-dir: 'extra/fonts/bootstrap-icons';
+

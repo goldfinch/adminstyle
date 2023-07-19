@@ -1,0 +1,81 @@
+{
+  "extra/sass/main.scss": {
+    "file": "assets/main.css",
+    "isEntry": true,
+    "src": "extra/sass/main.scss"
+  },
+  "node_modules/chosen-js/chosen-sprite.png": {
+    "file": "assets/chosen-sprite.png",
+    "src": "node_modules/chosen-js/chosen-sprite.png"
+  },
+  "node_modules/chosen-js/chosen-sprite@2x.png": {
+    "file": "assets/chosen-sprite@2x.png",
+    "src": "node_modules/chosen-js/chosen-sprite@2x.png"
+  },
+  "silverstripe-admin/client/src/styles/bundle-silverstripe-admin.scss": {
+    "file": "assets/bundle-silverstripe-admin.css",
+    "isEntry": true,
+    "src": "silverstripe-admin/client/src/styles/bundle-silverstripe-admin.scss"
+  },
+  "silverstripe-admin/client/src/styles/editor.scss": {
+    "file": "assets/editor.css",
+    "isEntry": true,
+    "src": "silverstripe-admin/client/src/styles/editor.scss"
+  },
+  "silverstripe-admin/client/src/styles/legacy/GridField_print.scss": {
+    "file": "assets/GridField_print.css",
+    "isEntry": true,
+    "src": "silverstripe-admin/client/src/styles/legacy/GridField_print.scss"
+  },
+  "silverstripe-admin/thirdparty/jquery-ui-themes/smoothness/images/ui-icons_444444_256x240.png": {
+    "file": "assets/ui-icons_444444_256x240.png",
+    "src": "silverstripe-admin/thirdparty/jquery-ui-themes/smoothness/images/ui-icons_444444_256x240.png"
+  },
+  "silverstripe-admin/thirdparty/jquery-ui-themes/smoothness/images/ui-icons_555555_256x240.png": {
+    "file": "assets/ui-icons_555555_256x240.png",
+    "src": "silverstripe-admin/thirdparty/jquery-ui-themes/smoothness/images/ui-icons_555555_256x240.png"
+  },
+  "silverstripe-admin/thirdparty/jquery-ui-themes/smoothness/images/ui-icons_777620_256x240.png": {
+    "file": "assets/ui-icons_777620_256x240.png",
+    "src": "silverstripe-admin/thirdparty/jquery-ui-themes/smoothness/images/ui-icons_777620_256x240.png"
+  },
+  "silverstripe-admin/thirdparty/jquery-ui-themes/smoothness/images/ui-icons_777777_256x240.png": {
+    "file": "assets/ui-icons_777777_256x240.png",
+    "src": "silverstripe-admin/thirdparty/jquery-ui-themes/smoothness/images/ui-icons_777777_256x240.png"
+  },
+  "silverstripe-admin/thirdparty/jquery-ui-themes/smoothness/images/ui-icons_cc0000_256x240.png": {
+    "file": "assets/ui-icons_cc0000_256x240.png",
+    "src": "silverstripe-admin/thirdparty/jquery-ui-themes/smoothness/images/ui-icons_cc0000_256x240.png"
+  },
+  "silverstripe-admin/thirdparty/jquery-ui-themes/smoothness/images/ui-icons_ffffff_256x240.png": {
+    "file": "assets/ui-icons_ffffff_256x240.png",
+    "src": "silverstripe-admin/thirdparty/jquery-ui-themes/smoothness/images/ui-icons_ffffff_256x240.png"
+  },
+  "silverstripe-admin/thirdparty/jstree/themes/apple/bg.jpg": {
+    "file": "assets/bg.jpg",
+    "src": "silverstripe-admin/thirdparty/jstree/themes/apple/bg.jpg"
+  },
+  "silverstripe-admin/thirdparty/jstree/themes/apple/d.png": {
+    "file": "assets/d.png",
+    "src": "silverstripe-admin/thirdparty/jstree/themes/apple/d.png"
+  },
+  "silverstripe-admin/thirdparty/jstree/themes/apple/throbber.gif": {
+    "file": "assets/throbber.gif",
+    "src": "silverstripe-admin/thirdparty/jstree/themes/apple/throbber.gif"
+  },
+  "silverstripe-asset-admin/client/src/styles/bundle-silverstripe-asset-admin.scss": {
+    "file": "assets/bundle-silverstripe-asset-admin.css",
+    "isEntry": true,
+    "src": "silverstripe-asset-admin/client/src/styles/bundle-silverstripe-asset-admin.scss"
+  },
+  "silverstripe-cms/client/src/styles/SilverStripeNavigator.scss": {
+    "file": "assets/SilverStripeNavigator.css",
+    "isEntry": true,
+    "src": "silverstripe-cms/client/src/styles/SilverStripeNavigator.scss"
+  },
+  "silverstripe-cms/client/src/styles/bundle-silverstripe-cms.scss": {
+    "file": "assets/bundle-silverstripe-cms.css",
+    "isEntry": true,
+    "src": "silverstripe-cms/client/src/styles/bundle-silverstripe-cms.scss"
+  }
+}

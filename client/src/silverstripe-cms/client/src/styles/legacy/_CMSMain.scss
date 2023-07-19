@@ -1,0 +1,184 @@
+/**
+ * Style custom to the CMSMain admin interface. CMSMain extends the built in
+ * SilverStripe admin section styles. As much as possible we want to use those
+ * built in styles. If anything in this file can be implemented in a generic
+ * way then it should be include in the admin scss files.
+ *
+ * @package cms
+ */
+
+/** ------------------------------------------------------------------
+ * Page History Section.
+ * ----------------------------------------------------------------- */
+#cms-page-history-versions {
+	tr {
+		&.loading {
+			color: #999;
+
+			td {
+
+				&:hover {
+					cursor: none;
+				}
+			}
+		}
+	}
+	td {
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}
+
+/** --------------------------------------------
+ * Tree View (collapsed for sidebar)
+ * -------------------------------------------- */
+#cms-content-treeview, #cms-content-listview {
+	.cms-tree-expand-trigger {
+		display: none; // Don't show trigger in expanded mode
+	}
+}
+
+/**
+ * DEPRECATED:
+ * .cms-content-tools will be removed in 4.0
+ * Use .cms-content-filters instead.
+ *
+ * Hide certain elements when shown in "sidebar mode"
+ */
+.cms-content-tools {
+	#cms-content-treeview {
+		.cms-content-toolbar {
+			border-bottom: none;
+			box-shadow: none;
+			margin-bottom: 0;
+		}
+		.cms-tree-expand-trigger {
+			display: block;
+			float: left;
+			margin: 0 0 2px 0;
+			span.ui-button-text {
+					padding-right: 8px;
+			}
+		}
+
+		.cms-tree {
+			// Hide badges and drag icons to save space
+			.badge {
+				display: none;
+			}
+
+			// Show badge on hovered node
+			a:hover > .text > .badge, .jstree-clicked > .text > .badge {
+				display: inline-block;
+			}
+		}
+	}
+}
+
+// Move search form inline with close button (rather than filter)
+#cms-content-tools-CMSMain {
+	.search-form {
+		right: 0;
+	}
+}
+
+/* -------------------------------------------------------------------
+ * List view
+ * ------------------------------------------------------------------- */
+.cms-list {
+
+  .cms-list__item-breadcrumbs {
+    margin-left: 21px;
+    margin-bottom: 0;
+    font-size: 0.9em;
+    word-break: break-word;
+  }
+}
+
+/* -------------------------------------------------------------------
+ * Sitetree tool bar
+ * ----------------------------------------------------------------- */
+.cms-content-toolbar {
+
+  .view-controls {
+    margin-top: 0;
+
+    .page-view-link {
+      display: inline-block;
+      margin-right: -5px;
+    }
+
+    &.view-controls--treeview .font-icon-tree,
+    &.view-controls--listview .font-icon-list {
+      display: none;
+    }
+  }
+
+}
+
+/* -------------------------------------------------------------------
+ * Container for editor + preview
+ * ----------------------------------------------------------------- */
+#pages-controller-cms-content,
+#pages-controller-cms-content + .cms-preview {
+  width: 50%; // Effectively inert, allows IE 11 to do its sizing math properly
+}
+
+/** ------------------------------------------------------------------
+ * URLSegment field
+ * ----------------------------------------------------------------- */
+.field.urlsegment {
+  .input-group {
+    width: auto;
+    flex-wrap: nowrap;
+  }
+
+	&.loading .form__field-label {
+		background-image: url('#{$theme-path}images/loading.gif');
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 20px;
+	}
+
+	.URL-link {
+		padding-top: 8px;
+		display: inline-block;
+	}
+
+	input.text {
+		flex: 0 1 250px;
+  }
+
+  .input-group-append {
+    z-index: 2;
+
+    &:last-of-type {
+      z-index: 1;
+    }
+
+    .btn {
+      margin-top: 0;
+      padding-top: $input-padding-y;
+      padding-bottom: $input-padding-y;
+    }
+  }
+
+	.help {
+		margin-left: 0;
+	}
+
+	.edit-holder {
+		display: none;
+
+    .form__field-description {
+      clear: both;
+    }
+	}
+}
+
+.form__field-update-url {
+    border-radius: 0 3px 3px 0;
+    margin-right: 0px;
+    margin-left: -1px;
+}

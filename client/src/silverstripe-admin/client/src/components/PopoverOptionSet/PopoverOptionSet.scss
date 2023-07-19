@@ -1,0 +1,118 @@
+$button-height: 40px;
+$column-width: 225px;
+
+$divided-panel-padding-x: calc($panel-padding-x / 2);
+
+.popover-option-set {
+  display: flex;
+  flex-direction: column;
+  border-radius: $border-radius;
+
+  > .popover {
+    overflow: hidden;
+    width: calc(100% - 10px);
+
+    @include media-breakpoint-up(sm) {
+      max-width: $column-width * 2;
+    }
+  }
+
+  &:focus,
+  &:hover {
+    box-shadow: $z-depth-1;
+    outline-width: 0;
+  }
+
+  &__button-container {
+    width: 100%;
+    padding: 10px;
+    box-shadow: $z-depth-1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-height: $button-height * 10;
+    overflow-y: auto;
+
+    :nth-child(odd) {
+      margin-right: $divided-panel-padding-x;
+    }
+
+    :nth-child(even) {
+      margin-right: 0;
+    }
+
+    :nth-last-child(-n+2) {
+      margin-bottom: 0;
+    }
+
+    .popover-option-set__no-results {
+      text-align: center;
+      vertical-align: middle;
+      width: 100%;
+      margin: 0;
+      padding: $divided-panel-padding-x;
+    }
+  }
+
+  &__button {
+    width: 100%;
+    padding: $divided-panel-padding-x;
+    text-align: left;
+    margin-bottom: 4px;
+    border: 0;
+    max-height: $button-height;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    @include media-breakpoint-up(sm) {
+      width: calc(50% - 5px);
+    }
+  }
+
+  // Adds necessary specificity to override default font-size and margins
+  & &__button::before {
+    font-size: 2.1rem;
+    margin-right: $divided-panel-padding-x;
+  }
+
+  &__search {
+    height: $toolbar-height;
+
+    &-input,
+    &-clear {
+      &,
+      &:focus,
+      &:hover,
+      &:active {
+        box-shadow: none;
+        border: 0;
+        border-bottom: 1px solid $border-color-light;
+        border-radius: 0;
+        outline: none;
+      }
+    }
+
+    &-input {
+      height: auto;
+      padding-left: $panel-padding-x;
+    }
+
+    &-clear {
+      margin-right: 0;
+    }
+
+    // Nesting needed for specificity, adds padding to clear link
+    .input-group-append {
+      .btn-link {
+        padding-right: $panel-padding-x;
+      }
+    }
+  }
+
+  &__inline {
+    z-index: 1;
+  }
+}
+
+

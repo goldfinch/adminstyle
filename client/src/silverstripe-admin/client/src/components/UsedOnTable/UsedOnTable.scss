@@ -1,0 +1,81 @@
+.used-on__badge {
+  border-color: #cf3f00;
+  color: $state-draft;
+  background-color: $state-draft-bg;
+}
+
+.used-on__table {
+
+  th {
+    padding: 10px;
+
+    &:first-of-type {
+      padding-right: 0;
+    }
+  }
+
+  td {
+    padding: 0;
+
+    &:first-child {
+      padding: 0 0 0 10px;
+    }
+
+    &.used-on__message {
+      padding: 10px;
+    }
+  }
+}
+
+.used-on__col--index {
+  width: 1em;
+  border: 0;
+}
+
+.used-on__cell-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  padding: 10px;
+
+  &--first {
+    padding-right: 0;
+  }
+
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.used-on__title-items {
+  display: inline;
+  padding: 0;
+}
+
+.used-on__title-item {
+  list-style-type: none;
+  display: inline;
+
+  &::after {
+    content: "/";
+    display: inline;
+    margin: 0 5px;
+  }
+
+  &:last-of-type {
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.used-on__type {
+  display: block;
+  font-size: 11px;
+}
+
+.used-on__message--loading,
+.used-on__message--empty {
+  text-align: center;
+}
