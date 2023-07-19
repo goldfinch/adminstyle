@@ -1,0 +1,18 @@
+a {
+  color: var(--color-link-primary);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--color-link-primary);
+    text-decoration: underline;
+  }
+
+  &.link--secondary,
+  &.link--secondary:hover {
+    color: var(--color-form-text);
+  }
+}
+
+h2 {
+  font-size: 1.5rem;
+}
