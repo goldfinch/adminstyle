@@ -265,6 +265,10 @@ input[type=radio]:checked {
 
 // --
 
+.form__field-holder.form__field-holder--no-label {
+  margin-top: 15px;
+}
+
 b, strong {
   font-weight: 600;
 }
