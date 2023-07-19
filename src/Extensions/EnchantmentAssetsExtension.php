@@ -25,6 +25,8 @@ class EnchantmentAssetsExtension extends Extension
                 // Requirements::css('silverstripe/admin: dist/css/LeftAndMain_printable.css');
                 // silverstripe-asset-admin
                 Requirements::block('silverstripe/asset-admin:client/dist/styles/bundle.css');
+                // silverstripe-versioned-admin
+                Requirements::block('silverstripe/versioned-admin:client/dist/styles/bundle.css');
 
                 $production = true;
 
@@ -37,6 +39,10 @@ class EnchantmentAssetsExtension extends Extension
                     Requirements::css('/enchantment-build/assets/bundle-silverstripe-admin.css');
                     // silverstripe-asset-admin
                     Requirements::css('/enchantment-build/assets/bundle-silverstripe-asset-admin.css');
+                    // silverstripe-versioned-admin
+                    Requirements::css('/enchantment-build/assets/bundle-silverstripe-versioned-admin.css');
+                    // silverstripe-campaign-admin
+                    Requirements::css('/enchantment-build/assets/bundle-silverstripe-campaign-admin.css');
                     // Extend
                     Requirements::css('/enchantment-build/assets/main.css');
                 }
@@ -51,6 +57,8 @@ class EnchantmentAssetsExtension extends Extension
                     <link rel="stylesheet" href="' . $host . '/silverstripe-admin/client/src/styles/bundle-silverstripe-admin.scss">
                     <link rel="stylesheet" href="' . $host . '/silverstripe-asset-admin/client/src/styles/bundle-silverstripe-asset-admin.scss">
                     <link rel="stylesheet" href="' . $host . '/silverstripe-cms/client/src/styles/bundle-silverstripe-cms.scss">
+                    <link rel="stylesheet" href="' . $host . '/silverstripe-versioned-admin/client/src/styles/bundle-silverstripe-versioned-admin.scss">
+                    <link rel="stylesheet" href="' . $host . '/silverstripe-campaign-admin/client/src/styles/bundle-silverstripe-campaign-admin.scss">
                     ');
                 }
             }

@@ -73,6 +73,11 @@
     "isEntry": true,
     "src": "silverstripe-asset-admin/client/src/styles/bundle-silverstripe-asset-admin.scss"
   },
+  "silverstripe-campaign-admin/client/src/styles/bundle-silverstripe-campaign-admin.scss": {
+    "file": "assets/bundle-silverstripe-campaign-admin.css",
+    "isEntry": true,
+    "src": "silverstripe-campaign-admin/client/src/styles/bundle-silverstripe-campaign-admin.scss"
+  },
   "silverstripe-cms/client/src/styles/SilverStripeNavigator.scss": {
     "file": "assets/SilverStripeNavigator.css",
     "isEntry": true,
@@ -82,5 +87,10 @@
     "file": "assets/bundle-silverstripe-cms.css",
     "isEntry": true,
     "src": "silverstripe-cms/client/src/styles/bundle-silverstripe-cms.scss"
+  },
+  "silverstripe-versioned-admin/client/src/styles/bundle-silverstripe-versioned-admin.scss": {
+    "file": "assets/bundle-silverstripe-versioned-admin.css",
+    "isEntry": true,
+    "src": "silverstripe-versioned-admin/client/src/styles/bundle-silverstripe-versioned-admin.scss"
   }
 }

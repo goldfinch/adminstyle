@@ -20,3 +20,9 @@ $theme-path-extra: 'extra/';
 // $bootstrap-icons-font-dir: '/node_modules/bootstrap-icons/font/fonts/';  // for vite dev only
 $bootstrap-icons-font-dir: 'extra/fonts/bootstrap-icons';
 
+
+// - silverstripe-campaign-admin
+$theme-path-silverstripe-campaign-admin: 'silverstripe-campaign-admin/client/src/';
+
+// - silverstripe-versioned-admin
+$theme-path-silverstripe-versioned-admin: 'silverstripe-versioned-admin/client/src/';

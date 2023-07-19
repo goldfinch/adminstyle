@@ -28,18 +28,22 @@ export default defineConfig({
   plugins: [
       laravel({
           input: [
-              // silverstripe-admin
+              // - silverstripe-admin
               'silverstripe-admin/client/src/styles/bundle-silverstripe-admin.scss',
               // 'silverstripe-admin/client/src/styles/bundle.scss',
               'silverstripe-admin/client/src/styles/editor.scss',
               'silverstripe-admin/client/src/styles/legacy/GridField_print.scss',
-              // silverstripe-asset-admin
+              // - silverstripe-asset-admin
               'silverstripe-asset-admin/client/src/styles/bundle-silverstripe-asset-admin.scss',
               // 'silverstripe-asset-admin/client/src/styles/bundle.scss',
-              // silverstrip-cms
+              // - silverstrip-cms
               'silverstripe-cms/client/src/styles/bundle-silverstripe-cms.scss',
               // 'silverstripe-cms/client/src/styles/bundle.scss',
               'silverstripe-cms/client/src/styles/SilverStripeNavigator.scss',
+              // - silverstripe-versioned-admin
+              'silverstripe-versioned-admin/client/src/styles/bundle-silverstripe-versioned-admin.scss',
+              // - silverstripe-campaign-admin
+              'silverstripe-campaign-admin/client/src/styles/bundle-silverstripe-campaign-admin.scss',
 
               'extra/sass/main.scss',
               'extra/sass/wysiwyg.scss',
