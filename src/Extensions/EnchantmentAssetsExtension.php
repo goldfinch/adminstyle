@@ -12,7 +12,7 @@ class EnchantmentAssetsExtension extends Extension
 {
     public function init()
     {
-        if (Environment::getEnv('SS_THEME_ENCHANTMENT') && is_dir(Director::baseFolder() . '/public/build/enchantment'))
+        if (Environment::getEnv('SS_THEME_ENCHANTMENT') && is_dir(Director::baseFolder() . '/public/build-cms/enchantment'))
         {
             $cfg = SiteConfig::current_site_config();
 
@@ -40,23 +40,23 @@ class EnchantmentAssetsExtension extends Extension
                 if ($production)
                 {
                     // silverstripe-cms
-                    Requirements::css('/build/enchantment/assets/bundle-silverstripe-cms.css');
+                    Requirements::css('/build-cms/enchantment/assets/bundle-silverstripe-cms.css');
                     // silverstripe-admin
                     // Requirements::css('silverstripe/admin: dist/css/LeftAndMain_printable.css');
-                    Requirements::css('/build/enchantment/assets/bundle-silverstripe-admin.css');
+                    Requirements::css('/build-cms/enchantment/assets/bundle-silverstripe-admin.css');
                     // silverstripe-asset-admin
-                    Requirements::css('/build/enchantment/assets/bundle-silverstripe-asset-admin.css');
+                    Requirements::css('/build-cms/enchantment/assets/bundle-silverstripe-asset-admin.css');
                     // silverstripe-versioned-admin
-                    Requirements::css('/build/enchantment/assets/bundle-silverstripe-versioned-admin.css');
+                    Requirements::css('/build-cms/enchantment/assets/bundle-silverstripe-versioned-admin.css');
                     // silverstripe-campaign-admin
-                    Requirements::css('/build/enchantment/assets/bundle-silverstripe-campaign-admin.css');
+                    Requirements::css('/build-cms/enchantment/assets/bundle-silverstripe-campaign-admin.css');
                     // silverstripe-session-manager
-                    Requirements::css('/build/enchantment/assets/bundle-silverstripe-session-manager.css');
+                    Requirements::css('/build-cms/enchantment/assets/bundle-silverstripe-session-manager.css');
                     // silverstripe-mfa (TODO: if installed)
-                    Requirements::css('/build/enchantment/assets/bundle-silverstripe-mfa.css');
-                    Requirements::css('/build/enchantment/assets/bundle-silverstripe-totp-authenticator.css');
+                    Requirements::css('/build-cms/enchantment/assets/bundle-silverstripe-mfa.css');
+                    Requirements::css('/build-cms/enchantment/assets/bundle-silverstripe-totp-authenticator.css');
                     // Extend
-                    Requirements::css('/build/enchantment/assets/enchantment.css');
+                    Requirements::css('/build-cms/enchantment/assets/enchantment.css');
                 }
                 else
                 {
