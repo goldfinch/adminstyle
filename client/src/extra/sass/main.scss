@@ -295,7 +295,9 @@ b, strong {
   position: absolute;
 }
 
-.form-group {
-  margin-bottom: 4px;
-  padding-bottom: 12px;
+.tab.ui-tabs-panel.ui-corner-bottom.ui-widget-content .form-group:last-child {
+
+  &:after {
+    border-bottom: 0;
+  }
 }

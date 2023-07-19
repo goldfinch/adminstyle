@@ -23,7 +23,7 @@ html [type="button"] {
 
 // Fix margin for btn in btn-toolbar without btn-group
 .btn-toolbar > .btn:not(:first-child) {
-  margin-left: 5px;
+  margin-left: 3px;
 }
 
 .btn-toolbar > .btn-group + .btn {

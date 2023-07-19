@@ -42,6 +42,7 @@ export default defineConfig({
               'silverstripe-cms/client/src/styles/SilverStripeNavigator.scss',
 
               'extra/sass/main.scss',
+              'extra/sass/wysiwyg.scss',
           ],
           refresh: true,
       }),

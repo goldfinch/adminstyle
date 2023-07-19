@@ -42,12 +42,15 @@ class EnchantmentAssetsExtension extends Extension
                 }
                 else
                 {
+                    // $host = 'http://[::1]:5173';
+                    $host = 'http://127.0.0.1:5173';
+
                     Requirements::insertHeadTags('
-                    <script type="module" src="http://127.0.0.1:5173/@vite/client"></script>
-                    <link rel="stylesheet" href="http://127.0.0.1:5173/extra/sass/main.scss">
-                    <link rel="stylesheet" href="http://127.0.0.1:5173/silverstripe-admin/client/src/styles/bundle-silverstripe-admin.scss">
-                    <link rel="stylesheet" href="http://127.0.0.1:5173/silverstripe-asset-admin/client/src/styles/bundle-silverstripe-asset-admin.scss">
-                    <link rel="stylesheet" href="http://127.0.0.1:5173/silverstripe-cms/client/src/styles/bundle-silverstripe-cms.scss">
+                    <script type="module" src="' . $host . '/@vite/client"></script>
+                    <link rel="stylesheet" href="' . $host . '/extra/sass/main.scss">
+                    <link rel="stylesheet" href="' . $host . '/silverstripe-admin/client/src/styles/bundle-silverstripe-admin.scss">
+                    <link rel="stylesheet" href="' . $host . '/silverstripe-asset-admin/client/src/styles/bundle-silverstripe-asset-admin.scss">
+                    <link rel="stylesheet" href="' . $host . '/silverstripe-cms/client/src/styles/bundle-silverstripe-cms.scss">
                     ');
                 }
             }

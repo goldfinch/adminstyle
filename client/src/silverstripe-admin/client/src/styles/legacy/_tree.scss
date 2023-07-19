@@ -21,7 +21,7 @@
       min-height: 18px;
       line-height: 25px;
       white-space: nowrap;
-      margin-left: 18px;
+      margin-left: 10px;
       min-width: 18px;
       &.jstree-open > ul {
         display: block;
@@ -638,6 +638,7 @@
 .cms-content-tools .cms-tree.jstree {
   li {
     min-width: 187px;
+    margin-top: 5px;
   }
   a {
     overflow: hidden;

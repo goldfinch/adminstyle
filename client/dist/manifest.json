@@ -4,6 +4,11 @@
     "isEntry": true,
     "src": "extra/sass/main.scss"
   },
+  "extra/sass/wysiwyg.scss": {
+    "file": "assets/wysiwyg.css",
+    "isEntry": true,
+    "src": "extra/sass/wysiwyg.scss"
+  },
   "node_modules/chosen-js/chosen-sprite.png": {
     "file": "assets/chosen-sprite.png",
     "src": "node_modules/chosen-js/chosen-sprite.png"
