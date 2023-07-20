@@ -8,7 +8,7 @@
 
 .cms-login-status__profile-link .font-icon-torso {
 
-  @extend .bi, .bi-person-fill;
+  @extend .bi, .bi-person-circle;
 }
 
 .menu__icon.font-icon-sitemap {
@@ -56,6 +56,16 @@
 .menu__icon.font-icon-cog {
 
   @extend .bi, .bi-gear-wide-connected;
+}
+
+.page-icon.font-icon-page {
+
+  @extend .bi, .bi-file-earmark-text-fill;
+}
+
+.page-icon.font-icon-p-error {
+
+  @extend .bi, .bi-file-earmark-medical;
 }
 
 .menu__icon {

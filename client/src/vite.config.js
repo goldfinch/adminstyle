@@ -78,10 +78,14 @@ export default defineConfig({
           },
 
           // lost assets (in .css files with no relative path)
-          // {
-          //   src: './silverstripe-asset-admin/client/src/images/chosen-sprite.png',
-          //   dest: '../dist/enchantment/assets',
-          // },
+          {
+            src: './silverstripe-admin/client/src/images/chosen-sprite.png',
+            dest: '../dist-extra/enchantment/assets',
+          },
+          {
+            src: './silverstripe-admin/thirdparty/jstree/themes/default/d.png',
+            dest: '../dist-extra/enchantment/assets',
+          },
           // silverstripe-asset-admin
           {
             src: './silverstripe-asset-admin/client/src/images/*',

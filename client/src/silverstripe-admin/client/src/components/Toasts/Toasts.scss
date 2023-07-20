@@ -42,7 +42,7 @@
   margin: 0 0 map_get($spacers, sm) 0;
   word-wrap: break-word;
   max-height: 250px;
-  border-left: $toast-border-radius solid;
+  border-left: 7px solid; // $toast-border-radius solid;
   opacity: 1;
   transition: box-shadow $transition-speed-fast ease;
   width: 100%;

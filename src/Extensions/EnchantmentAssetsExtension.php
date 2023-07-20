@@ -32,7 +32,8 @@ class EnchantmentAssetsExtension extends Extension
                 // silverstripe-session-manager
                 Requirements::block('silverstripe/session-manager: client/dist/styles/bundle.css');
                 // silverstripe-mfa (TODO: if installed)
-                Requirements::block('silverstripe/mfa:client/dist/styles/bundle-cms.css');
+                Requirements::block("silverstripe/mfa: client/dist/styles/bundle.css");
+                Requirements::block("silverstripe/mfa: client/dist/styles/bundle-cms.css");
                 Requirements::block('silverstripe/totp-authenticator: client/dist/styles/bundle.css');
 
                 $production = true;

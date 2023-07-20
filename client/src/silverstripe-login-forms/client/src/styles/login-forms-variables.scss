@@ -2,7 +2,7 @@ $mobile-breakpoint: 420px;
 
 // Default colour variants
 $color-page-background: $brand-secondary; // lighten($gray-100, 3%);
-$color-button-secondary-hover-background: darken($color-page-background, 5);
+$color-button-secondary-hover-background: darken($brand-secondary, 5);
 
 $color-button-primary-background: $brand-success;
 $color-button-primary-text: $white;
