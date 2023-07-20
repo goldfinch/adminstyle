@@ -235,7 +235,7 @@ input[type=radio]:checked {
 .cms-content-loading-spinner .spinner {
   background-image: url('#{$theme-path-extra}images/loading.svg');
   background-position: center;
-  background-size: 80%;
+  background-size: 90%;
   background-repeat: no-repeat;
 }
 
@@ -277,7 +277,7 @@ input[type=radio]:checked {
 
 // --
 
-.form__field-holder.form__field-holder--no-label {
+.form__fieldgroup.form__field-holder.form__field-holder--no-label {
   margin-top: 5px;
 }
 
@@ -300,4 +300,16 @@ b, strong {
   &:after {
     border-bottom: 0;
   }
+}
+
+.cms-content-controls .preview-selector .chosen-drop, .toolbar--south .preview-selector .chosen-drop {
+  display: none;
+}
+
+.cms-content-controls .preview-selector .chosen-with-drop .chosen-drop, .toolbar--south .preview-selector .chosen-with-drop .chosen-drop {
+  display: block;
+}
+
+.ss-toggle .ui-accordion-content {
+  overflow: hidden;
 }

@@ -54,5 +54,6 @@
         <footer class="silverstripe-brand">
             <% include SilverStripeLogo %>
         </footer>
+        <% include BackgroundAnimation %>
     </body>
 </html>

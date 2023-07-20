@@ -49,6 +49,8 @@ html {
 
 .login-form__title {
   margin-top: 0;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
 .login-form__content,
@@ -88,6 +90,8 @@ fieldset {
 .login-form-control--text .login-form-control__label,
 .field.text label {
   display: block;
+  font-size: 14px;
+  font-weight: 500;
   margin-bottom: var(--spacing-form-label-bottom);
 }
 
@@ -122,6 +126,8 @@ fieldset {
 .btn-success,
 .btn-primary,
 input[type="submit"] {
+  border-radius: 5px;
+  font-weight: 600;
   background-color: var(--color-button-primary-background);
   color: var(--color-button-primary-text);
   border: 0;

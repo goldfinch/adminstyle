@@ -4,9 +4,9 @@
 // Non-bootstrap variables
 // Anything below this line should only be used by non-bootstrap code
 
+$brand-primary: #778da9;
 $brand-secondary: #43536d;
 $brand-secondary-hover: darken($brand-secondary, 2);
-$brand-primary: #778da9;
 $brand-success: #55bb82;
 $brand-danger: #d5041b;
 
@@ -44,7 +44,7 @@ $spacer-xs: calc($spacer * .625); // 10px
 // Grid columns
 
 // Panel padding
-$panel-padding: calc($grid-gutter-width / 2);
+$panel-padding: calc($grid-gutter-width / 1.5);
 $panel-padding-x: $panel-padding;
 $panel-padding-y: $panel-padding;
 

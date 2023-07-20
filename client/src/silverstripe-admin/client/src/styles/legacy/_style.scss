@@ -1555,6 +1555,7 @@ form.member-profile-form {
       border-bottom: 0;
       box-shadow: none;
       margin-top: -5px;
+      font-weight: 500;
     }
   }
 }
@@ -1577,7 +1578,7 @@ form.member-profile-form {
 
 // overlay for switching between CMS panes
 .cms .ui-widget-overlay-light {
-  opacity: 0.15;
+  opacity: 0.05;
   background-color: #000;
 }
 

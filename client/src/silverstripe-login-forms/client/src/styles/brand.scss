@@ -1,6 +1,7 @@
 .app-brand {
   display: flex;
   justify-content: center;
+  color: #fff;
   padding: var(--spacing-app-brand);
 
   &__link,
@@ -20,6 +21,7 @@
 
   &__name {
     margin: 0;
+    color: #fff;
     text-align: center;
   }
 
