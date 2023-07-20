@@ -485,7 +485,7 @@
     }
     a, a:link {
       color:  $link-color;
-      padding: 3px 6px 3px 6px;
+      padding: 3px 6px 5px;
       border: none;
       display:  inline-block;
       margin-right: 5px;
@@ -613,6 +613,8 @@
         a:focus {
           .jstree-icon {
             display: block;
+            position: relative;
+            top: 1px;
           }
         }
       }
@@ -674,7 +676,7 @@
   &::before {
     font-size: 18px; // $font-size-lg;
     position: relative;
-    top: -2px;
+    top: 0;
   }
 }
 

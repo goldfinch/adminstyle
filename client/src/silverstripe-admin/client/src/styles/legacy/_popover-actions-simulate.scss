@@ -2,7 +2,7 @@
 
   .popover-actions-simulate .ui-tabs-anchor {
     font-size: 0;
-    padding: $input-btn-padding-y $input-btn-padding-x;
+    padding: $input-btn-padding-y 19px; // $input-btn-padding-x;
     border: 1px solid transparent;
     display: flex;
     align-items: center;
