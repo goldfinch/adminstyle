@@ -1,4 +1,14 @@
 {
+  "extra/js/admin-ctrl.js": {
+    "file": "enchantment/assets/admin-ctrl.js",
+    "isEntry": true,
+    "src": "extra/js/admin-ctrl.js"
+  },
+  "extra/sass/admin-ctrl-style.scss": {
+    "file": "enchantment/assets/admin-ctrl-style.css",
+    "isEntry": true,
+    "src": "extra/sass/admin-ctrl-style.scss"
+  },
   "extra/sass/enchantment.scss": {
     "file": "enchantment/assets/enchantment.css",
     "isEntry": true,

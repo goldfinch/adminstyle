@@ -57,6 +57,8 @@ export default defineConfig({
 
               'extra/sass/enchantment.scss',
               'extra/sass/wysiwyg.scss',
+              'extra/sass/admin-ctrl-style.scss',
+              'extra/js/admin-ctrl.js',
           ],
           refresh: true,
       }),
