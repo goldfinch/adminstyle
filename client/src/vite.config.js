@@ -121,6 +121,10 @@ export default defineConfig({
           {
             src: './extra/images/*',
             dest: '../dist/enchantment/assets/extra/images',
+          },
+          {
+            src: './node_modules/bootstrap-icons/icons/*',
+            dest: '../dist/enchantment/assets/extra/bootstrap-icons',
           }
         ],
       })

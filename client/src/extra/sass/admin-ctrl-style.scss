@@ -89,20 +89,27 @@
 .adminctrl ul li[data-i='build'] a {
 
   &:before {
-    mask-image: url(#{$theme-path-extra}images/icons/build.svg);
+    mask-image: url(#{$theme-path-extra}bootstrap-icons/pencil-fill.svg);
   }
 }
 
 .adminctrl ul li[data-i='planet'] a {
 
   &:before {
-    mask-image: url(#{$theme-path-extra}images/icons/planet.svg);
+    mask-image: url(#{$theme-path-extra}bootstrap-icons/box-fill.svg);
   }
 }
 
 .adminctrl ul li[data-i='exit'] a {
 
   &:before {
-    mask-image: url(#{$theme-path-extra}images/icons/exit.svg);
+    mask-image: url(#{$theme-path-extra}bootstrap-icons/door-open-fill.svg);
+  }
+}
+
+.adminctrl ul li[data-i='settings'] a {
+
+  &:before {
+    mask-image: url(#{$theme-path-extra}bootstrap-icons/gear-wide-connected.svg);
   }
 }
