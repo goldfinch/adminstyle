@@ -552,7 +552,7 @@ button.loading {
     padding-left: $spacer * 1.75;
 
     &.ui-state-default {
-      background: $body-bg-dark;
+      background: rgba($brand-primary, .1); // $body-bg-dark;
     }
 
     &.ui-state-active {
