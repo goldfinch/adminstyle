@@ -23,13 +23,14 @@ class AdminGear {
       adminctrl.classList.add('adminctrl');
       adminctrl.innerHTML = '\
           <ul>\
-            <li data-i="settings"><a href="' + logoutLink.content + '/settings" title="Settings"></a></li>\
             <li data-i="exit"><a href="' + logoutLink.content + '" title="Log out"></a></li>\
-            <li data-info>Last edit</li>\
             <li data-i="planet"><a href="/admin" title="Admin panel"></a></li>\
             <li data-i="build"><a href="' + editLink.content + '" title="Edit this page"></a></li>\
           </ul>\
       ';
+
+      // <li data-i="settings"><a href="' + logoutLink.content + '/settings" title="Settings"></a></li>\
+      // <li data-info>Last edit</li>\
 
       adminctrl.addEventListener('mouseover', (e) => {
 
@@ -42,6 +43,8 @@ class AdminGear {
         element.classList.remove('adminctrl--active')
       });
 
+      body.appendChild(adminctrl)
+
       setTimeout(() => adminctrl.classList.add('adminctrl--visible'), 100);
     }
 
@@ -49,6 +52,6 @@ class AdminGear {
 
 }
 
-window.addEventListener('load', (event) => {
-  new AdminGear();
-});
+// window.addEventListener('load', (event) => {
+//   new AdminGear();
+// });

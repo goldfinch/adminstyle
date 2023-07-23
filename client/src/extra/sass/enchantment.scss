@@ -21,6 +21,11 @@
   @extend .bi, .bi-megaphone-fill;
 }
 
+.menu__icon.font-icon-database {
+
+  @extend .bi, .bi-database-fill;
+}
+
 .menu__icon.font-icon-image {
 
   @extend .bi, .bi-image-fill;
@@ -66,6 +71,21 @@
 .page-icon.font-icon-p-error {
 
   @extend .bi, .bi-file-earmark-medical;
+}
+
+.page-icon.font-icon-p-error {
+
+  @extend .bi, .bi-file-earmark-medical;
+}
+
+.page-icon.font-icon-p-redirect {
+
+  @extend .bi, .bi-file-earmark-arrow-down-fill;
+}
+
+.page-icon.font-icon-p-virtual {
+
+  @extend .bi, .bi-file-earmark-easel-fill;
 }
 
 .menu__icon {
@@ -137,7 +157,7 @@ input[type=checkbox]:before {
   mask-image: url('#{$theme-path-extra}images/check.svg');
   mask-size: cover;
   mask-repeat: no-repeat;
-  mask-position: center;
+  mask-position: 70%;
   background-color: #fff;
 }
 
@@ -382,6 +402,7 @@ b, strong {
   margin-left: 30px;
 }
 
-.cms-edit-form .form-group.checkbox .form__field-holder {
-  margin-left: 0;
-}
+// * checkbox in /admin/settings
+// .cms-edit-form .form-group.checkbox .form__field-holder {
+//   margin-left: 0;
+// }
