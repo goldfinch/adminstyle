@@ -1,7 +1,7 @@
 ```
 SS_THEME_ENCHANTMENT=true
 
-cp -r vendor/goldfinch/enchantment/client/dist public/build-cms
+rm -rf public/build-cms && cp -r vendor/goldfinch/enchantment/client/dist public/build-cms
 cp -r vendor/goldfinch/enchantment/client/dist-extra public/build
 
 .gitignore > /public/build-cms
