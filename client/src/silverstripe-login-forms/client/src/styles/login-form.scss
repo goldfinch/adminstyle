@@ -144,8 +144,8 @@ input[type="submit"] {
     &:active,
     &.active,
     &:hover {
-      border-color: var(--color-button-primary-hover-background);
-      background-color: var(--color-button-primary-hover-background);
+      border-color: darken($brand-success, 40); // var(--color-button-primary-hover-background);
+      background-color: darken($brand-success, 40); // var(--color-button-primary-hover-background);
       color: var(--color-button-primary-hover-text);
     }
   }
