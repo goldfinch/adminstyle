@@ -7,7 +7,6 @@ $theme-path-thirdparty: $theme-path-silverstripe-admin-thirdparty;
 // Thirdparty
 @import "chosen";
 @import "~bootstrap/scss/bootstrap";
-@import '../../../../extra/sass/after-bootstrap.scss';
 @import "../../../thirdparty/jquery-ui-themes/smoothness/jquery-ui.css";
 @import "../../../thirdparty/jstree/themes/apple/style.css";
 
