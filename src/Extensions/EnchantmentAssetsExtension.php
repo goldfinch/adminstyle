@@ -40,24 +40,41 @@ class EnchantmentAssetsExtension extends Extension
 
                 if ($production)
                 {
-                    // silverstripe-admin
-                    // Requirements::css('silverstripe/admin: dist/css/LeftAndMain_printable.css');
-                    Requirements::css('/build-cms/enchantment/assets/bundle-silverstripe-admin.css');
+                    // // silverstripe-admin
+                    // // Requirements::css('silverstripe/admin: dist/css/LeftAndMain_printable.css');
+                    // Requirements::css('/build-cms/enchantment/assets/bundle-silverstripe-admin.css');
+                    // // silverstripe-cms
+                    // Requirements::css('/build-cms/enchantment/assets/bundle-silverstripe-cms.css');
+                    // // silverstripe-session-manager
+                    // Requirements::css('/build-cms/enchantment/assets/bundle-silverstripe-session-manager.css');
+                    // // silverstripe-versioned-admin
+                    // Requirements::css('/build-cms/enchantment/assets/bundle-silverstripe-versioned-admin.css');
+                    // // silverstripe-asset-admin
+                    // Requirements::css('/build-cms/enchantment/assets/bundle-silverstripe-asset-admin.css');
+                    // // silverstripe-campaign-admin
+                    // Requirements::css('/build-cms/enchantment/assets/bundle-silverstripe-campaign-admin.css');
+                    // // silverstripe-mfa (TODO: if installed)
+                    // Requirements::css('/build-cms/enchantment/assets/bundle-silverstripe-mfa.css');
+                    // Requirements::css('/build-cms/enchantment/assets/bundle-silverstripe-totp-authenticator.css');
+                    // // Extend
+                    // Requirements::css('/build-cms/enchantment/assets/enchantment.css');
+
+                    Requirements::css('goldfinch/enchantment:client/dist/enchantment/assets/bundle-silverstripe-admin.css');
                     // silverstripe-cms
-                    Requirements::css('/build-cms/enchantment/assets/bundle-silverstripe-cms.css');
+                    Requirements::css('goldfinch/enchantment:client/dist/enchantment/assets/bundle-silverstripe-cms.css');
                     // silverstripe-session-manager
-                    Requirements::css('/build-cms/enchantment/assets/bundle-silverstripe-session-manager.css');
+                    Requirements::css('goldfinch/enchantment:client/dist/enchantment/assets/bundle-silverstripe-session-manager.css');
                     // silverstripe-versioned-admin
-                    Requirements::css('/build-cms/enchantment/assets/bundle-silverstripe-versioned-admin.css');
+                    Requirements::css('goldfinch/enchantment:client/dist/enchantment/assets/bundle-silverstripe-versioned-admin.css');
                     // silverstripe-asset-admin
-                    Requirements::css('/build-cms/enchantment/assets/bundle-silverstripe-asset-admin.css');
+                    Requirements::css('goldfinch/enchantment:client/dist/enchantment/assets/bundle-silverstripe-asset-admin.css');
                     // silverstripe-campaign-admin
-                    Requirements::css('/build-cms/enchantment/assets/bundle-silverstripe-campaign-admin.css');
+                    Requirements::css('goldfinch/enchantment:client/dist/enchantment/assets/bundle-silverstripe-campaign-admin.css');
                     // silverstripe-mfa (TODO: if installed)
-                    Requirements::css('/build-cms/enchantment/assets/bundle-silverstripe-mfa.css');
-                    Requirements::css('/build-cms/enchantment/assets/bundle-silverstripe-totp-authenticator.css');
+                    Requirements::css('goldfinch/enchantment:client/dist/enchantment/assets/bundle-silverstripe-mfa.css');
+                    Requirements::css('goldfinch/enchantment:client/dist/enchantment/assets/bundle-silverstripe-totp-authenticator.css');
                     // Extend
-                    Requirements::css('/build-cms/enchantment/assets/enchantment.css');
+                    Requirements::css('goldfinch/enchantment:client/dist/enchantment/assets/enchantment.css');
                 }
                 else
                 {
