@@ -1,4 +1,108 @@
 {
+  "extra/fonts/OpenSans/OpenSans-Bold.woff": {
+    "file": "enchantment/assets/OpenSans-Bold.woff",
+    "src": "extra/fonts/OpenSans/OpenSans-Bold.woff"
+  },
+  "extra/fonts/OpenSans/OpenSans-Bold.woff2": {
+    "file": "enchantment/assets/OpenSans-Bold.woff2",
+    "src": "extra/fonts/OpenSans/OpenSans-Bold.woff2"
+  },
+  "extra/fonts/OpenSans/OpenSans-BoldItalic.woff": {
+    "file": "enchantment/assets/OpenSans-BoldItalic.woff",
+    "src": "extra/fonts/OpenSans/OpenSans-BoldItalic.woff"
+  },
+  "extra/fonts/OpenSans/OpenSans-BoldItalic.woff2": {
+    "file": "enchantment/assets/OpenSans-BoldItalic.woff2",
+    "src": "extra/fonts/OpenSans/OpenSans-BoldItalic.woff2"
+  },
+  "extra/fonts/OpenSans/OpenSans-ExtraBold.woff": {
+    "file": "enchantment/assets/OpenSans-ExtraBold.woff",
+    "src": "extra/fonts/OpenSans/OpenSans-ExtraBold.woff"
+  },
+  "extra/fonts/OpenSans/OpenSans-ExtraBold.woff2": {
+    "file": "enchantment/assets/OpenSans-ExtraBold.woff2",
+    "src": "extra/fonts/OpenSans/OpenSans-ExtraBold.woff2"
+  },
+  "extra/fonts/OpenSans/OpenSans-ExtraBoldItalic.woff": {
+    "file": "enchantment/assets/OpenSans-ExtraBoldItalic.woff",
+    "src": "extra/fonts/OpenSans/OpenSans-ExtraBoldItalic.woff"
+  },
+  "extra/fonts/OpenSans/OpenSans-ExtraBoldItalic.woff2": {
+    "file": "enchantment/assets/OpenSans-ExtraBoldItalic.woff2",
+    "src": "extra/fonts/OpenSans/OpenSans-ExtraBoldItalic.woff2"
+  },
+  "extra/fonts/OpenSans/OpenSans-Italic.woff": {
+    "file": "enchantment/assets/OpenSans-Italic.woff",
+    "src": "extra/fonts/OpenSans/OpenSans-Italic.woff"
+  },
+  "extra/fonts/OpenSans/OpenSans-Italic.woff2": {
+    "file": "enchantment/assets/OpenSans-Italic.woff2",
+    "src": "extra/fonts/OpenSans/OpenSans-Italic.woff2"
+  },
+  "extra/fonts/OpenSans/OpenSans-Light.woff": {
+    "file": "enchantment/assets/OpenSans-Light.woff",
+    "src": "extra/fonts/OpenSans/OpenSans-Light.woff"
+  },
+  "extra/fonts/OpenSans/OpenSans-Light.woff2": {
+    "file": "enchantment/assets/OpenSans-Light.woff2",
+    "src": "extra/fonts/OpenSans/OpenSans-Light.woff2"
+  },
+  "extra/fonts/OpenSans/OpenSans-LightItalic.woff": {
+    "file": "enchantment/assets/OpenSans-LightItalic.woff",
+    "src": "extra/fonts/OpenSans/OpenSans-LightItalic.woff"
+  },
+  "extra/fonts/OpenSans/OpenSans-LightItalic.woff2": {
+    "file": "enchantment/assets/OpenSans-LightItalic.woff2",
+    "src": "extra/fonts/OpenSans/OpenSans-LightItalic.woff2"
+  },
+  "extra/fonts/OpenSans/OpenSans-Medium.woff": {
+    "file": "enchantment/assets/OpenSans-Medium.woff",
+    "src": "extra/fonts/OpenSans/OpenSans-Medium.woff"
+  },
+  "extra/fonts/OpenSans/OpenSans-Medium.woff2": {
+    "file": "enchantment/assets/OpenSans-Medium.woff2",
+    "src": "extra/fonts/OpenSans/OpenSans-Medium.woff2"
+  },
+  "extra/fonts/OpenSans/OpenSans-MediumItalic.woff": {
+    "file": "enchantment/assets/OpenSans-MediumItalic.woff",
+    "src": "extra/fonts/OpenSans/OpenSans-MediumItalic.woff"
+  },
+  "extra/fonts/OpenSans/OpenSans-MediumItalic.woff2": {
+    "file": "enchantment/assets/OpenSans-MediumItalic.woff2",
+    "src": "extra/fonts/OpenSans/OpenSans-MediumItalic.woff2"
+  },
+  "extra/fonts/OpenSans/OpenSans-Regular.woff": {
+    "file": "enchantment/assets/OpenSans-Regular.woff",
+    "src": "extra/fonts/OpenSans/OpenSans-Regular.woff"
+  },
+  "extra/fonts/OpenSans/OpenSans-Regular.woff2": {
+    "file": "enchantment/assets/OpenSans-Regular.woff2",
+    "src": "extra/fonts/OpenSans/OpenSans-Regular.woff2"
+  },
+  "extra/fonts/OpenSans/OpenSans-SemiBold.woff": {
+    "file": "enchantment/assets/OpenSans-SemiBold.woff",
+    "src": "extra/fonts/OpenSans/OpenSans-SemiBold.woff"
+  },
+  "extra/fonts/OpenSans/OpenSans-SemiBold.woff2": {
+    "file": "enchantment/assets/OpenSans-SemiBold.woff2",
+    "src": "extra/fonts/OpenSans/OpenSans-SemiBold.woff2"
+  },
+  "extra/fonts/OpenSans/OpenSans-SemiBoldItalic.woff": {
+    "file": "enchantment/assets/OpenSans-SemiBoldItalic.woff",
+    "src": "extra/fonts/OpenSans/OpenSans-SemiBoldItalic.woff"
+  },
+  "extra/fonts/OpenSans/OpenSans-SemiBoldItalic.woff2": {
+    "file": "enchantment/assets/OpenSans-SemiBoldItalic.woff2",
+    "src": "extra/fonts/OpenSans/OpenSans-SemiBoldItalic.woff2"
+  },
+  "extra/images/check.svg": {
+    "file": "enchantment/assets/check.svg",
+    "src": "extra/images/check.svg"
+  },
+  "extra/images/loading.svg": {
+    "file": "enchantment/assets/loading.svg",
+    "src": "extra/images/loading.svg"
+  },
   "extra/js/admin-ctrl.js": {
     "file": "enchantment/assets/admin-ctrl.js",
     "isEntry": true,
@@ -19,6 +123,14 @@
     "isEntry": true,
     "src": "extra/sass/wysiwyg.scss"
   },
+  "node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff": {
+    "file": "enchantment/assets/bootstrap-icons.woff",
+    "src": "node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff"
+  },
+  "node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2": {
+    "file": "enchantment/assets/bootstrap-icons.woff2",
+    "src": "node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2"
+  },
   "node_modules/chosen-js/chosen-sprite.png": {
     "file": "enchantment/assets/chosen-sprite.png",
     "src": "node_modules/chosen-js/chosen-sprite.png"
@@ -26,6 +138,58 @@
   "node_modules/chosen-js/chosen-sprite@2x.png": {
     "file": "enchantment/assets/chosen-sprite@2x.png",
     "src": "node_modules/chosen-js/chosen-sprite@2x.png"
+  },
+  "silverstripe-admin/client/src/font/fonts/silverstripe.eot": {
+    "file": "enchantment/assets/silverstripe.eot",
+    "src": "silverstripe-admin/client/src/font/fonts/silverstripe.eot"
+  },
+  "silverstripe-admin/client/src/font/fonts/silverstripe.svg": {
+    "file": "enchantment/assets/silverstripe.svg",
+    "src": "silverstripe-admin/client/src/font/fonts/silverstripe.svg"
+  },
+  "silverstripe-admin/client/src/font/fonts/silverstripe.ttf": {
+    "file": "enchantment/assets/silverstripe.ttf",
+    "src": "silverstripe-admin/client/src/font/fonts/silverstripe.ttf"
+  },
+  "silverstripe-admin/client/src/font/fonts/silverstripe.woff": {
+    "file": "enchantment/assets/silverstripe.woff",
+    "src": "silverstripe-admin/client/src/font/fonts/silverstripe.woff"
+  },
+  "silverstripe-admin/client/src/images/network-save-constructive.gif": {
+    "file": "enchantment/assets/network-save-constructive.gif",
+    "src": "silverstripe-admin/client/src/images/network-save-constructive.gif"
+  },
+  "silverstripe-admin/client/src/images/network-save.gif": {
+    "file": "enchantment/assets/network-save.gif",
+    "src": "silverstripe-admin/client/src/images/network-save.gif"
+  },
+  "silverstripe-admin/client/src/images/question.png": {
+    "file": "enchantment/assets/question.png",
+    "src": "silverstripe-admin/client/src/images/question.png"
+  },
+  "silverstripe-admin/client/src/images/sitetree_ss_default_icons.png": {
+    "file": "enchantment/assets/sitetree_ss_default_icons.png",
+    "src": "silverstripe-admin/client/src/images/sitetree_ss_default_icons.png"
+  },
+  "silverstripe-admin/client/src/images/sitetree_ss_default_icons@2x.png": {
+    "file": "enchantment/assets/sitetree_ss_default_icons@2x.png",
+    "src": "silverstripe-admin/client/src/images/sitetree_ss_default_icons@2x.png"
+  },
+  "silverstripe-admin/client/src/images/spinner.gif": {
+    "file": "enchantment/assets/spinner.gif",
+    "src": "silverstripe-admin/client/src/images/spinner.gif"
+  },
+  "silverstripe-admin/client/src/images/sprites/sprite-sprites-32x32.png": {
+    "file": "enchantment/assets/sprite-sprites-32x32.png",
+    "src": "silverstripe-admin/client/src/images/sprites/sprite-sprites-32x32.png"
+  },
+  "silverstripe-admin/client/src/images/textures/cms_content_header.png": {
+    "file": "enchantment/assets/cms_content_header.png",
+    "src": "silverstripe-admin/client/src/images/textures/cms_content_header.png"
+  },
+  "silverstripe-admin/client/src/images/throbber.gif": {
+    "file": "enchantment/assets/throbber.gif",
+    "src": "silverstripe-admin/client/src/images/throbber.gif"
   },
   "silverstripe-admin/client/src/styles/bundle-silverstripe-admin.scss": {
     "file": "enchantment/assets/bundle-silverstripe-admin.css",
@@ -76,7 +240,7 @@
   },
   "silverstripe-admin/thirdparty/jstree/themes/apple/throbber.gif": {
     "file": "enchantment/assets/throbber.gif",
-    "src": "silverstripe-admin/thirdparty/jstree/themes/apple/throbber.gif"
+    "src": "silverstripe-admin/client/src/images/throbber.gif"
   },
   "silverstripe-asset-admin/client/src/styles/bundle-silverstripe-asset-admin.scss": {
     "file": "enchantment/assets/bundle-silverstripe-asset-admin.css",
