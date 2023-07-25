@@ -3,11 +3,9 @@
 namespace Goldfinch\Enchantment\Extensions;
 
 use SilverStripe\Forms\FieldList;
-use LeKoala\Encrypt\EncryptHelper;
 use SilverStripe\ORM\DataExtension;
 use SilverStripe\Forms\CheckboxField;
 use SilverStripe\ORM\ValidationResult;
-use SilverStripe\Control\Director;
 use SilverStripe\Core\Environment;
 
 class SiteConfigExtension extends DataExtension
@@ -18,7 +16,7 @@ class SiteConfigExtension extends DataExtension
 
     public function updateCMSFields(FieldList $fields)
     {
-        if (Environment::getEnv('SS_THEME_ENCHANTMENT') && is_dir(Director::baseFolder() . '/public/build-cms/enchantment'))
+        if (Environment::getEnv('SS_THEME_ENCHANTMENT'))
         {
             $fields->addFieldsToTab('Root.Main', [
 

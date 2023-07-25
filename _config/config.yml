@@ -16,7 +16,3 @@ SilverStripe\Admin\LeftAndMain:
 SilverStripe\Forms\HTMLEditor\TinyMCEConfig:
   editor_css:
     - 'goldfinch/enchantment:client/dist/enchantment/assets/wysiwyg.css'
-
-SilverStripe\CMS\Controllers\ContentController:
-  extensions:
-    - Goldfinch\Enchantment\Extensions\AdminCtrlExtension
