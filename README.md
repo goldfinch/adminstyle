@@ -1,5 +1,8 @@
 ```
 SS_THEME_ENCHANTMENT=true
+
+To 
+cp -r vendor/goldfinch/enchantment/client/dist-extra public/build
 ```
 
 silverstripe-admin (c0ed41c)

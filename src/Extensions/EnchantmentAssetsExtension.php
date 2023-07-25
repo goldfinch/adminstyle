@@ -36,7 +36,7 @@ class EnchantmentAssetsExtension extends Extension
                 Requirements::block('silverstripe/asset-admin:client/dist/styles/bundle.css');
 
                 // silverstripe/campaign-admin
-                if (InstalledVersions::isInstalled('silverstripe/campaign-admin'))
+                if (InstalledVersions::isInstalled('silverstripe/campaign-admin') && !InstalledVersions::isInstalled('goldfinch/cleaner'))
                 {
                     Requirements::block('silverstripe/campaign-admin: client/dist/styles/bundle.css');
                 }
@@ -72,7 +72,7 @@ class EnchantmentAssetsExtension extends Extension
                     Requirements::css('goldfinch/enchantment:client/dist/enchantment/assets/bundle-silverstripe-asset-admin.css');
 
                     // silverstripe-campaign-admin
-                    if (InstalledVersions::isInstalled('silverstripe/campaign-admin'))
+                    if (InstalledVersions::isInstalled('silverstripe/campaign-admin') && !InstalledVersions::isInstalled('goldfinch/cleaner'))
                     {
                         Requirements::css('goldfinch/enchantment:client/dist/enchantment/assets/bundle-silverstripe-campaign-admin.css');
                     }

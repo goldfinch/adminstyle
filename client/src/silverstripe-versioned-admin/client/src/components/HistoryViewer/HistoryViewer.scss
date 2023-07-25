@@ -50,6 +50,9 @@ $diff-added-color: #b9f1c8;
 }
 
 .history-viewer__messages .message-box {
+  display: flex;
+  align-items: center;
+
   &:first-child {
     margin-top: $panel-padding-y;
   }
