@@ -175,7 +175,7 @@ $search-box-height: 53px;
   padding-top: 7px;
   border-style: none;
   border-radius: 0;
-  font-weight: bold;
+  font-weight: 500;
   height: $search-box-height;
   opacity: 1;
   width: $search-width-max;
@@ -220,7 +220,7 @@ $search-box-height: 53px;
 
   &:focus,
   .search-box--expanded & {
-    box-shadow: 0 1px 1px $shadow-level-1;
+    box-shadow: rgb(159 159 159 / 10%) 0px 5px 3px 0px; // 0 1px 1px $shadow-level-1;
     border-color: $gray-200;
   }
 

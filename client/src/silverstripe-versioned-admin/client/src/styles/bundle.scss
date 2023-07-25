@@ -3,6 +3,8 @@
 
 // Thirdparty
 @import "~bootstrap/scss/mixins";
+@import '../../../../extra/sass/after-bootstrap.scss';
+
 
 // Legacy
 @import "legacy/ArchiveAdmin";

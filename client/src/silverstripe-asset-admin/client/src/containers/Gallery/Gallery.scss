@@ -66,8 +66,8 @@
 
 .gallery__main--selectable {
   user-select: none;
-  margin: #{-$panel-padding-y} #{-$panel-padding-x};
-  padding: #{$panel-padding-y} #{$panel-padding-x};
+  // margin: #{-$panel-padding-y} #{-$panel-padding-x};
+  // padding: #{$panel-padding-y} #{$panel-padding-x};
 }
 
 .gallery__back-container {
@@ -208,7 +208,7 @@
 
 .gallery__state-buttons {
   @include media-breakpoint-up(sm) {
-    margin-right: -$panel-padding-x + $input-btn-padding-x;
+    // margin-right: -$panel-padding-x + $input-btn-padding-x;
   }
 
   .btn-group:last-child {

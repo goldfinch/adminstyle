@@ -28,15 +28,15 @@
 // Gridfield header tools & actions (sort and filter)
 .grid-field__sort {
   .grid-field & {
-    margin-top: #{-$spacer};
-    margin-left: #{-$spacer};
-    margin-right: #{-$spacer};
-    margin-bottom: calc(#{-$spacer} - 1px);
-    padding-top: $spacer;
-    padding-right: $spacer;
-    padding-bottom: calc(#{$spacer} + 1px);
-    padding-left: $spacer;
-    width: calc(100% + #{$spacer * 2});
+    // margin-top: #{-$spacer};
+    // margin-left: #{-$spacer};
+    // margin-right: #{-$spacer};
+    // margin-bottom: calc(#{-$spacer} - 1px);
+    // padding-top: $spacer;
+    // padding-right: $spacer;
+    // padding-bottom: calc(#{$spacer} + 1px);
+    // padding-left: $spacer;
+    // width: calc(100% + #{$spacer * 2});
     height: $toolbar-height;
     text-align: left;
     border: 0;
@@ -53,12 +53,13 @@
 
     &:focus {
       outline: none;
-      border-bottom: $table-border-width solid $cyan;
+      background-color: #efefef;
+      // border-bottom: $table-border-width solid $cyan;
     }
   }
 
   &:hover {
-    border-bottom: $table-border-width solid $border-color-light;
+    // border-bottom: $table-border-width solid $border-color-light;
   }
 
   &::after {
@@ -69,7 +70,8 @@
 
   &.ss-gridfield-sorted-desc, // TODO BEMify class
   &.ss-gridfield-sorted-asc {
-    border-bottom: $table-border-width solid $cyan;
+    background-color: #efefef;
+    // border-bottom: $table-border-width solid $cyan;
 
     &::after,
     &:hover::after {
@@ -92,15 +94,16 @@
   }
 
   th:first-child & {
-    margin-left: -$grid-gutter-width-half;
-    padding-left: $grid-gutter-width-half;
-    width: calc(100% + #{$spacer + $grid-gutter-width-half});
+    // margin-left: -$grid-gutter-width-half;
+    // padding-left: $grid-gutter-width-half;
+    width: 100%; // calc(100% + #{$spacer + $grid-gutter-width-half});
+    padding-left: 0;
   }
 
   th:last-child & {
     margin-right: -$grid-gutter-width-half;
     padding-right: $grid-gutter-width-half;
-    width: calc(100% + #{$spacer + $grid-gutter-width-half});
+    // width: calc(100% + #{$spacer + $grid-gutter-width-half});
   }
 
   th:only-child & {

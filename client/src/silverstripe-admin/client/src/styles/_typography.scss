@@ -11,9 +11,9 @@ h1 {
 // Used as a base for components: GridField.
 
 .table {
-  margin-left: -$grid-gutter-width-half;
-  margin-right: -$grid-gutter-width-half;
-  min-width: calc(100% + #{$grid-gutter-width});
+  // margin-left: -$grid-gutter-width-half;
+  // margin-right: -$grid-gutter-width-half;
+  // min-width: calc(100% + #{$grid-gutter-width});
   margin-bottom: $spacer * 2;
   border-top: 0;
 

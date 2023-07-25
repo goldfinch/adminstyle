@@ -5,6 +5,7 @@
 @import "~bootstrap/scss/mixins";
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
+@import '../../../../extra/sass/after-bootstrap.scss';
 
 // Layout and sections
 @import "../containers/CampaignAdmin/CampaignAdmin";

@@ -4,6 +4,9 @@ import autoprefixer from "autoprefixer";
 import { resolve } from 'path';
 import { viteStaticCopy } from 'vite-plugin-static-copy'
 import * as path from 'path'
+import fs from 'fs';
+
+const host = 'silverstripe-starter.lh';
 
 export default defineConfig({
 
@@ -11,6 +14,15 @@ export default defineConfig({
       alias: {
           '~bootstrap': path.resolve(__dirname, 'node_modules/bootstrap'),
       }
+  },
+
+  server: {
+      host,
+      hmr: { host },
+      https: {
+          key: fs.readFileSync(`/Applications/MAMP/Library/OpenSSL/certs/${host}.key`),
+          cert: fs.readFileSync(`/Applications/MAMP/Library/OpenSSL/certs/${host}.crt`),
+      },
   },
 
   build: {

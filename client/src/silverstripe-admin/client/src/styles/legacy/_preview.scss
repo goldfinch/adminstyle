@@ -33,6 +33,12 @@
           width: 44px;
         }
 
+        &:not([data-icon="font-icon-edit-write"]):not([data-icon="font-icon-columns"]) {
+          > span {
+            width: 54px;
+          }
+        }
+
         > div {
           display: block;
           width: 20px;
@@ -168,11 +174,11 @@
         }
 
         li.result-selected {
-          background: $dropdown-link-active-bg;
+          // background: $dropdown-link-active-bg;
           color: $component-active-color;
 
           &.highlighted, &:hover, &:focus, &::before {
-            background: $dropdown-link-active-bg;
+            // background: $dropdown-link-active-bg;
             color: $component-active-color;
           }
         }

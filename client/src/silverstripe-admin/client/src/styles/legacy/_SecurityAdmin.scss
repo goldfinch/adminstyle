@@ -5,6 +5,10 @@
     margin-top: $spacer;
   }
 
+  li:first-child h5 {
+    margin-top: 0;
+  }
+
   label {
     margin: 0;
   }
