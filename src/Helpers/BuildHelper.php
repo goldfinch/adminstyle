@@ -15,8 +15,10 @@ class BuildHelper
           is_dir(Director::baseFolder() . '/vendor/goldfinch/enchantment/client/public')
         )
         {
-            // $host = 'http://[::1]:5173';
-            $host = 'http://127.0.0.1:5173';
+            $port = 5173;
+            $host = 'https://' . Director::host() . ':' . $port;
+            // $host = 'https://[::1]:' . $port;
+            // $host = 'https://127.0.0.1:' . $port;
 
             Requirements::insertHeadTags('
             <script type="module" src="' . $host . '/@vite/client"></script>
