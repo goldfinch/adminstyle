@@ -38,58 +38,6 @@
     "file": "enchantment/assets/chosen-sprite@2x.png",
     "src": "node_modules/chosen-js/chosen-sprite@2x.png"
   },
-  "silverstripe-admin/client/src/font/fonts/silverstripe.eot": {
-    "file": "enchantment/assets/silverstripe.eot",
-    "src": "silverstripe-admin/client/src/font/fonts/silverstripe.eot"
-  },
-  "silverstripe-admin/client/src/font/fonts/silverstripe.svg": {
-    "file": "enchantment/assets/silverstripe.svg",
-    "src": "silverstripe-admin/client/src/font/fonts/silverstripe.svg"
-  },
-  "silverstripe-admin/client/src/font/fonts/silverstripe.ttf": {
-    "file": "enchantment/assets/silverstripe.ttf",
-    "src": "silverstripe-admin/client/src/font/fonts/silverstripe.ttf"
-  },
-  "silverstripe-admin/client/src/font/fonts/silverstripe.woff": {
-    "file": "enchantment/assets/silverstripe.woff",
-    "src": "silverstripe-admin/client/src/font/fonts/silverstripe.woff"
-  },
-  "silverstripe-admin/client/src/images/network-save-constructive.gif": {
-    "file": "enchantment/assets/network-save-constructive.gif",
-    "src": "silverstripe-admin/client/src/images/network-save-constructive.gif"
-  },
-  "silverstripe-admin/client/src/images/network-save.gif": {
-    "file": "enchantment/assets/network-save.gif",
-    "src": "silverstripe-admin/client/src/images/network-save.gif"
-  },
-  "silverstripe-admin/client/src/images/question.png": {
-    "file": "enchantment/assets/question.png",
-    "src": "silverstripe-admin/client/src/images/question.png"
-  },
-  "silverstripe-admin/client/src/images/sitetree_ss_default_icons.png": {
-    "file": "enchantment/assets/sitetree_ss_default_icons.png",
-    "src": "silverstripe-admin/client/src/images/sitetree_ss_default_icons.png"
-  },
-  "silverstripe-admin/client/src/images/sitetree_ss_default_icons@2x.png": {
-    "file": "enchantment/assets/sitetree_ss_default_icons@2x.png",
-    "src": "silverstripe-admin/client/src/images/sitetree_ss_default_icons@2x.png"
-  },
-  "silverstripe-admin/client/src/images/spinner.gif": {
-    "file": "enchantment/assets/spinner.gif",
-    "src": "silverstripe-admin/client/src/images/spinner.gif"
-  },
-  "silverstripe-admin/client/src/images/sprites/sprite-sprites-32x32.png": {
-    "file": "enchantment/assets/sprite-sprites-32x32.png",
-    "src": "silverstripe-admin/client/src/images/sprites/sprite-sprites-32x32.png"
-  },
-  "silverstripe-admin/client/src/images/textures/cms_content_header.png": {
-    "file": "enchantment/assets/cms_content_header.png",
-    "src": "silverstripe-admin/client/src/images/textures/cms_content_header.png"
-  },
-  "silverstripe-admin/client/src/images/throbber.gif": {
-    "file": "enchantment/assets/throbber.gif",
-    "src": "silverstripe-admin/client/src/images/throbber.gif"
-  },
   "silverstripe-admin/client/src/styles/bundle-silverstripe-admin.scss": {
     "file": "enchantment/assets/bundle-silverstripe-admin.css",
     "isEntry": true,
@@ -139,7 +87,7 @@
   },
   "silverstripe-admin/thirdparty/jstree/themes/apple/throbber.gif": {
     "file": "enchantment/assets/throbber.gif",
-    "src": "silverstripe-admin/client/src/images/throbber.gif"
+    "src": "silverstripe-admin/thirdparty/jstree/themes/apple/throbber.gif"
   },
   "silverstripe-asset-admin/client/src/styles/bundle-silverstripe-asset-admin.scss": {
     "file": "enchantment/assets/bundle-silverstripe-asset-admin.css",

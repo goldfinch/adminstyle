@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: "silverstripe";
-  src: url("#{$theme-path}font/fonts/silverstripe.eot");
-  src: url("#{$theme-path}font/fonts/silverstripe.eot?#iefix") format("embedded-opentype"),
-  url("#{$theme-path}font/fonts/silverstripe.woff") format("woff"),
-  url("#{$theme-path}font/fonts/silverstripe.ttf") format("truetype"),
-  url("#{$theme-path}font/fonts/silverstripe.svg#silverstripe") format("svg");
+  src: url("#{$silverstripe-admin-font-path}silverstripe.eot");
+  src: url("#{$silverstripe-admin-font-path}silverstripe.eot?#iefix") format("embedded-opentype"),
+  url("#{$silverstripe-admin-font-path}silverstripe.woff") format("woff"),
+  url("#{$silverstripe-admin-font-path}silverstripe.ttf") format("truetype"),
+  url("#{$silverstripe-admin-font-path}silverstripe.svg#silverstripe") format("svg");
   font-weight: normal;
   font-style: normal;
 }
