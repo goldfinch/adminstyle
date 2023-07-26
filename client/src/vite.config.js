@@ -1,9 +1,8 @@
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 import autoprefixer from "autoprefixer";
-import { resolve } from 'path';
-import { viteStaticCopy } from 'vite-plugin-static-copy'
 import * as path from 'path'
+import { viteStaticCopy } from 'vite-plugin-static-copy'
 import fs from 'fs';
 
 const host = 'silverstripe-starter.lh';
