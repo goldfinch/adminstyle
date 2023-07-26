@@ -27,30 +27,40 @@ export default defineConfig({
 
   // root: path.join(__dirname, 'src'),
   // base: '',
-
   build: {
     emptyOutDir: true,
     outDir: '../dist',
     rollupOptions: {
       output: {
-        entryFileNames: `[name].js`,
-        chunkFileNames: `js/[name].js`,
-        assetFileNames: (assetInfo) => {
-          if (assetInfo.name.endsWith('.css')) {
-            return '[name][extname]'
-          } else if (
-            assetInfo.name.match(/(\.(woff2?|eot|ttf|otf)|font\.svg)(\?.*)?$/)
-          ) {
-            return 'fonts/[name][extname]'
-          } else if (assetInfo.name.match(/\.(jpg|png|svg)$/)) {
-            return 'images/[name][extname]'
-          }
-
-          return 'js/[name][extname]'
-        }
+        entryFileNames: `enchantment/assets/[name].js`,
+        chunkFileNames: `enchantment/assets/[name].js`,
+        assetFileNames: `enchantment/assets/[name].[ext]`
       }
     }
   },
+  // build: {
+  //   emptyOutDir: true,
+  //   outDir: '../dist',
+  //   rollupOptions: {
+  //     output: {
+  //       entryFileNames: `[name].js`,
+  //       chunkFileNames: `js/[name].js`,
+  //       assetFileNames: (assetInfo) => {
+  //         if (assetInfo.name.endsWith('.css')) {
+  //           return '[name][extname]'
+  //         } else if (
+  //           assetInfo.name.match(/(\.(woff2?|eot|ttf|otf)|font\.svg)(\?.*)?$/)
+  //         ) {
+  //           return 'fonts/[name][extname]'
+  //         } else if (assetInfo.name.match(/\.(jpg|png|svg)$/)) {
+  //           return 'images/[name][extname]'
+  //         }
+
+  //         return 'js/[name][extname]'
+  //       }
+  //     }
+  //   }
+  // },
 
   plugins: [
     laravel({

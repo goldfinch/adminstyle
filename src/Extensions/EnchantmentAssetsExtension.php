@@ -57,45 +57,46 @@ class EnchantmentAssetsExtension extends Extension
                 if (BuildHelper::isProduction())
                 {
                     // silverstripe-admin
-                    Requirements::css('goldfinch/enchantment:client/dist/enchantment/assets/bundle-silverstripe-admin.css');
+                    Requirements::css('goldfinch/enchantment:client/dist/bundle-silverstripe-admin.css');
 
                     // silverstripe-cms
-                    Requirements::css('goldfinch/enchantment:client/dist/enchantment/assets/bundle-silverstripe-cms.css');
+                    Requirements::css('goldfinch/enchantment:client/dist/bundle-silverstripe-cms.css');
 
                     // silverstripe-session-manager
-                    Requirements::css('goldfinch/enchantment:client/dist/enchantment/assets/bundle-silverstripe-session-manager.css');
+                    Requirements::css('goldfinch/enchantment:client/dist/bundle-silverstripe-session-manager.css');
 
                     // silverstripe-versioned-admin
-                    Requirements::css('goldfinch/enchantment:client/dist/enchantment/assets/bundle-silverstripe-versioned-admin.css');
+                    Requirements::css('goldfinch/enchantment:client/dist/bundle-silverstripe-versioned-admin.css');
 
                     // silverstripe-asset-admin
-                    Requirements::css('goldfinch/enchantment:client/dist/enchantment/assets/bundle-silverstripe-asset-admin.css');
+                    Requirements::css('goldfinch/enchantment:client/dist/bundle-silverstripe-asset-admin.css');
 
                     // silverstripe-campaign-admin
                     if (InstalledVersions::isInstalled('silverstripe/campaign-admin') && !InstalledVersions::isInstalled('goldfinch/cleaner'))
                     {
-                        Requirements::css('goldfinch/enchantment:client/dist/enchantment/assets/bundle-silverstripe-campaign-admin.css');
+                        Requirements::css('goldfinch/enchantment:client/dist/bundle-silverstripe-campaign-admin.css');
                     }
 
                     // silverstripe-mfa
                     if (InstalledVersions::isInstalled('silverstripe/mfa'))
                     {
-                        Requirements::css('goldfinch/enchantment:client/dist/enchantment/assets/bundle-silverstripe-mfa.css');
+                        Requirements::css('goldfinch/enchantment:client/dist/bundle-silverstripe-mfa.css');
 
                         // silverstripe/totp-authenticator
                         if (InstalledVersions::isInstalled('silverstripe/totp-authenticator'))
                         {
-                            Requirements::css('goldfinch/enchantment:client/dist/enchantment/assets/bundle-silverstripe-totp-authenticator.css');
+                            Requirements::css('goldfinch/enchantment:client/dist/bundle-silverstripe-totp-authenticator.css');
                         }
                     }
 
                     // Enchantment
-                    Requirements::css('goldfinch/enchantment:client/dist/enchantment/assets/enchantment.css');
-                    Requirements::javascript('goldfinch/enchantment:client/dist/enchantment/assets/enchantment.js');
+                    Requirements::css('goldfinch/enchantment:client/dist/enchantment-style.css');
+                    Requirements::javascript('goldfinch/enchantment:client/dist/enchantment.js');
                 }
 
                 // extra assets
                 Requirements::css('goldfinch/extra-assets:client/dist/font-opensans.css');
+                Requirements::css('goldfinch/extra-assets:client/dist/bootstrap-icons.css');
             }
         }
     }
