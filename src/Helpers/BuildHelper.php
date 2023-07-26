@@ -22,14 +22,14 @@ class BuildHelper
             <script type="module" src="' . $host . '/@vite/client"></script>
             <link rel="stylesheet" href="' . $host . '/silverstripe-admin/client/src/styles/bundle-silverstripe-admin.scss">
             <link rel="stylesheet" href="' . $host . '/silverstripe-cms/client/src/styles/bundle-silverstripe-cms.scss">
-            <link rel="stylesheet" href="' . $host . '/silverstripe-session-manager/client/src/styles/bundle-silverstripe-session-manager.scss">
+            <link rel="stylesheet" href="' . $host . '/silverstripe-session-manager/client/src/bundles/bundle-silverstripe-session-manager.scss">
             <link rel="stylesheet" href="' . $host . '/silverstripe-versioned-admin/client/src/styles/bundle-silverstripe-versioned-admin.scss">
             <link rel="stylesheet" href="' . $host . '/silverstripe-asset-admin/client/src/styles/bundle-silverstripe-asset-admin.scss">
             <link rel="stylesheet" href="' . $host . '/silverstripe-campaign-admin/client/src/styles/bundle-silverstripe-campaign-admin.scss">
-            <link rel="stylesheet" href="' . $host . '/silverstripe-mfa/client/src/styles/bundle-silverstripe-mfa.scss">
-            <link rel="stylesheet" href="' . $host . '/silverstripe-totp-authenticator/client/src/styles/bundle-silverstripe-totp-authenticator.scss">
-            <link rel="stylesheet" href="' . $host . '/enchantment/sass/enchantment.scss">
-            <script type="module" src="' . $host . '/enchantment/js/enchantment.js"></script>
+            <link rel="stylesheet" href="' . $host . '/silverstripe-mfa/client/src/bundles/bundle-silverstripe-mfa.scss">
+            <link rel="stylesheet" href="' . $host . '/silverstripe-totp-authenticator/client/src/bundles/bundle-silverstripe-totp-authenticator.scss">
+            <link rel="stylesheet" href="' . $host . '/enchantment/enchantment-style.scss">
+            <script type="module" src="' . $host . '/enchantment/enchantment.js"></script>
             ');
 
             return false;

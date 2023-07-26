@@ -14,3 +14,7 @@ silverstripe-session-manager (246c5ec)
 silverstripe-mfa (29260f1)
 silverstripe-totp-authenticator (9ea9c5e)
 silverstripe-login-forms (d7f7e6b)
+
+
+#TODO
+- remove bootstrap-icons from enchantment-style
