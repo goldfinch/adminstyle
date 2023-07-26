@@ -4,6 +4,7 @@ namespace Goldfinch\Enchantment\Helpers;
 
 use SilverStripe\Control\Director;
 use SilverStripe\View\Requirements;
+use SilverStripe\Core\Environment;
 
 class BuildHelper
 {
@@ -11,14 +12,11 @@ class BuildHelper
     {
         if (
           Director::isDev() &&
-          is_dir(Director::baseFolder() . '/vendor/goldfinch/enchantment/client/src') &&
-          is_dir(Director::baseFolder() . '/vendor/goldfinch/enchantment/client/public')
+          Environment::getEnv('GOLDFINCH_ENCHANTMENT_DEV')
         )
         {
             $port = 5173;
             $host = 'https://' . Director::host() . ':' . $port;
-            // $host = 'https://[::1]:' . $port;
-            // $host = 'https://127.0.0.1:' . $port;
 
             Requirements::insertHeadTags('
             <script type="module" src="' . $host . '/@vite/client"></script>
@@ -30,7 +28,8 @@ class BuildHelper
             <link rel="stylesheet" href="' . $host . '/silverstripe-campaign-admin/client/src/styles/bundle-silverstripe-campaign-admin.scss">
             <link rel="stylesheet" href="' . $host . '/silverstripe-mfa/client/src/styles/bundle-silverstripe-mfa.scss">
             <link rel="stylesheet" href="' . $host . '/silverstripe-totp-authenticator/client/src/styles/bundle-silverstripe-totp-authenticator.scss">
-            <link rel="stylesheet" href="' . $host . '/extra/sass/enchantment.scss">
+            <link rel="stylesheet" href="' . $host . '/enchantment/sass/enchantment.scss">
+            <script type="module" src="' . $host . '/enchantment/js/enchantment.js"></script>
             ');
 
             return false;
