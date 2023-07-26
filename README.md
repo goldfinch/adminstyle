@@ -23,8 +23,11 @@ silverstripe-login-forms (d7f7e6b)
 
 ---- oage settings/history
 
-https://silverstripe-starter.lh/_resources/vendor/goldfinch/enchantment/client/dist/enchantment/assets/images/sitetree_ss_default_icons.png
-https://silverstripe-starter.lh/build/enchantment/assets/chosen-sprite.png
-https://silverstripe-starter.lh:5173/silverstripe-admin/client/src/styles/silverstripe-admin/thirdparty/jquery-ui-themes/smoothness/images/ui-icons_444444_256x240.png
-https://silverstripe-starter.lh:5173/silverstripe-admin/client/src/styles/silverstripe-admin/client/src/images/sitetree_ss_default_icons.png
-https://silverstripe-starter.lh/_resources/vendor/goldfinch/enchantment/client/dist/enchantment/assets/images/sitetree_ss_default_icons.png 
+_resources/vendor/goldfinch/enchantment/client/dist/enchantment/assets/images/sitetree_ss_default_icons.png
+silverstripe-admin/client/src/styles/silverstripe-admin/thirdparty/jquery-ui-themes/smoothness/images/ui-icons_444444_256x240.png
+silverstripe-admin/client/src/styles/silverstripe-admin/client/src/images/sitetree_ss_default_icons.png
+
+
+- in build
+_resources/vendor/goldfinch/enchantment/client/dist/enchantment/assets/images/sitetree_ss_default_icons.png
+build/enchantment/assets/chosen-sprite.png

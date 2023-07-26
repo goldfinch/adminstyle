@@ -5,7 +5,7 @@ export default function initCfg(command, mode, ssrBuild) {
 
   const buildAssetsDir = '/_resources/vendor/goldfinch/enchantment/client/dist/enchantment/assets/'
 
-  const bootstrap_icon_path = dev ? '../node_modules/bootstrap-icons/font/fonts' : '/_resources/vendor/goldfinch/extra-assets/client/dist/bootstrap-icons/icons';
+  const bootstrap_icon_path = dev ? '../node_modules/bootstrap-icons/font/fonts' : '/_resources/vendor/goldfinch/extra-assets/client/dist/bootstrap-icons/fonts';
   const silverstripe_admin = dev ? 'silverstripe-admin/client/src/' : '/_resources/vendor/goldfinch/enchantment/client/dist/enchantment/assets/'
   const enchantment = dev ? '/_resources/vendor/goldfinch/enchantment/client/dist/enchantment/assets/enchantment/' : ''
 
