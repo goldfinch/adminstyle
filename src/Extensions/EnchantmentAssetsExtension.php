@@ -20,37 +20,37 @@ class EnchantmentAssetsExtension extends Extension
             if ($cfg->ThemeEnchantment)
             {
                 // silverstripe-admin
-                Requirements::block('silverstripe/admin: client/dist/enchantment/assets/styles/bundle.css');
+                Requirements::block('silverstripe/admin: client/dist/styles/bundle.css');
                 // Requirements::css('silverstripe/admin: dist/css/LeftAndMain_printable.css');
 
                 // silverstripe-cms
-                Requirements::block('silverstripe/cms: client/dist/enchantment/assets/styles/bundle.css');
+                Requirements::block('silverstripe/cms: client/dist/styles/bundle.css');
 
                 // silverstripe-session-manager
-                Requirements::block('silverstripe/session-manager: client/dist/enchantment/assets/styles/bundle.css');
+                Requirements::block('silverstripe/session-manager: client/dist/styles/bundle.css');
 
                 // silverstripe-versioned-admin
-                Requirements::block('silverstripe/versioned-admin:client/dist/enchantment/assets/styles/bundle.css');
+                Requirements::block('silverstripe/versioned-admin:client/dist/styles/bundle.css');
 
                 // silverstripe-asset-admin
-                Requirements::block('silverstripe/asset-admin:client/dist/enchantment/assets/styles/bundle.css');
+                Requirements::block('silverstripe/asset-admin:client/dist/styles/bundle.css');
 
                 // silverstripe/campaign-admin
                 if (InstalledVersions::isInstalled('silverstripe/campaign-admin') && !InstalledVersions::isInstalled('goldfinch/cleaner'))
                 {
-                    Requirements::block('silverstripe/campaign-admin: client/dist/enchantment/assets/styles/bundle.css');
+                    Requirements::block('silverstripe/campaign-admin: client/dist/styles/bundle.css');
                 }
 
                 // silverstripe-mfa
                 if (InstalledVersions::isInstalled('silverstripe/mfa'))
                 {
-                    Requirements::block("silverstripe/mfa: client/dist/enchantment/assets/styles/bundle.css");
-                    Requirements::block("silverstripe/mfa: client/dist/enchantment/assets/styles/bundle-cms.css");
+                    Requirements::block("silverstripe/mfa: client/dist/styles/bundle.css");
+                    Requirements::block("silverstripe/mfa: client/dist/styles/bundle-cms.css");
 
                     // silverstripe/totp-authenticator
                     if (InstalledVersions::isInstalled('silverstripe/totp-authenticator'))
                     {
-                        Requirements::block('silverstripe/totp-authenticator: client/dist/enchantment/assets/styles/bundle.css');
+                        Requirements::block('silverstripe/totp-authenticator: client/dist/styles/bundle.css');
                     }
                 }
 

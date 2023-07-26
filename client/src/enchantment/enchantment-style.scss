@@ -228,7 +228,7 @@ input[type=checkbox]:before {
   top: 2px;
   left: 2px;
   transition: .3s opacity ease-in-out;
-  mask-image: url('#{$theme-path-enchantment}images/check.svg');
+  mask-image: url('#{$enchantment_images}check.svg');
   mask-size: cover;
   mask-repeat: no-repeat;
   mask-position: 70%;
@@ -313,7 +313,7 @@ input[type=radio]:checked {
 // Logo / Loadings
 
 .btn__loading-icon {
-  mask-image: url('#{$theme-path-enchantment}images/loading.svg');
+  mask-image: url('#{$enchantment_images}loading.svg');
   mask-position: center;
   mask-size: contain;
   mask-repeat: no-repeat;
@@ -328,7 +328,7 @@ input[type=radio]:checked {
 }
 
 .ss-loading-screen svg {
-  background-image: url('#{$theme-path-enchantment}images/loading.svg');
+  background-image: url('#{$enchantment_images}loading.svg');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -339,7 +339,7 @@ input[type=radio]:checked {
 }
 
 .cms-content-loading-spinner .spinner {
-  background-image: url('#{$theme-path-enchantment}images/loading.svg');
+  background-image: url('#{$enchantment_images}loading.svg');
   background-position: center;
   background-size: 90%;
   background-repeat: no-repeat;

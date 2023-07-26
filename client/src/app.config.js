@@ -1,26 +1,33 @@
+export default function initCfg(command, mode, ssrBuild) {
 
-const dev = import.meta.env && import.meta.env.DEV;
-const host = 'silverstripe-starter.lh';
+  const dev = command === 'serve';
+  const host = 'silverstripe-starter.lh';
 
-const bootstrap_icon_path = dev ? '/_resources/vendor/goldfinch/extra-assets/client/dist/bootstrap-icons/icons/' : '../node_modules/bootstrap-icons/font/fonts';
-const silverstripe_admin = dev ? 'silverstripe-admin/client/src/' : '/_resources/vendor/goldfinch/enchantment/client/dist/enchantment/assets/'
-const enchantment = dev ? '/_resources/vendor/goldfinch/enchantment/client/dist/enchantment/assets/enchantment/' : ''
+  const buildAssetsDir = '/_resources/vendor/goldfinch/enchantment/client/dist/enchantment/assets/'
 
-const silverstripe_admin_font_path = dev ? (silverstripe_admin + 'font/fonts/') : '/_resources/vendor/silverstripe/admin/client/dist/fonts/';
+  const bootstrap_icon_path = dev ? '../node_modules/bootstrap-icons/font/fonts' : '/_resources/vendor/goldfinch/extra-assets/client/dist/bootstrap-icons/icons';
+  const silverstripe_admin = dev ? 'silverstripe-admin/client/src/' : '/_resources/vendor/goldfinch/enchantment/client/dist/enchantment/assets/'
+  const enchantment = dev ? '/_resources/vendor/goldfinch/enchantment/client/dist/enchantment/assets/enchantment/' : ''
 
-export default {
+  const silverstripe_admin_font_path = dev ? '../../../../silverstripe-admin/client/src/font/fonts/' : (buildAssetsDir + 'silverstripe-admin/client/src/font/fonts/');
+  const enchantment_images = dev ? './images/' : (buildAssetsDir + 'enchantment/images/');
 
-  host: host,
-  certs: '/Applications/MAMP/Library/OpenSSL/certs/' + host,
+  return {
 
-  sassAdditionalData: `
-    $bootstrap-icons-font-dir: '${bootstrap_icon_path}';
-    $silverstripe-admin: '${silverstripe_admin}';
-    $enchantment: '${enchantment}';
-    $silverstripe-admin-font-path: '${silverstripe_admin_font_path}';
-  `,
+    host: host,
+    certs: '/Applications/MAMP/Library/OpenSSL/certs/' + host,
 
-  public: {
-      bootstrap_icon_path: bootstrap_icon_path,
+    sassAdditionalData: `
+      $bootstrap-icons-font-dir: '${bootstrap_icon_path}';
+      $silverstripe-admin: '${silverstripe_admin}';
+      $enchantment: '${enchantment}';
+
+      $silverstripe-admin-font-path: '${silverstripe_admin_font_path}';
+      $enchantment_images: '${enchantment_images}';
+    `,
+
+    public: {
+        bootstrap_icon_path: bootstrap_icon_path,
+    }
   }
 }

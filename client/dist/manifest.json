@@ -14,22 +14,6 @@
     "isEntry": true,
     "src": "enchantment/enchantment.js"
   },
-  "enchantment/images/check.svg": {
-    "file": "enchantment/assets/check.svg",
-    "src": "enchantment/images/check.svg"
-  },
-  "enchantment/images/loading.svg": {
-    "file": "enchantment/assets/loading.svg",
-    "src": "enchantment/images/loading.svg"
-  },
-  "node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff": {
-    "file": "enchantment/assets/bootstrap-icons.woff",
-    "src": "node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff"
-  },
-  "node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2": {
-    "file": "enchantment/assets/bootstrap-icons.woff2",
-    "src": "node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2"
-  },
   "node_modules/chosen-js/chosen-sprite.png": {
     "file": "enchantment/assets/chosen-sprite.png",
     "src": "node_modules/chosen-js/chosen-sprite.png"
