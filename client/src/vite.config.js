@@ -4,7 +4,7 @@ import autoprefixer from "autoprefixer";
 import * as path from 'path'
 import { viteStaticCopy } from 'vite-plugin-static-copy'
 import fs from 'fs';
-import replace from 'vite-plugin-filter-replace';
+// import replace from 'vite-plugin-filter-replace';
 import initCfg from './app.config.js'
 
 export default defineConfig(({ command, mode, ssrBuild }) => {
@@ -114,7 +114,10 @@ export default defineConfig(({ command, mode, ssrBuild }) => {
       //   {
       //     filter: /\.css$/,
       //     replace: [
-      //       { from: '', to: '' },
+      //       {
+      //           from: 'client/dist/enchantment/assets/images/sitetree_ss_default_icons.png',
+      //           to: 'client/src/silverstripe-admin/client/src/images/sitetree_ss_default_icons.png'
+      //       },
       //     ],
       //   },
       // ]),
