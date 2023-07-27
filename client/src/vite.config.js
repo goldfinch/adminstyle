@@ -4,6 +4,7 @@ import autoprefixer from "autoprefixer";
 import * as path from 'path'
 import { viteStaticCopy } from 'vite-plugin-static-copy'
 import fs from 'fs';
+import replace from 'vite-plugin-filter-replace';
 import initCfg from './app.config.js'
 
 export default defineConfig(({ command, mode, ssrBuild }) => {
@@ -108,6 +109,15 @@ export default defineConfig(({ command, mode, ssrBuild }) => {
         ],
         refresh: true,
       }),
+
+      // replace([
+      //   {
+      //     filter: /\.css$/,
+      //     replace: [
+      //       { from: '', to: '' },
+      //     ],
+      //   },
+      // ]),
 
       viteStaticCopy({
         targets: [
