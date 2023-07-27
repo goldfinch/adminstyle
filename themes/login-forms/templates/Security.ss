@@ -10,12 +10,12 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
         <meta name="color-scheme" content="light <% if $darkModeIsEnabled() %>dark<% else %>only<% end_if %>" />
         <% if $SiteConfig.ThemeEnchantment %>
-            <% require css("/build-cms/enchantment/assets/bundle-silverstripe-admin.css") %>
-            <% require css("/build-cms/enchantment/assets/bundle-silverstripe-login-forms.css") %>
+            <% require css("goldfinch/enchantment:client/dist/enchantment/assets/bundle-silverstripe-admin.css") %>
+            <% require css("goldfinch/enchantment:client/dist/enchantment/assets/bundle-silverstripe-login-forms.css") %>
             <% if $darkModeIsEnabled() %>
-                <% require css("/build-cms/enchantment/assets/dark-mode-silverstripe-login-forms.css") %>
+                <% require css("goldfinch/enchantment:client/dist/enchantment/assets/dark-mode-silverstripe-login-forms.css") %>
             <% end_if %>
-            <% require css("/build-cms/enchantment/assets/enchantment.css") %>
+            <% require css("goldfinch/enchantment:client/dist/enchantment/assets/enchantment-style.css") %>
         <% else %>
             <% require css("silverstripe/admin: client/dist/styles/bundle.css") %>
             <% require css("silverstripe/login-forms: client/dist/styles/bundle.css") %>
