@@ -94,6 +94,10 @@ class EnchantmentAssetsExtension extends Extension
                     Requirements::javascript('goldfinch/enchantment:client/dist/enchantment/assets/enchantment.js');
                 }
 
+                Requirements::insertHeadTags('
+                <meta charset="utf-8" />
+                ');
+
                 // extra assets
                 Requirements::css('goldfinch/extra-assets:client/dist/font-opensans.css');
                 Requirements::css('goldfinch/extra-assets:client/dist/bootstrap-icons-with-reset.css');

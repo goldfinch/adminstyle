@@ -433,7 +433,7 @@ b, strong {
 
 .form__field-extra-label, .form__field-description,
 .display-logic-display.form-group--no-label {
-  color: #8d8d8d;
+  color: rgba($brand-secondary, .6);
 }
 
 // refresh buttons seokit
@@ -464,4 +464,17 @@ b, strong {
 .chosen-container .chosen-results li.highlighted {
   background-image: unset !important;
   background-color: $brand-primary;
+}
+
+// Settings/Configurations
+.form-group.field.checkbox.display-logic-dispatcher {
+  margin-bottom: 0;
+}
+.form-group.field.checkbox.display-logic-dispatcher + div{
+  margin-top: 16px;
+}
+
+.table tbody tr td {
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
 }
