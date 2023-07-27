@@ -1,202 +1,9 @@
 @import 'variables';
 
-@import 'bootstrap-icons'; // only for @extend
-
 @import '../silverstripe-admin/client/src/styles/_variables';
-
-.cms-login-status__profile-link .font-icon-torso {
-
-  @extend .bi, .bi-person-circle;
-}
-
-.menu__icon.font-icon-sitemap {
-
-  @extend .bi, .bi-box-fill;
-}
-
-.menu__icon.font-icon-page-multiple {
-
-  @extend .bi, .bi-megaphone-fill;
-}
-
-.menu__icon.font-icon-database {
-
-  @extend .bi, .bi-database-fill;
-}
-
-.menu__icon.font-icon-image {
-
-  @extend .bi, .bi-image-fill;
-}
-
-.grid-print-button.font-icon-print {
-  @extend .bi, .bi-printer-fill;
-
-  &:before {
-    position: relative;
-    bottom: -4px;
-  }
-}
-
-.action_import.font-icon-upload {
-  @extend .bi, .bi-cloud-arrow-up-fill;
-
-  &:before {
-    position: relative;
-    bottom: -3px;
-  }
-
-  .btn__title {
-    position: relative;
-    top: -1px;
-  }
-}
-
-.bulk-actions__action.font-icon-edit {
-
-  @extend .bi, .bi-pencil-fill;
-
-  &:before {
-    position: relative;
-    top: 1px;
-  }
-}
-.font-icon-folder-move {
-
-  @extend .bi, .bi-folder-symlink;
-}
-.font-icon-folder-add {
-
-  @extend .bi, .bi-folder-plus;
-}
-
-.action.font-icon-edit {
-  @extend .bi, .bi-pencil-fill;
-
-  &:before {
-    position: relative;
-    top: -1px;
-  }
-}
-
-.action.font-icon-trash {
-  @extend .bi, .bi-trash3-fill;
-
-  &:before {
-    position: relative;
-    top: -1px;
-  }
-}
-
-.font-icon-down-circled.action_export {
-  @extend .bi, .bi-cloud-download-fill;
-
-  &:before {
-    position: relative;
-    bottom: -4px;
-  }
-}
-
-.menu__icon.font-icon-chart-line {
-
-  @extend .bi, .bi-graph-up-arrow;
-}
-
-.menu__icon.font-icon-torsos-all {
-
-  @extend .bi, .bi-people-fill;
-}
-
-.menu__icon.font-icon-box {
-
-  @extend .bi, .bi-archive-fill;
-}
-
-.menu__icon.icon.icon-16.icon-axllent-metaeditor-metaeditor {
-  background-image: none;
-
-  @extend .bi, .bi-bar-chart-fill;
-}
-
-.menu__icon.icon.icon-16.icon-silverstripe-redirectedurls-admin-redirectedurladmin {
-  background-image: none;
-
-  @extend .bi, .bi-shuffle;
-}
-
-.menu__icon.font-icon-cog {
-
-  @extend .bi, .bi-gear-wide-connected;
-}
-
-.page-icon.font-icon-page {
-
-  @extend .bi, .bi-file-earmark-text-fill;
-}
-
-.page-icon.font-icon-p-error {
-
-  @extend .bi, .bi-file-earmark-medical;
-}
-
-.page-icon.font-icon-p-error {
-
-  @extend .bi, .bi-file-earmark-medical;
-}
-
-.page-icon.font-icon-p-redirect {
-
-  @extend .bi, .bi-file-earmark-arrow-down-fill;
-}
-
-.page-icon.font-icon-p-virtual {
-
-  @extend .bi, .bi-file-earmark-easel-fill;
-}
 
 .menu__icon {
   margin-top: -3px !important;
-}
-
-.action.font-icon-tick {
-
-  @extend .bi, .bi-check2-circle;
-  // @extend .bi, .bi-check-lg;
-
-  &:before {
-    top: 2px;
-  }
-}
-
-.action.font-icon-save {
-
-  @extend .bi, .bi-check-circle-fill;
-
-  &:before {
-    top: 2px;
-  }
-}
-
-.bulk-actions__action.font-icon-trash {
-  @extend .bi, .bi-trash3-fill;
-
-  &:before {
-    top: 1px;
-  }
-}
-.action--delete.font-icon-trash-bin {
-
-  @extend .bi, .bi-trash3-fill;
-
-  &:before {
-    top: 2px;
-  }
-}
-
-.cms-login-status__logout-link.font-icon-logout {
-  font-size: 18px;
-
-  @extend .bi, .bi-sign-turn-right-fill;
 }
 
 input[type=checkbox] {
@@ -543,16 +350,6 @@ b, strong {
   top: 11px;
 }
 
-.field .chosen-container-single .chosen-single div b {
-
-  @extend .bi, .bi-caret-down-fill;
-  background-image: none !important;
-}
-
-.field .chosen-container-single.chosen-container-active .chosen-single div b {
-  @extend .bi, .bi-caret-up-fill;
-}
-
 .chosen-container-single .chosen-single abbr {
   top: 11px;
 }
@@ -616,20 +413,6 @@ b, strong {
 .jstree-checked > a > .jstree-checkbox {
   background-image: none;
 }
-.cms .jstree a ins.jstree-checkbox {
-
-  @extend .bi, .bi-square;
-
-  &:before {
-    position: relative;
-    top: 0
-  }
-}
-
-.cms .jstree .jstree-checked > a > .jstree-checkbox {
-
-  @extend .bi, .bi-check-square-fill;
-}
 
 .cms li.jstree-open > ul {
   margin-left: 0;
@@ -682,9 +465,3 @@ b, strong {
   background-image: unset !important;
   background-color: $brand-primary;
 }
-
-// .chosen-single.font-icon-edit-write,
-// .font-icon-edit-write.icon-view {
-
-//   @extend .bi, .bi-pencil-square;
-// }

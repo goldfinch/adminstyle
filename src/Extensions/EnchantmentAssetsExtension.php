@@ -96,7 +96,7 @@ class EnchantmentAssetsExtension extends Extension
 
                 // extra assets
                 Requirements::css('goldfinch/extra-assets:client/dist/font-opensans.css');
-                Requirements::css('goldfinch/extra-assets:client/dist/bootstrap-icons.css');
+                Requirements::css('goldfinch/extra-assets:client/dist/bootstrap-icons-with-reset.css');
             }
         }
     }
