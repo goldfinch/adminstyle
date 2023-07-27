@@ -1,8 +1,5 @@
 ```
 SS_THEME_ENCHANTMENT=true
-
-To 
-cp -r vendor/goldfinch/enchantment/client/dist-extra public/build
 ```
 
 silverstripe-admin (c0ed41c)
@@ -14,20 +11,3 @@ silverstripe-session-manager (246c5ec)
 silverstripe-mfa (29260f1)
 silverstripe-totp-authenticator (9ea9c5e)
 silverstripe-login-forms (d7f7e6b)
-
-
-#TODO
-- remove bootstrap-icons from enchantment-style
-
-
-
----- oage settings/history
-
-_resources/vendor/goldfinch/enchantment/client/dist/enchantment/assets/images/sitetree_ss_default_icons.png
-silverstripe-admin/client/src/styles/silverstripe-admin/thirdparty/jquery-ui-themes/smoothness/images/ui-icons_444444_256x240.png
-silverstripe-admin/client/src/styles/silverstripe-admin/client/src/images/sitetree_ss_default_icons.png
-
-
-- in build
-_resources/vendor/goldfinch/enchantment/client/dist/enchantment/assets/images/sitetree_ss_default_icons.png
-build/enchantment/assets/chosen-sprite.png

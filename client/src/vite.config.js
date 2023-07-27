@@ -4,7 +4,6 @@ import autoprefixer from "autoprefixer";
 import * as path from 'path'
 import { viteStaticCopy } from 'vite-plugin-static-copy'
 import fs from 'fs';
-// import replace from 'vite-plugin-filter-replace';
 import initCfg from './app.config.js'
 
 export default defineConfig(({ command, mode, ssrBuild }) => {
@@ -30,15 +29,13 @@ export default defineConfig(({ command, mode, ssrBuild }) => {
       },
     },
 
-    // root: path.join(__dirname, 'src'),
-    // base: '',
     build: {
       emptyOutDir: true,
       outDir: '../dist',
       rollupOptions: {
         output: {
           entryFileNames: `enchantment/assets/[name].js`,
-          chunkFileNames: `enchantment/assets/[name].js`,
+          chunkFileNames: `enchantment/assets/[name]-[hash].js`,
           assetFileNames: `enchantment/assets/[name].[ext]`
         }
       }
@@ -110,18 +107,6 @@ export default defineConfig(({ command, mode, ssrBuild }) => {
         refresh: true,
       }),
 
-      // replace([
-      //   {
-      //     filter: /\.css$/,
-      //     replace: [
-      //       {
-      //           from: 'client/dist/enchantment/assets/images/sitetree_ss_default_icons.png',
-      //           to: 'client/src/silverstripe-admin/client/src/images/sitetree_ss_default_icons.png'
-      //       },
-      //     ],
-      //   },
-      // ]),
-
       viteStaticCopy({
         targets: [
 
@@ -138,16 +123,6 @@ export default defineConfig(({ command, mode, ssrBuild }) => {
             src: './silverstripe-admin/thirdparty/*',
             dest: '../dist/enchantment/assets/silverstripe-admin/thirdparty',
           },
-
-          // lost assets (in .css files with no relative path)
-          // {
-          //   src: './silverstripe-admin/client/src/images/chosen-sprite.png',
-          //   dest: '../dist-extra/enchantment/assets',
-          // },
-          // {
-          //   src: './silverstripe-admin/thirdparty/jstree/themes/default/d.png',
-          //   dest: '../dist-extra/enchantment/assets',
-          // },
 
           // silverstripe-asset-admin
           {
@@ -169,13 +144,6 @@ export default defineConfig(({ command, mode, ssrBuild }) => {
             dest: '../dist/enchantment/assets/silverstripe-campaign-admin/client/src/images',
           },
 
-          // bootstrap-icons
-
-          // {
-          //   src: './node_modules/bootstrap-icons/font/fonts/*',
-          //   dest: '../dist/enchantment/assets/extra/fonts/bootstrap-icons',
-          // },
-
           // extra
 
           {
@@ -186,10 +154,12 @@ export default defineConfig(({ command, mode, ssrBuild }) => {
             src: './enchantment/images/*',
             dest: '../dist/enchantment/assets/enchantment/images',
           },
-          // {
-          //   src: './node_modules/bootstrap-icons/icons/*',
-          //   dest: '../dist/enchantment/assets/extra/bootstrap-icons',
-          // }
+
+          // lost assets
+          {
+            src: './silverstripe-asset-admin/client/src/components/InsertEmbedModal/placement.png',
+            dest: '../dist/enchantment/assets/enchantment',
+          },
         ],
       })
     ],
