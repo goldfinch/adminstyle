@@ -243,6 +243,7 @@
     background-image: none;
     text-align: center;
     display: inline;
+    margin-right: 5px;
     @include gridle-select-focus();
   }
 }

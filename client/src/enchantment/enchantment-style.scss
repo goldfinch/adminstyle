@@ -478,3 +478,23 @@ b, strong {
   padding-top: 15px !important;
   padding-bottom: 15px !important;
 }
+
+// Tinymce Custom Skin
+.tox-tinymce {
+  border-radius: var(--bs-border-radius) !important;
+  border: 1px solid #dee2e6 !important;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+  &:hover {
+    border: 1px solid rgba($brand-primary, .5) !important;
+    box-shadow: 0 0 0 0.25rem rgba($brand-primary, .25);
+  }
+}
+
+.tox-tiered-menu {
+  position: absolute !important;
+}
+
+body {
+  overflow: hidden;
+}
