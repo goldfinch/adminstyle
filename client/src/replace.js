@@ -18,8 +18,8 @@ replace({
   to: '/_resources/vendor/goldfinch/enchantment/client/dist/enchantment/assets/enchantment/placement.png',
 })
 
-// replace({
-//   files: `../dist/enchantment/assets/bundle-silverstripe-admin.css`,
-//   from: /_resources\/vendor\/goldfinch\/enchantment\/client\/dist\/enchantment\/assets\/images\//g,
-//   to: '_resources/vendor/goldfinch/enchantment/client/dist/enchantment/assets/silverstripe-admin/client/src/images/',
-// })
+replace({
+  files: `../dist/enchantment/assets/bundle-silverstripe-admin.css`,
+  from: /_resources\/vendor\/goldfinch\/enchantment\/client\/dist\/enchantment\/assets\/images\//g,
+  to: '_resources/vendor/goldfinch/enchantment/client/dist/enchantment/assets/silverstripe-admin/client/src/images/',
+})
