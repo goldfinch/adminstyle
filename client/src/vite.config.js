@@ -100,6 +100,7 @@ export default defineConfig(({ command, mode, ssrBuild }) => {
           'silverstripe-login-forms/client/src/styles/bundle-silverstripe-login-forms.scss',
           'silverstripe-login-forms/client/src/styles/dark-mode-silverstripe-login-forms.scss',
 
+          // 'enchantment/bootstrap.scss',
           'enchantment/enchantment-style.scss',
           'enchantment/enchantment.js',
           'enchantment/enchantment-wysiwyg.scss',

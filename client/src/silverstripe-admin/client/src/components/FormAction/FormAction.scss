@@ -30,7 +30,7 @@
   }
 
   .btn__title {
-    vertical-align: middle;
+    vertical-align: unset; // middle;
   }
 
   &.btn--last {

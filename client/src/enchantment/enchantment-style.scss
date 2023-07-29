@@ -2,6 +2,9 @@
 
 @import '../silverstripe-admin/client/src/styles/_variables';
 
+// only for ml-auto mr-auto replacement (maybe temporary)
+@import './bootstrap';
+
 .menu__icon {
   margin-top: -3px !important;
 }
@@ -337,9 +340,35 @@ b, strong {
   border: 0;
 }
 
+.ml-auto { @extend .ms-auto; }
+.ml-1 { @extend .ms-1; }
+.ml-2 { @extend .ms-2; }
+.ml-3 { @extend .ms-3; }
+.ml-4 { @extend .ms-4; }
+.ml-5 { @extend .ms-5; }
+.mr-auto { @extend .me-auto; }
+.mr-1 { @extend .me-1; }
+.mr-2 { @extend .me-2; }
+.mr-3 { @extend .me-3; }
+.mr-4 { @extend .me-4; }
+.mr-5 { @extend .me-5; }
+
+.pl-1 { @extend .ps-1; }
+.pl-2 { @extend .ps-2; }
+.pl-3 { @extend .ps-3; }
+.pl-4 { @extend .ps-4; }
+.pl-5 { @extend .ps-5; }
+.pr-1 { @extend .pe-1; }
+.pr-2 { @extend .pe-2; }
+.pr-3 { @extend .pe-3; }
+.pr-4 { @extend .pe-4; }
+.pr-5 { @extend .pe-5; }
+
+
 .modal {
   z-index: 1060;
 }
+
 
 .field .chosen-container-single.chosen-container-active .chosen-single {
   border-end-end-radius: 0;
@@ -359,8 +388,8 @@ b, strong {
 }
 
 .btn .btn__title {
-  position: relative;
-  top: 1px;
+  // position: relative;
+  // top: 1px;
 }
 
 .action.action-detail.btn.btn-primary.font-icon-plus-circled {
@@ -497,4 +526,9 @@ b, strong {
 
 body {
   overflow: hidden;
+}
+
+.toolbar__back-button {
+  border: 1px solid #eee;
+  margin-right: 15px;
 }
