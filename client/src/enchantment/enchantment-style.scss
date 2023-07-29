@@ -564,3 +564,12 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background-color: rgba($brand-primary, .8);
 }
+
+.search-box__content-field .form__field-label {
+  margin-bottom: 10px;
+}
+
+.has-panel .section-label a {
+  color: $brand-primary;
+  text-decoration: none;
+}
