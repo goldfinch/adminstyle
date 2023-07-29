@@ -5,10 +5,6 @@
 // only for ml-auto mr-auto replacement (maybe temporary)
 @import './bootstrap';
 
-.menu__icon {
-  margin-top: -3px !important;
-}
-
 input[type=checkbox] {
   cursor: pointer;
   outline: none;
@@ -547,4 +543,24 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column-reverse;
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: 11px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba($brand-primary, .6);
+  border-radius: 10px;
+  border: 7px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba($brand-primary, .8);
 }
