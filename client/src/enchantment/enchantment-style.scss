@@ -310,6 +310,7 @@ b, strong {
 }
 
 .tab.ui-tabs-panel.ui-corner-bottom.ui-widget-content .form-group:last-child {
+  margin-bottom: 0;
   padding-bottom: 0;
 }
 
@@ -572,4 +573,50 @@ body {
 .has-panel .section-label a {
   color: $brand-primary;
   text-decoration: none;
+}
+
+.tab-pane .form-group:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.tab-pane .form-group:last-child:after {
+  border-bottom: 0;
+}
+
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+  font-weight: 500;
+}
+
+.panel.panel--padded .ui-tabs-nav {
+  padding-left: 8px;
+  padding-bottom: 7px;
+}
+
+.panel.panel--padded .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+  isolation: isolate;
+
+  &:after {
+    background-color: #fff;
+  }
+}
+
+.panel.panel--padded .ui-tabs .ui-tabs-nav .ui-tabs-anchor.active {
+  color: #fff;
+
+  &:after {
+    opacity: 1;
+    background-color: $brand-primary;
+  }
+}
+
+.ui-tabs .cms-tabset-nav-primary.ui-tabs-nav.cms-tabset-nav-primary {
+  padding-left: 8px !important;
+}
+
+.toolbar__back-button {
+
+  @include media-breakpoint-down(sm) {
+    margin-left: 40px;
+  }
 }
