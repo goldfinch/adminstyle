@@ -10,7 +10,7 @@ $gallery-item-label-height: 40px;
   border-radius: $border-radius-sm;
   transition: box-shadow $transition-speed-fast;
   height: $gallery-item-height;
-  transition: opacity 250ms linear;
+  transition: all 250ms linear;
 
   &:hover {
     box-shadow: $gallery-item-shadow;

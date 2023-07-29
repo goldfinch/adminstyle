@@ -9,7 +9,7 @@ $admin-secondary: #212529;
 $admin-tertiary: #000;
 
 body {
-  font-family: 'Open Sans'; // $font-primary;
+  font-family: $font-family-sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 35px;

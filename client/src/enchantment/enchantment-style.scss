@@ -532,3 +532,19 @@ body {
   border: 1px solid #eee;
   margin-right: 15px;
 }
+
+.tox.tox-button {
+  font-family: $font-family-sans-serif;
+  font-weight: 600;
+  background-color: $brand-success;
+}
+
+.insert-embed-modal__url-create {
+  margin-bottom: 10px;
+}
+
+.insert-embed-modal--edit .fieldgroup.fieldgroup--fill-width .flexbox-area-grow.form-group--no-label.form-group {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+}
