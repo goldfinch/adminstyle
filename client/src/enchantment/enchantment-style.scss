@@ -605,6 +605,7 @@ body {
   background-color: rgba($brand-primary, .8);
 }
 
+.search-form__wrapper .form__field-label,
 .search-box__content-field .form__field-label {
   margin-bottom: 10px;
 }
@@ -672,5 +673,3 @@ body {
 .panel--padded .ui-tabs-nav li {
   outline: none;
 }
-
-
