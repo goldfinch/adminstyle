@@ -620,3 +620,11 @@ body {
     margin-left: 40px;
   }
 }
+
+// Settings, last form-group
+.form-group.treemultiselect ~ div.form-group {
+
+  &:after {
+    border-bottom: 0 !important;
+  }
+}
