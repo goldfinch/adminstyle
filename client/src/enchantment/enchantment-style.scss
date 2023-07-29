@@ -118,6 +118,27 @@ input[type=radio]:checked {
 
 // Logo / Loadings
 
+.field.urlsegment.loading .form__field-label {
+  position: relative;
+  background-image: unset !important;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 3px;
+    right: 0;
+    mask-image: url('#{$enchantment_images}loading.svg');
+    mask-position: center;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    margin-top: 0;
+    width: 30px;
+    height: 30px;
+    background-color: $brand-primary;
+  }
+}
+
 .btn__loading-icon {
   mask-image: url('#{$enchantment_images}loading.svg');
   mask-position: center;
@@ -233,6 +254,24 @@ b, strong {
 }
 
 // -- elemental
+
+.elemental-editor-list {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 30px;
+}
+
+.element-editor__hover-bar-line {
+  background-color: $brand-primary;
+}
+
+.element-editor__hover-bar-line:before {
+  color: $brand-secondary;
+}
+
+.elemental-block__history-tab .panel--padded.panel--scrollable {
+  padding: 0;
+}
 
 [class^=bi-].element-editor-add-element__button,
 [class*=" bi-"].element-editor-add-element__button {
@@ -628,3 +667,10 @@ body {
     border-bottom: 0 !important;
   }
 }
+.field.urlsegment .URL-link,
+.ui-tabs.cms-tabset-primary .ui-tabs-nav .ui-state-default, .ui-tabs .ui-tabs-nav.cms-tabset-nav-primary .ui-state-default, .ui-tabs .cms-content-header-tabs .ui-tabs-nav .ui-state-default,
+.panel--padded .ui-tabs-nav li {
+  outline: none;
+}
+
+
