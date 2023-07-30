@@ -154,7 +154,7 @@ input[type=radio]:checked {
   opacity: 0;
 }
 
-.btn-outline-primary.btn__loading-icon {
+.btn-outline-primary.btn--loading .btn__loading-icon {
   background-color: $brand-success;
 }
 
@@ -676,4 +676,8 @@ body {
 .ui-tabs.cms-tabset-primary .ui-tabs-nav .ui-state-default, .ui-tabs .ui-tabs-nav.cms-tabset-nav-primary .ui-state-default, .ui-tabs .cms-content-header-tabs .ui-tabs-nav .ui-state-default,
 .panel--padded .ui-tabs-nav li {
   outline: none;
+}
+
+.btn.btn--loading, .btn.loading {
+  color: transparent !important;
 }
