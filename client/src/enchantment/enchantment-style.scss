@@ -154,6 +154,10 @@ input[type=radio]:checked {
   opacity: 0;
 }
 
+.btn-outline-primary.btn__loading-icon {
+  background-color: $brand-success;
+}
+
 .ss-loading-screen svg {
   background-image: url('#{$enchantment_images}loading.svg');
   background-position: center;
@@ -496,8 +500,8 @@ b, strong {
   margin-bottom: 16px;
 }
 
-.form__field-extra-label, .form__field-description,
-.display-logic-display.form-group--no-label {
+.form__field-extra-label, .form__field-description {
+// .display-logic-display.form-group--no-label Settings/Configuration (MetaFBC/AppSec)
   color: rgba($brand-secondary, .6);
 }
 
