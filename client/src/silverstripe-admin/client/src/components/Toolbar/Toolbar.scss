@@ -73,6 +73,10 @@ $circular-button-padding: 7px;
   align-items: center;
   padding-left: $panel-padding-x;
   padding-right: $panel-padding-x;
+
+  @include media-breakpoint-down(sm) {
+    margin-left: 40px;
+  }
 }
 
 

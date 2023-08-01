@@ -685,3 +685,12 @@ body {
 .tox .tox-label, .tox .tox-toolbar-label {
   margin-bottom: 10px;
 }
+
+.form-group.field.field.CompositeField.selectiongroup.parent-mode {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.jstree-no-checkboxes > li.jstree-last > ul > li > ul > li li {
+  margin-left: 15px;
+}
