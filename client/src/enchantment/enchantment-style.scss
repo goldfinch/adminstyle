@@ -721,3 +721,11 @@ button.update.btn.btn-outline-secondary.form__field-update-url {
 .toolbar--south .preview-selector .chosen-container .chosen-single {
   margin-right: 10px;
 }
+
+.action.btn.btn-primary.font-icon-plus-circled.new.new-link {
+  padding-top: 7px;
+
+  &:before {
+    top: 0;
+  }
+}
