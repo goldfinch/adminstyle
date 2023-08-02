@@ -694,3 +694,30 @@ body {
 .jstree-no-checkboxes > li.jstree-last > ul > li > ul > li li {
   margin-left: 15px;
 }
+
+button.update.btn.btn-outline-secondary.form__field-update-url {
+  color: transparent;
+  min-width: 94px;
+  display: inline-block;
+
+  &:before {
+    content: 'Update URL';
+    position: absolute;
+    color: $brand-primary;
+    display: block;
+    transform: translateY(-50%) translateX(-50%);
+    width: 100%;
+    top: 50%;
+    left: 50%;
+  }
+}
+
+// goldfinch/nested pdo
+#Form_ItemEditForm_RightGroup_Holder + #preview-mode-dropdown-in-content {
+  margin-left: 10px;
+}
+
+.cms-content-controls .preview-selector .chosen-container .chosen-single.font-icon-resize,
+.toolbar--south .preview-selector .chosen-container .chosen-single.font-icon-resize {
+  margin-right: 10px;
+}

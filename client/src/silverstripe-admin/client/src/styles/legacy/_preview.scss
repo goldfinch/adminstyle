@@ -175,11 +175,11 @@
 
         li.result-selected {
           // background: $dropdown-link-active-bg;
-          color: $component-active-color;
+          // color: $component-active-color;
 
           &.highlighted, &:hover, &:focus, &::before {
             // background: $dropdown-link-active-bg;
-            color: $component-active-color;
+            // color: $component-active-color;
           }
         }
       }
