@@ -44,14 +44,20 @@ class EnchantmentAssetsExtension extends Extension
                 // silverstripe-mfa
                 if (InstalledVersions::isInstalled('silverstripe/mfa'))
                 {
-                    Requirements::block("silverstripe/mfa: client/dist/styles/bundle.css");
-                    Requirements::block("silverstripe/mfa: client/dist/styles/bundle-cms.css");
+                    Requirements::block('silverstripe/mfa: client/dist/styles/bundle.css');
+                    Requirements::block('silverstripe/mfa: client/dist/styles/bundle-cms.css');
 
                     // silverstripe/totp-authenticator
                     if (InstalledVersions::isInstalled('silverstripe/totp-authenticator'))
                     {
                         Requirements::block('silverstripe/totp-authenticator: client/dist/styles/bundle.css');
                     }
+                }
+
+                // symbiote/silverstripe-grouped-cms-menu
+                if (InstalledVersions::isInstalled('symbiote/silverstripe-grouped-cms-menu'))
+                {
+                    Requirements::block('symbiote/silverstripe-grouped-cms-menu:client/dist/css/GroupedCmsMenu.css');
                 }
 
                 if (BuildHelper::isProduction())
@@ -87,6 +93,12 @@ class EnchantmentAssetsExtension extends Extension
                         {
                             Requirements::css('goldfinch/enchantment:client/dist/enchantment/assets/bundle-silverstripe-totp-authenticator.css');
                         }
+                    }
+
+                    // symbiote/silverstripe-grouped-cms-menu
+                    if (InstalledVersions::isInstalled('symbiote/silverstripe-grouped-cms-menu'))
+                    {
+                        Requirements::css('goldfinch/enchantment:client/dist/enchantment/assets/GroupedCmsMenu.css');
                     }
 
                     // Enchantment

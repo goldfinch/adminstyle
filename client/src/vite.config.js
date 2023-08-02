@@ -100,6 +100,9 @@ export default defineConfig(({ command, mode, ssrBuild }) => {
           'silverstripe-login-forms/client/src/styles/bundle-silverstripe-login-forms.scss',
           'silverstripe-login-forms/client/src/styles/dark-mode-silverstripe-login-forms.scss',
 
+          // symbiote/silverstripe-grouped-cms-menu
+          'silverstripe-grouped-cms-menu/GroupedCmsMenu.scss',
+
           // 'enchantment/bootstrap.scss',
           'enchantment/enchantment-style.scss',
           'enchantment/enchantment.js',

@@ -28,6 +28,7 @@ class BuildHelper
             <link rel="stylesheet" href="' . $host . '/silverstripe-campaign-admin/client/src/styles/bundle-silverstripe-campaign-admin.scss">
             <link rel="stylesheet" href="' . $host . '/silverstripe-mfa/client/src/bundles/bundle-silverstripe-mfa.scss">
             <link rel="stylesheet" href="' . $host . '/silverstripe-totp-authenticator/client/src/bundles/bundle-silverstripe-totp-authenticator.scss">
+            <link rel="stylesheet" href="' . $host . '/silverstripe-totp-authenticator/client/src/silverstripe-grouped-cms-menu/GroupedCmsMenu.scss">
             <link rel="stylesheet" href="' . $host . '/enchantment/enchantment-style.scss">
             <script type="module" src="' . $host . '/enchantment/enchantment.js"></script>
             ');
