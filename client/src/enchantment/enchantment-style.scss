@@ -729,3 +729,37 @@ button.update.btn.btn-outline-secondary.form__field-update-url {
     top: 0;
   }
 }
+
+.grid-field {
+  // display: flex;
+  flex-wrap: wrap;
+}
+
+.grid-field .add-existing-autocompleter {
+  // margin-left: auto;
+  float: right;
+}
+
+.grid-field .action.action-detail {
+  float: left;
+  width: fit-content;
+  height: fit-content;
+}
+
+.cms .grid-field .add-existing-autocompleter input.relation-search {
+  border-color: $brand-primary;
+}
+.cms .grid-field .add-existing-autocompleter button.action_gridfield_relationadd {}
+
+.panel .alert {
+  margin-bottom: 43px;
+}
+
+table thead tr:nth-child(2) th:first-child > button,
+table tbody tr td:first-child {
+  padding-left: 15px !important;
+}
+
+.grid.grid-field.ss-gridfield:not(.form-group--no-label) > .grid-field__table {
+  margin-top: 60px !important;
+}

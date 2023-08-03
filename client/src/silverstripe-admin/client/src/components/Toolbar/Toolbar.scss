@@ -88,7 +88,7 @@ $circular-button-padding: 7px;
   // padding-top: $spacer-xs;
   // padding-bottom: $spacer-xs;
   min-height: auto;
-  width: auto; // override 100% width due to negative margin
+  width: 100%; // auto; // override 100% width due to negative margin
 
   .btn {
     transition: font-size 0s;

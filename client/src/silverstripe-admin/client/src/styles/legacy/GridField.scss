@@ -109,6 +109,7 @@
 
   .grid-field__table {
     margin-top: 20px;
+    clear: both;
 
     .grid-field__filter-header {
       .fieldholder-small {
@@ -409,6 +410,7 @@
 }
 
 .grid-field {
+
   // If gridfield isn't first thing on page
   .field + & {
     .toolbar--content {
