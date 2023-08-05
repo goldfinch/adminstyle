@@ -12,6 +12,10 @@ use SilverStripe\Core\Environment;
 
 class SiteConfigExtension extends DataExtension
 {
+    private static $defaults = [
+        'ThemeEnchantment' => 1,
+    ];
+
     private static $db = [
         'ThemeEnchantment' => 'Boolean',
     ];
