@@ -691,8 +691,12 @@ body {
   margin-right: 0;
 }
 
+.cms .jstree li.jstree-open > ul > li > ul {
+  margin-left: 7px;
+}
+
 .jstree-no-checkboxes > li.jstree-last > ul > li > ul > li li {
-  margin-left: 15px;
+  margin-left: 7px;
 }
 
 button.update.btn.btn-outline-secondary.form__field-update-url {
