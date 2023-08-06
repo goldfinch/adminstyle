@@ -14,6 +14,10 @@ class SiteConfigExtension extends DataExtension
         'ThemeEnchantment' => 'Boolean',
     ];
 
+    private static $defaults = [
+        'ThemeEnchantment' => 1,
+    ];
+
     public function updateCMSFields(FieldList $fields)
     {
         if (Environment::getEnv('SS_THEME_ENCHANTMENT'))
