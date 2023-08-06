@@ -21,6 +21,7 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
   font-size: 14px;
   display: block;
   width: 100%;
+  outline: 1px solid #318f5a;
 }
 
 .btn-toolbar, .btn-toolbar p {

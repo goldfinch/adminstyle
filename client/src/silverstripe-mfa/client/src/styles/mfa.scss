@@ -52,6 +52,13 @@
   .btn-secondary,
   .btn-link {
     color: var(--color-text);
+    border-radius: 5px;
+    font-weight: 600;
+    border: 0;
+
+    &:hover, &:active, &:focus, &:focus-visible {
+      color: #fff;
+    }
   }
 
   .btn-primary:focus {
