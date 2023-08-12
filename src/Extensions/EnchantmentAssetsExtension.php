@@ -41,13 +41,12 @@ class EnchantmentAssetsExtension extends Extension
                     Requirements::block('silverstripe/campaign-admin: client/dist/styles/bundle.css');
                 }
 
-                // silverstripe-mfa
+                // silverstripe-mfa (for Security templates refer to _config.php)
                 if (InstalledVersions::isInstalled('silverstripe/mfa'))
                 {
-                    Requirements::block('silverstripe/mfa: client/dist/styles/bundle.css');
                     Requirements::block('silverstripe/mfa: client/dist/styles/bundle-cms.css');
 
-                    // silverstripe/totp-authenticator
+                    // silverstripe/totp-authenticator (for Security templates refer to _config.php)
                     if (InstalledVersions::isInstalled('silverstripe/totp-authenticator'))
                     {
                         Requirements::block('silverstripe/totp-authenticator: client/dist/styles/bundle.css');
@@ -83,12 +82,12 @@ class EnchantmentAssetsExtension extends Extension
                         Requirements::css('goldfinch/enchantment:client/dist/enchantment/assets/bundle-silverstripe-campaign-admin.css');
                     }
 
-                    // silverstripe-mfa
+                    // silverstripe-mfa (for Security templates refer to _config.php)
                     if (InstalledVersions::isInstalled('silverstripe/mfa'))
                     {
                         Requirements::css('goldfinch/enchantment:client/dist/enchantment/assets/bundle-silverstripe-mfa.css');
 
-                        // silverstripe/totp-authenticator
+                        // silverstripe/totp-authenticator (for Security templates refer to _config.php)
                         if (InstalledVersions::isInstalled('silverstripe/totp-authenticator'))
                         {
                             Requirements::css('goldfinch/enchantment:client/dist/enchantment/assets/bundle-silverstripe-totp-authenticator.css');
