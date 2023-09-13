@@ -771,3 +771,13 @@ table tbody tr td:first-child {
 .displaylogicwrapper.wrapper {
   margin-top: 16px;
 }
+
+// undefinedoffset/sortablegridfield
+form table.grid-field__table thead tr td.sortablerowsheading .gridfield-sortablerows input[type="checkbox"] {
+  height: 20px !important;
+}
+form table.grid-field__table thead tr td.sortablerowsheading label {
+  position: relative;
+  top: -5px;
+  cursor: pointer;
+}
