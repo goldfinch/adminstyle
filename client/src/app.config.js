@@ -3,11 +3,11 @@ export default function initCfg(command, mode, ssrBuild) {
   const dev = command === 'serve';
   const host = 'silverstripe-starter.lh';
 
-  const buildAssetsDir = '/_resources/vendor/goldfinch/enchantment/client/dist/enchantment/assets/'
+  const buildAssetsDir = '../../../dist/enchantment/assets/'
 
-  const bootstrap_icon_path = dev ? '../node_modules/bootstrap-icons/font/fonts' : '/_resources/vendor/goldfinch/extra-assets/client/dist/bootstrap-icons/fonts';
-  const silverstripe_admin = dev ? 'silverstripe-admin/client/src/' : '/_resources/vendor/goldfinch/enchantment/client/dist/enchantment/assets/'
-  const enchantment = dev ? '/_resources/vendor/goldfinch/enchantment/client/dist/enchantment/assets/enchantment/' : ''
+  const bootstrap_icon_path = dev ? '../node_modules/bootstrap-icons/font/fonts' : '../../../dist/bootstrap-icons/fonts';
+  const silverstripe_admin = dev ? 'silverstripe-admin/client/src/' : '../../../dist/enchantment/assets/'
+  const enchantment = dev ? '../../../dist/enchantment/assets/enchantment/' : ''
 
   const silverstripe_admin_font_path = dev ? '../../../../silverstripe-admin/client/src/font/fonts/' : (buildAssetsDir + 'silverstripe-admin/client/src/font/fonts/');
   const enchantment_images = dev ? './images/' : (buildAssetsDir + 'enchantment/images/');
