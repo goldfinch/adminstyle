@@ -2,7 +2,7 @@
 Name: goldfinch-enchantment
 After:
   - '#goldfinch-basement'
-  - '#goldfinch-seokit'
+  - '#goldfinch-seo'
 ---
 
 SilverStripe\SiteConfig\SiteConfig:
