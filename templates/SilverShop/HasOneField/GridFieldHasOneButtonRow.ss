@@ -1,6 +1,6 @@
 <div class="form-group field hasone">
 	<label class="form__field-label">
-		<%-- $GridField.Title --%>
+		<%-- Uncommented out 16.10.23 --%>$GridField.Title
 	</label>
 	<div class="form__field-holder form-row d-flex">
 		<div class="col">$LeftFragment</div>
