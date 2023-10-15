@@ -9,13 +9,13 @@ replace({
 replace({
   files: `../dist/**/*.css`,
   from: /silverstripe-cms\/client\/src\/images\//g,
-  to: '/../../../dist/enchantment/assets/silverstripe-cms/client/src/images/',
+  to: '../../../dist/enchantment/assets/silverstripe-cms/client/src/images/',
 })
 
 replace({
   files: `../dist/**/*.css`,
   from: /placement.png/g,
-  to: '/../../../dist/enchantment/assets/enchantment/placement.png',
+  to: '../../../dist/enchantment/assets/enchantment/placement.png',
 })
 
 replace({
