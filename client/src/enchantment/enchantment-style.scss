@@ -781,3 +781,7 @@ form table.grid-field__table thead tr td.sortablerowsheading label {
   top: -5px;
   cursor: pointer;
 }
+
+.tab.ui-tabs-panel fieldset.grid.grid-field {
+  margin-top: 0 !important;
+}
