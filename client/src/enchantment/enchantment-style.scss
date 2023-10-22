@@ -785,3 +785,29 @@ form table.grid-field__table thead tr td.sortablerowsheading label {
 .grid.grid-field {
   margin-top: 0 !important;
 }
+
+.form-group.field.multiselect {
+  margin: 15px 0;
+}
+
+.form-group.field.multiselect .form__field-holder {
+  margin: 0;
+  padding: 0 7px;
+}
+
+.form-group.field.multiselect .form__field-holder .ui-multiselect {
+  border-color: #c1cad9;
+  padding: 10px 20px;
+}
+
+.form-group.field.multiselect .form__field-holder .ui-multiselect .available {
+  padding-right: 10px;
+}
+
+.form-group.field.multiselect .form__field-holder .ui-multiselect .selected {
+  padding-left: 10px;
+}
+
+.form-group.field.multiselect .form__field-holder .ui-multiselect .ui-multiselect .ui-widget-header {
+  padding: 10px 0;
+}
