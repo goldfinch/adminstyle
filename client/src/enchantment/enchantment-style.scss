@@ -811,3 +811,12 @@ form table.grid-field__table thead tr td.sortablerowsheading label {
 .form-group.field.multiselect .form__field-holder .ui-multiselect .ui-multiselect .ui-widget-header {
   padding: 10px 0;
 }
+
+.form-group.field.multiselect {
+  padding: 0;
+}
+
+.cms-edit-form .form-group.multiselect:after {
+  margin-left: 0;
+  margin-right: 0;
+}
