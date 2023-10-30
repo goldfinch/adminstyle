@@ -820,3 +820,14 @@ form table.grid-field__table thead tr td.sortablerowsheading label {
   margin-left: 0;
   margin-right: 0;
 }
+
+@media (min-width: 992px) {
+  .form--inline .form-group:after, .ss-insert-link .form__fieldgroup .form-group:after, .cms-edit-form .form-group:after {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .form--inline .form-group,.ss-insert-link .form__fieldgroup .form-group,.cms-edit-form .form-group {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
