@@ -834,4 +834,8 @@ form table.grid-field__table thead tr td.sortablerowsheading label {
   .form--inline .form__field-label, .ss-insert-link .form__fieldgroup .form__field-label, .cms-edit-form .form__field-label {
     margin-left: 0 !important;
   }
+
+  .form--inline .form-group .form__field-holder .form-group .form__field-holder,.form--inline .form-group .form__field-holder .form-group .form__field-label,.ss-insert-link .form__fieldgroup .form-group .form__field-holder .form-group .form__field-holder,.ss-insert-link .form__fieldgroup .form-group .form__field-holder .form-group .form__field-label,.cms-edit-form .form-group .form__field-holder .form-group .form__field-holder,.cms-edit-form .form-group .form__field-holder .form-group .form__field-label {
+      padding-left: 0 !important;
+  }
 }
