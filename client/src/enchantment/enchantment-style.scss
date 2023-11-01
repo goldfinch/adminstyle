@@ -843,8 +843,14 @@ form table.grid-field__table thead tr td.sortablerowsheading label {
   .form--inline .form-group:not(.stacked) .form__field-holder, .ss-insert-link .form__fieldgroup .form-group:not(.stacked) .form__field-holder, .cms-edit-form .form-group:not(.stacked) .form__field-holder {
     padding-left: 0 !important;
   }
+
+  .form--inline .stacked .form__field-holder, .ss-insert-link .form__fieldgroup .stacked .form__field-holder, .cms-edit-form .stacked .form__field-holder {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
 }
 
 .form-group.field.multiselect {
   margin-bottom: 32px !important;
 }
+
