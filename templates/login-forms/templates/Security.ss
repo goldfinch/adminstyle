@@ -10,6 +10,7 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
         <meta name="color-scheme" content="light <% if $darkModeIsEnabled() %>dark<% else %>only<% end_if %>" />
         <% if $SiteConfig.ThemeEnchantment %>
+            <% require css("goldfinch/extra-assets:client/dist/font-opensans.css") %>
             <% require css("goldfinch/enchantment:client/dist/enchantment/assets/bundle-silverstripe-admin.css") %>
             <% require css("goldfinch/enchantment:client/dist/enchantment/assets/bundle-silverstripe-login-forms.css") %>
             <% if $darkModeIsEnabled() %>
