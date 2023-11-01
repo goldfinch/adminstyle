@@ -856,3 +856,11 @@ form table.grid-field__table thead tr td.sortablerowsheading label {
   margin-bottom: 32px !important;
 }
 
+// link module (checkbox margin)
+#Form_ItemEditForm_OpenInNewWindow_Holder {
+  margin-top: 16px;
+}
+.linkfield__button {
+  padding-bottom: 0;
+  margin-top: 0;
+}
