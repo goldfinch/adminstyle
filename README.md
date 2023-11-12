@@ -6,7 +6,7 @@ silverstripe-admin (6e52fee)
 
 silverstripe-cms (221b698)
 
-silverstripe-asset-admin (a9f6a31)
+silverstripe-asset-admin (97ea474)
 
 silverstripe-versioned-admin (fc60dac)
 
