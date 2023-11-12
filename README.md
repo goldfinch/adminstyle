@@ -10,7 +10,7 @@ silverstripe-asset-admin (97ea474)
 
 silverstripe-versioned-admin (4e6f231)
 
-silverstripe-campaign-admin (9e5e00b)
+silverstripe-campaign-admin (1c20dbf)
 
 silverstripe-session-manager (246c5ec)
 
