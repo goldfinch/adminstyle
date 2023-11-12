@@ -8,7 +8,7 @@ silverstripe-cms (221b698)
 
 silverstripe-asset-admin (97ea474)
 
-silverstripe-versioned-admin (fc60dac)
+silverstripe-versioned-admin (4e6f231)
 
 silverstripe-campaign-admin (9e5e00b)
 
