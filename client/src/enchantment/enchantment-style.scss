@@ -869,3 +869,8 @@ form table.grid-field__table thead tr td.sortablerowsheading label {
 form table.grid-field__table thead tr td.sortablerowsheading label {
   margin-bottom: 15px !important;
 }
+
+.badge.badge-info {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-secondary-rgb),var(--bs-bg-opacity))!important;
+}
