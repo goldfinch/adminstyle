@@ -4,7 +4,7 @@ SS_THEME_ENCHANTMENT=true
 
 silverstripe-admin (6e52fee) 
 
-silverstripe-cms (c831b1b)
+silverstripe-cms (221b698)
 
 silverstripe-asset-admin (a9f6a31)
 
