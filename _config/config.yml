@@ -2,7 +2,7 @@
 Name: goldfinch-enchantment
 After:
   - '#goldfinch-basement'
-  - '#goldfinch-seokit'
+  - '#goldfinch-seo'
 ---
 
 SilverStripe\SiteConfig\SiteConfig:
@@ -15,8 +15,4 @@ SilverStripe\Admin\LeftAndMain:
 
 SilverStripe\Forms\HTMLEditor\TinyMCEConfig:
   editor_css:
-    - '/build-cms/enchantment/assets/wysiwyg.css'
-
-SilverStripe\CMS\Controllers\ContentController:
-  extensions:
-    - Goldfinch\Enchantment\Extensions\AdminCtrlExtension
+    - 'goldfinch/enchantment:client/dist/enchantment/assets/enchantment-wysiwyg.css'

@@ -1,23 +1,18 @@
 {
-  "extra/js/admin-ctrl.js": {
-    "file": "enchantment/assets/admin-ctrl.js",
+  "enchantment/enchantment-style.scss": {
+    "file": "enchantment/assets/enchantment-style.css",
     "isEntry": true,
-    "src": "extra/js/admin-ctrl.js"
+    "src": "enchantment/enchantment-style.scss"
   },
-  "extra/sass/admin-ctrl-style.scss": {
-    "file": "enchantment/assets/admin-ctrl-style.css",
+  "enchantment/enchantment-wysiwyg.scss": {
+    "file": "enchantment/assets/enchantment-wysiwyg.css",
     "isEntry": true,
-    "src": "extra/sass/admin-ctrl-style.scss"
+    "src": "enchantment/enchantment-wysiwyg.scss"
   },
-  "extra/sass/enchantment.scss": {
-    "file": "enchantment/assets/enchantment.css",
+  "enchantment/enchantment.js": {
+    "file": "enchantment/assets/enchantment.js",
     "isEntry": true,
-    "src": "extra/sass/enchantment.scss"
-  },
-  "extra/sass/wysiwyg.scss": {
-    "file": "enchantment/assets/wysiwyg.css",
-    "isEntry": true,
-    "src": "extra/sass/wysiwyg.scss"
+    "src": "enchantment/enchantment.js"
   },
   "node_modules/chosen-js/chosen-sprite.png": {
     "file": "enchantment/assets/chosen-sprite.png",
@@ -97,6 +92,11 @@
     "file": "enchantment/assets/bundle-silverstripe-cms.css",
     "isEntry": true,
     "src": "silverstripe-cms/client/src/styles/bundle-silverstripe-cms.scss"
+  },
+  "silverstripe-grouped-cms-menu/GroupedCmsMenu.scss": {
+    "file": "enchantment/assets/GroupedCmsMenu.css",
+    "isEntry": true,
+    "src": "silverstripe-grouped-cms-menu/GroupedCmsMenu.scss"
   },
   "silverstripe-login-forms/client/src/styles/bundle-silverstripe-login-forms.scss": {
     "file": "enchantment/assets/bundle-silverstripe-login-forms.css",

@@ -47,8 +47,10 @@
     height: 32px;
     opacity: 1;
     margin-top: 0;
-    margin-right: -$panel-padding-x;
+    // margin-right: -$panel-padding-x;
     color: $text-muted;
+    background: transparent;
+    border: none;
 
     span {
       display: none;
@@ -73,7 +75,7 @@
     content: "\44"; // font-icon-cancel
     color: $text-muted;
     position: relative;
-    top: -.2em;
+    top: -2px;
     font-size: 22px; // btn-icon-xl
     font-family: silverstripe;
     font-style: normal;

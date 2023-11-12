@@ -1,0 +1,60 @@
+@import 'variables';
+
+// @import "./fonts/OpenSans";
+
+@import '../silverstripe-admin/client/src/styles/_variables';
+
+$admin-primary: $brand-primary;
+$admin-secondary: #454545;
+$admin-tertiary: #000;
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: $font-family-sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 35px;
+  background-color: #fff;
+  color: $admin-secondary;
+  padding: 5px 20px;
+}
+
+.mce-content-body p,
+.mce-content-body div {
+  line-height: 1.8 !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.mce-content-body a {
+  color: $admin-primary;
+}
+
+blockquote {
+  font-weight: bold;
+  color: $admin-secondary;
+  position: relative;
+  margin: 39px 0;
+  padding: 0 0 0 50px;
+  letter-spacing: 0;
+  line-height: 1.4;
+  word-spacing: 0;
+
+  &:before {
+    content: '';
+    width: 20px;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $admin-tertiary;
+  }
+}
+
+[data-component="true"] {
+  background-color: #9c9eaf;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+}

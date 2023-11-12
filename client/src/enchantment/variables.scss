@@ -1,0 +1,31 @@
+// - silverstripe-admin
+
+$theme-path-silverstripe-admin: $silverstripe-admin;
+$theme-path-silverstripe-admin-thirdparty: 'silverstripe-admin/thirdparty/';
+
+// - silverstripe-asset-admin app.config.js
+// $theme-path-silverstripe-asset-admin: './silverstripe-asset-admin/client/src/';
+
+// - silverstripe-cms
+$theme-path-silverstripe-cms: 'silverstripe-cms/client/src/';
+
+// - enchantment
+$theme-path-enchantment: $enchantment;
+
+// - silverstripe-campaign-admin
+$theme-path-silverstripe-campaign-admin: 'silverstripe-campaign-admin/client/src/';
+
+// - silverstripe-versioned-admin
+$theme-path-silverstripe-versioned-admin: 'silverstripe-versioned-admin/client/src/';
+
+// - silverstripe-session-manager
+$theme-path-silverstripe-session-manager: 'silverstripe-session-manager/client/src/';
+
+// - silverstripe-mfa
+$theme-path-silverstripe-mfa: 'silverstripe-mfa/client/src/';
+
+// - silverstripe-totp-authenticator
+$theme-path-silverstripe-totp-authenticator: 'silverstripe-totp-authenticator/client/src/';
+
+// - silverstripe-login-forms
+$theme-path-silverstripe-login-forms: 'silverstripe-login-forms/client/src/';

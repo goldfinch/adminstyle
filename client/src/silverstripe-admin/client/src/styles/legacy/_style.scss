@@ -90,7 +90,7 @@ html, body {
   border-bottom: 1px solid $border-color;
 
   @include media-breakpoint-up(md) {
-    padding-left: 17px;
+    padding-left: $panel-padding-x;
   }
 
   .backlink {
@@ -284,7 +284,7 @@ html, body {
       display: block;
       padding: 10px 0;
       font-weight: 500;
-      font-size: 16px; // 1.2em;
+      font-size: 14px; // 1.2em;
     }
     .sep {
       padding-top: 8px;
@@ -666,6 +666,7 @@ html, body {
   margin-top: 0;
   padding-top: map_get($spacers, xs); // Same as toolbar padding
   min-height: $toolbar-height;
+  margin-right: 8px;
 
   &.icon-button-group-tabs {
     margin-top: 12px;

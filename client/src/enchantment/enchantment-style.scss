@@ -1,0 +1,871 @@
+@import 'variables';
+
+@import '../silverstripe-admin/client/src/styles/_variables';
+
+// only for ml-auto mr-auto replacement (maybe temporary)
+@import './bootstrap';
+
+input[type=checkbox] {
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #dee2e6;
+  border-radius: .23rem;
+  left: 0;
+  top: -1px;
+  display: inline-block;
+  place-content: center;
+  transition: border .3s ease-in-out;
+  margin-right: 10px;
+}
+
+input[type=checkbox]:before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  opacity: 0;
+  position: relative;
+  top: 2px;
+  left: 2px;
+  transition: .3s opacity ease-in-out;
+  mask-image: url('#{$enchantment_images}check.svg');
+  mask-size: cover;
+  mask-repeat: no-repeat;
+  mask-position: 70%;
+  background-color: #fff;
+}
+
+input[type=checkbox]:checked {
+  border-color: $brand-primary;
+
+  &:before {
+    opacity: 1;
+    background-color: $brand-primary;
+  }
+}
+
+input[type=radio] {
+  outline: none;
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #dee2e6;
+  border-radius: 50%;
+  display: inline-block;
+  place-content: center;
+  left: 0;
+  transition: border .3s ease-in-out;
+  margin-right: 10px;
+}
+
+input[type=radio]:before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  background-color: $brand-primary;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+}
+
+input[type=radio]:checked {
+  border-color: $brand-primary;
+
+  &:before {
+    transform: scale(1);
+  }
+}
+
+.form-check-label {
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.btn-primary {
+  color: #fff !important;
+}
+
+// Extra
+
+.fcol-12 {
+  width: 100%;
+}
+
+.fcol-6 {
+  width: 100%;
+
+  @media (min-width: 992px) {
+    width: calc(50% - 10px);
+  }
+}
+
+.badge-success {
+  color: #fff !important;
+}
+
+// Logo / Loadings
+
+.field.urlsegment.loading .form__field-label {
+  position: relative;
+  background-image: unset !important;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 3px;
+    right: 0;
+    mask-image: url('#{$enchantment_images}loading.svg');
+    mask-position: center;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    margin-top: 0;
+    width: 30px;
+    height: 30px;
+    background-color: $brand-primary;
+  }
+}
+
+.btn__loading-icon {
+  mask-image: url('#{$enchantment_images}loading.svg');
+  mask-position: center;
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  margin-top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.btn__loading-icon span {
+  opacity: 0;
+}
+
+.btn-outline-primary.btn--loading .btn__loading-icon {
+  background-color: $brand-success;
+}
+
+.ss-loading-screen svg {
+  background-image: url('#{$enchantment_images}loading.svg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.ss-loading-screen__logo__part {
+  opacity: 0;
+}
+
+.cms-content-loading-spinner .spinner {
+  background-image: url('#{$enchantment_images}loading.svg');
+  background-position: center;
+  background-size: 90%;
+  background-repeat: no-repeat;
+}
+
+.cms-content-loading-spinner .spinner svg {
+  opacity: 0;
+}
+
+.ss-loading-screen__text {
+  display: none;
+}
+
+// .cms-help__menu .cms-help__logo {
+//   background: none;
+//   mask-image: url(../images/ss.svg);
+//   mask-position: center;
+//   mask-size: 80%;
+//   mask-repeat: no-repeat;
+//   background-color: #fff;
+// }
+
+// Select component
+
+.chosen-container-multi .chosen-choices li.search-field input[type="text"] {
+  color: $gray-600 !important;
+}
+
+.chosen-container .chosen-results li.highlighted {
+  background-color: $brand-primary !important;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, $brand-secondary), color-stop(90%, $brand-secondary)) !important;
+  background-image: linear-gradient($brand-primary 20%, $brand-secondary 90%) !important;
+  color: #fff !important;
+}
+
+// Display logic component styles
+
+.display-logic-dispatcher .form-check-label {
+  cursor: pointer;
+}
+
+// --
+
+.form__fieldgroup.form__field-holder.form__field-holder--no-label {
+  margin-top: 5px;
+}
+
+b, strong {
+  font-weight: 600;
+}
+
+.history-viewer__actions-dropdown.show .dropdown-menu {
+  padding: 0 15px;
+  min-width: 16rem;
+}
+
+.no-change-track.history-viewer-heading__compare-mode-checkbox {
+  position: relative;
+  top: 2px;
+
+  + label {
+    margin-left: 10px;
+    position: relative;
+    top: -4px;
+  }
+}
+
+.tab.ui-tabs-panel.ui-corner-bottom.ui-widget-content .form-group:last-child {
+
+  &:after {
+    border-bottom: 0;
+  }
+}
+
+.cms-content-controls .preview-selector .chosen-drop, .toolbar--south .preview-selector .chosen-drop {
+  display: none;
+}
+
+.cms-content-controls .preview-selector .chosen-with-drop .chosen-drop, .toolbar--south .preview-selector .chosen-with-drop .chosen-drop {
+  display: block;
+}
+
+.ss-toggle .ui-accordion-content {
+  overflow: hidden;
+}
+
+// -- elemental
+
+.elemental-editor-list {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 30px;
+}
+
+.element-editor__hover-bar-line {
+  background-color: $brand-primary;
+}
+
+.element-editor__hover-bar-line:before {
+  color: $brand-secondary;
+}
+
+.elemental-block__history-tab .panel--padded.panel--scrollable {
+  padding: 0;
+}
+
+[class^=bi-].element-editor-add-element__button,
+[class*=" bi-"].element-editor-add-element__button {
+  padding-left: 58px;
+
+  &:before {
+    margin-right: 0;
+    position: absolute;
+    left: 18px;
+    top: 12px;
+    font-size: 22px;
+  }
+}
+
+.element-editor-header__title {
+  margin-left: 20px;
+}
+
+.element-editor-summary {
+  margin-top: 0px;
+  margin-left: 46px;
+}
+
+.element-editor-header__icon-container [class^=bi-],
+.element-editor-header__icon-container [class*=" bi-"] {
+  position: relative;
+  top: 1px;
+  left: 6px;
+}
+
+.element-editor__element {
+  padding: 20px 25px;
+}
+
+.textcheckboxgroup .input-group-append .form-check-input {
+  position: absolute;
+}
+
+.element-editor-header__drag-handle .font-icon-drag-handle {
+  position: relative;
+  top: 3px;
+}
+
+.element-editor-editform {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.popover-option-set__button {
+  max-height: unset;
+}
+
+// might need to be moved to silverstripe-admin (check)
+.text-checkbox-group-field .form-check-label {
+  margin-left: 30px;
+}
+
+// * checkbox in /admin/settings
+// .cms-edit-form .form-group.checkbox .form__field-holder {
+//   margin-left: 0;
+// }
+
+.form-group {}
+
+.form-check-input:checked[type=radio] {
+  position: relative;
+}
+
+.table th:first-child, .table td:first-child {
+  padding-left: 0;
+}
+
+.table th:last-child, .table td:last-child {
+  padding-right: 0;
+}
+
+.tab.ui-tabs-panel.ui-corner-bottom.ui-widget-content .form-group:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.panel--padded.panel--scrollable {
+  padding-right: $panel-padding-x;
+}
+
+.show-filter .grid-field__search-holder + .ss-gridfield-buttonrow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.ml-auto { @extend .ms-auto; }
+.ml-1 { @extend .ms-1; }
+.ml-2 { @extend .ms-2; }
+.ml-3 { @extend .ms-3; }
+.ml-4 { @extend .ms-4; }
+.ml-5 { @extend .ms-5; }
+.mr-auto { @extend .me-auto; }
+.mr-1 { @extend .me-1; }
+.mr-2 { @extend .me-2; }
+.mr-3 { @extend .me-3; }
+.mr-4 { @extend .me-4; }
+.mr-5 { @extend .me-5; }
+
+.pl-1 { @extend .ps-1; }
+.pl-2 { @extend .ps-2; }
+.pl-3 { @extend .ps-3; }
+.pl-4 { @extend .ps-4; }
+.pl-5 { @extend .ps-5; }
+.pr-1 { @extend .pe-1; }
+.pr-2 { @extend .pe-2; }
+.pr-3 { @extend .pe-3; }
+.pr-4 { @extend .pe-4; }
+.pr-5 { @extend .pe-5; }
+
+
+.modal {
+  z-index: 1060;
+}
+
+
+.field .chosen-container-single.chosen-container-active .chosen-single {
+  border-end-end-radius: 0;
+  border-end-start-radius: 0;
+}
+
+.chosen-container .chosen-results-scroll-up span {
+  top: 11px;
+}
+
+.chosen-container-single .chosen-single abbr {
+  top: 11px;
+}
+
+.cms .grid-field__table tr th.main {
+  vertical-align: middle;
+}
+
+.btn .btn__title {
+  // position: relative;
+  // top: 1px;
+}
+
+.action.action-detail.btn.btn-primary.font-icon-plus-circled {
+
+  &:before {
+    position: relative;
+    top: -1px;
+  }
+}
+
+.font-icon-cancel.btn--no-text.btn--icon-lg.search-box__cancel.btn.btn-secondary {
+  border-bottom: 1px solid #dbdbdb;
+}
+
+// Hide gap at the top of table (! need to doublecheck)
+.grid-field__title-row {
+  display: none;
+}
+
+.form-check {
+  min-height: unset;
+}
+
+.form-check-input {
+
+  &:checked {
+    background-color: unset;
+  }
+}
+
+.form-check {
+  min-height: unset;
+  padding-left: 0; //$form-check-padding-start;
+}
+
+.btn {
+  box-shadow: none;
+
+  &:focus-visible {
+    // Avoid using mixin so we can pass custom focus shadow properly
+    @if $enable-shadows {
+      box-shadow: none;
+    } @else {
+      box-shadow: none;
+    }
+  }
+}
+
+.jstree-apple .jstree-unchecked > a > .jstree-checkbox,
+.jstree-checked > a > .jstree-checkbox {
+  background-image: none;
+}
+
+.cms li.jstree-open > ul {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.cms .jstree.jstree-focused {
+  margin-left: 0;
+}
+
+.btn-check:checked + .btn, :not(.btn-check) + .btn:active, .btn:first-child:active, .btn.active, .btn.show {
+  box-shadow: none;
+}
+
+.form-group.field {
+  margin-bottom: 16px;
+}
+
+.form__field-extra-label, .form__field-description {
+// .display-logic-display.form-group--no-label Settings/Configuration (MetaFBC/AppSec)
+  color: rgba($brand-secondary, .6);
+}
+
+// refresh buttons seokit
+.form__fieldgroup > .form__fieldgroup-item {
+  vertical-align: text-bottom;
+}
+
+.form-group.field.CompositeField.fieldgroup.form-group--no-label {
+  margin-bottom: 0;
+}
+
+.tox .tox-statusbar__path,
+.tox .tox-statusbar__wordcount {
+  font-size: 12px;
+  opacity: .6;
+}
+.field .chosen-container-single .chosen-single {
+  border: 1px solid #c1cad9;
+}
+.field .chosen-drop {
+  border-color: #c1cad9;
+}
+
+.chosen-container-single .chosen-search input[type="text"] {
+  border-color: #c1cad9;
+}
+
+.chosen-container .chosen-results li.highlighted {
+  background-image: unset !important;
+  background-color: $brand-primary;
+}
+
+// Settings/Configurations
+.form-group.field.checkbox.display-logic-dispatcher {
+  margin-bottom: 0;
+}
+.form-group.field.checkbox.display-logic-dispatcher + div{
+  margin-top: 16px;
+}
+
+.table tbody tr td {
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+}
+
+// Tinymce Custom Skin
+.tox-tinymce {
+  border-radius: var(--bs-border-radius) !important;
+  border: 1px solid #dee2e6 !important;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+  &:hover {
+    border: 1px solid rgba($brand-primary, .5) !important;
+    box-shadow: 0 0 0 0.25rem rgba($brand-primary, .25);
+  }
+}
+
+.tox-tiered-menu {
+  position: absolute !important;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+.toolbar__back-button {
+  border: 1px solid #eee;
+  margin-right: 15px;
+}
+
+.tox.tox-button {
+  font-family: $font-family-sans-serif;
+  font-weight: 600;
+  background-color: $brand-success;
+}
+
+.insert-embed-modal__url-create {
+  margin-bottom: 10px;
+}
+
+.insert-embed-modal--edit .fieldgroup.fieldgroup--fill-width .flexbox-area-grow.form-group--no-label.form-group {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: 11px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba($brand-primary, .6);
+  border-radius: 10px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba($brand-primary, .8);
+}
+
+.search-form__wrapper .form__field-label,
+.search-box__content-field .form__field-label {
+  margin-bottom: 10px;
+}
+
+.has-panel .section-label a {
+  color: $brand-primary;
+  text-decoration: none;
+}
+
+.tab-pane .form-group:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.tab-pane .form-group:last-child:after {
+  border-bottom: 0;
+}
+
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+  font-weight: 500;
+}
+
+.panel.panel--padded .ui-tabs-nav {
+  padding-left: 8px;
+  padding-bottom: 7px;
+}
+
+.panel.panel--padded .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+  isolation: isolate;
+
+  &:after {
+    background-color: #fff;
+  }
+}
+
+.panel.panel--padded .ui-tabs .ui-tabs-nav .ui-tabs-anchor.active {
+  color: #fff;
+
+  &:after {
+    opacity: 1;
+    background-color: $brand-primary;
+  }
+}
+
+.ui-tabs .cms-tabset-nav-primary.ui-tabs-nav.cms-tabset-nav-primary {
+  padding-left: 8px !important;
+}
+
+.toolbar__back-button {
+
+  @include media-breakpoint-down(sm) {
+    margin-left: 40px;
+  }
+}
+
+// Settings, last form-group
+.form-group.treemultiselect ~ div.form-group {
+
+  &:after {
+    border-bottom: 0 !important;
+  }
+}
+.field.urlsegment .URL-link,
+.ui-tabs.cms-tabset-primary .ui-tabs-nav .ui-state-default, .ui-tabs .ui-tabs-nav.cms-tabset-nav-primary .ui-state-default, .ui-tabs .cms-content-header-tabs .ui-tabs-nav .ui-state-default,
+.panel--padded .ui-tabs-nav li {
+  outline: none;
+}
+
+.btn.btn--loading, .btn.loading {
+  color: transparent !important;
+}
+
+.tox .tox-label, .tox .tox-toolbar-label {
+  margin-bottom: 10px;
+}
+
+.form-group.field.field.CompositeField.selectiongroup.parent-mode {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.cms .jstree li.jstree-open > ul > li > ul {
+  margin-left: 7px;
+}
+
+// .jstree-no-checkboxes > li.jstree-last > ul > li > ul > li li {
+//   margin-left: 7px;
+// }
+
+button.update.btn.btn-outline-secondary.form__field-update-url {
+  color: transparent;
+  min-width: 94px;
+  display: inline-block;
+
+  &:before {
+    content: 'Update URL';
+    position: absolute;
+    color: $brand-primary;
+    display: block;
+    transform: translateY(-50%) translateX(-50%);
+    width: 100%;
+    top: 50%;
+    left: 50%;
+  }
+}
+
+// goldfinch/nested pdo
+#Form_ItemEditForm_RightGroup_Holder + #preview-mode-dropdown-in-content {
+  margin-left: 10px;
+}
+
+.cms-content-controls .preview-selector .chosen-container .chosen-container,
+.toolbar--south .preview-selector .chosen-container .chosen-single {
+  margin-right: 10px;
+}
+
+.action.btn.btn-primary.font-icon-plus-circled.new.new-link {
+  padding-top: 7px;
+
+  &:before {
+    top: 0;
+  }
+}
+
+.grid-field {
+  // display: flex;
+  flex-wrap: wrap;
+}
+
+.grid-field .add-existing-autocompleter {
+  // margin-left: auto;
+  float: right;
+}
+
+.grid-field .action.action-detail {
+  float: left;
+  width: fit-content;
+  height: fit-content;
+}
+
+.cms .grid-field .add-existing-autocompleter input.relation-search {
+  border-color: $brand-primary;
+}
+.cms .grid-field .add-existing-autocompleter button.action_gridfield_relationadd {}
+
+.panel .alert {
+  margin-bottom: 43px;
+}
+
+table thead tr:nth-child(2) th:first-child > button,
+table tbody tr td:first-child {
+  padding-left: 15px !important;
+}
+
+.grid.grid-field.ss-gridfield:not(.form-group--no-label) > .grid-field__table {
+  margin-top: 60px !important;
+}
+
+.displaylogicwrapper.wrapper {
+  margin-top: 16px;
+}
+
+// undefinedoffset/sortablegridfield
+form table.grid-field__table thead tr td.sortablerowsheading .gridfield-sortablerows input[type="checkbox"] {
+  height: 20px !important;
+}
+form table.grid-field__table thead tr td.sortablerowsheading label {
+  position: relative;
+  top: -5px;
+  cursor: pointer;
+}
+
+.grid.grid-field {
+  margin-top: 0 !important;
+}
+
+.form-group.field.multiselect {
+  margin: 15px 0;
+}
+
+.form-group.field.multiselect .form__field-holder {
+  margin: 0;
+  padding: 0 7px;
+}
+
+.form-group.field.multiselect .form__field-holder .ui-multiselect {
+  border-color: #c1cad9;
+  padding: 10px 20px;
+}
+
+.form-group.field.multiselect .form__field-holder .ui-multiselect .available {
+  padding-right: 10px;
+}
+
+.form-group.field.multiselect .form__field-holder .ui-multiselect .selected {
+  padding-left: 10px;
+}
+
+.form-group.field.multiselect .form__field-holder .ui-multiselect .ui-multiselect .ui-widget-header {
+  padding: 10px 0;
+}
+
+.form-group.field.multiselect {
+  padding: 0;
+}
+
+.cms-edit-form .form-group.multiselect:after {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@media (min-width: 992px) {
+  .form--inline .form-group:after, .ss-insert-link .form__fieldgroup .form-group:after, .cms-edit-form .form-group:after {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .form--inline .form-group,.ss-insert-link .form__fieldgroup .form-group,.cms-edit-form .form-group {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .form--inline .form__field-label, .ss-insert-link .form__fieldgroup .form__field-label, .cms-edit-form .form__field-label {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .form--inline .form-group .form__field-holder .form-group .form__field-holder,.form--inline .form-group .form__field-holder .form-group .form__field-label,.ss-insert-link .form__fieldgroup .form-group .form__field-holder .form-group .form__field-holder,.ss-insert-link .form__fieldgroup .form-group .form__field-holder .form-group .form__field-label,.cms-edit-form .form-group .form__field-holder .form-group .form__field-holder,.cms-edit-form .form-group .form__field-holder .form-group .form__field-label {
+      padding-left: 0 !important;
+  }
+
+  .form--inline .form-group:not(.stacked) .form__field-holder, .ss-insert-link .form__fieldgroup .form-group:not(.stacked) .form__field-holder, .cms-edit-form .form-group:not(.stacked) .form__field-holder {
+    padding-left: 0 !important;
+  }
+
+  .form--inline .stacked .form__field-holder, .ss-insert-link .form__fieldgroup .stacked .form__field-holder, .cms-edit-form .stacked .form__field-holder {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+}
+
+.form-group.field.multiselect {
+  margin-bottom: 32px !important;
+}
+
+// link module (checkbox margin)
+#Form_ItemEditForm_OpenInNewWindow_Holder {
+  margin-top: 16px;
+}
+.linkfield__button {
+  padding-bottom: 0;
+  margin-top: 0;
+}
+
+// sortable grid module (checkbox)
+form table.grid-field__table thead tr td.sortablerowsheading label {
+  margin-bottom: 15px !important;
+}

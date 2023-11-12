@@ -74,10 +74,10 @@
 .cms h2.breadcrumb__item-title--last, // TODO Fix CMS clash
 .breadcrumb__item--last .breadcrumb__item-title,
 .breadcrumb__item-title--last {
-  margin: 0;
-  font-size: $h3-font-size;
-  font-weight: normal;
-  line-height: 24px;
+  margin: 2px 0 0 0;
+  font-size: 14px; // $h3-font-size;
+  font-weight: 500;
+  // line-height: 10px; // add new page (caused issue)
   @include text-truncate;
   display: flex;
   align-items: center;

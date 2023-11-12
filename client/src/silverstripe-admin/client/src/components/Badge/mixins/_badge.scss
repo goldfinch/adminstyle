@@ -5,7 +5,8 @@
   background-color: color-yiq($bg);
 
   &[href] {
-    @include hover-focus {
+    &:hover,
+    &:focus {
       color: darken($bg, 10%);
       background-color: color-yiq($bg);
     }
