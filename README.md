@@ -16,6 +16,6 @@ silverstripe-session-manager (cab0fd1)
 
 silverstripe-mfa (9a2f3ed)
 
-silverstripe-totp-authenticator (9ea9c5e)
+silverstripe-totp-authenticator (3fafc9e)
 
 silverstripe-login-forms (d7f7e6b)
