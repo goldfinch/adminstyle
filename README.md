@@ -12,7 +12,7 @@ silverstripe-versioned-admin (4e6f231)
 
 silverstripe-campaign-admin (1c20dbf)
 
-silverstripe-session-manager (246c5ec)
+silverstripe-session-manager (cab0fd1)
 
 silverstripe-mfa (29260f1)
 
