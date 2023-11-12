@@ -2,7 +2,7 @@
 SS_THEME_ENCHANTMENT=true
 ```
 
-silverstripe-admin (c0ed41c)
+silverstripe-admin (6e52fee) 
 
 silverstripe-cms (c831b1b)
 

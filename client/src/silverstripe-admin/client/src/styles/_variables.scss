@@ -11,7 +11,7 @@ $brand-success: #55bb82;
 $brand-danger: #d5041b;
 
 // Offical SilverStripe brand color
-$color-brand: #43c7f4 !default;
+$color-brand: white !default;
 
 // Generic colors
 $color-notice:  #93CDE8 !default;
@@ -135,8 +135,6 @@ $shadow-level-2: rgba(0, 0, 0, .15);
 $shadow-level-3: rgba(0, 0, 0, .2);
 $shadow-level-4: rgba(0, 0, 0, .25);
 $shadow-level-5: rgba(0, 0, 0, .3);
-
-// TODO tidy all shadows cms wide (including AssetAdmin)
 
 $shadow-light: $shadow-level-3;
 $shadow-lighter: $shadow-level-1;
