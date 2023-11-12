@@ -299,6 +299,9 @@
 .font-icon-menu-settings:before {
   content: "\e001";
 }
+.font-icon-silverstripe:before {
+  content: "\4d";
+}
 .font-icon-sort:before {
   content: "\e003";
 }
@@ -781,10 +784,4 @@
 }
 .font-icon-attention-1:before {
   content: "\e09a";
-}
-.font-icon-silverstripe:before {
-  content: "\4d";
-}
-.font-icon-silverstripe-cms:before {
-  content: "\e09b";
 }
