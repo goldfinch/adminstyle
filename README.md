@@ -14,7 +14,7 @@ silverstripe-campaign-admin (1c20dbf)
 
 silverstripe-session-manager (cab0fd1)
 
-silverstripe-mfa (29260f1)
+silverstripe-mfa (9a2f3ed)
 
 silverstripe-totp-authenticator (9ea9c5e)
 
