@@ -19,3 +19,6 @@ silverstripe-mfa (9a2f3ed)
 silverstripe-totp-authenticator (3fafc9e)
 
 silverstripe-login-forms (84c21a0)
+
+
+(silverstripe-grouped-cms-menu)
