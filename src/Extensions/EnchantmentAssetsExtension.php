@@ -53,10 +53,10 @@ class EnchantmentAssetsExtension extends Extension
                     }
                 }
 
-                // symbiote/silverstripe-grouped-cms-menu
-                if (InstalledVersions::isInstalled('symbiote/silverstripe-grouped-cms-menu'))
+                // goldfinch/silverstripe-grouped-cms-menu
+                if (InstalledVersions::isInstalled('goldfinch/silverstripe-grouped-cms-menu'))
                 {
-                    Requirements::block('symbiote/silverstripe-grouped-cms-menu:client/dist/css/GroupedCmsMenu.css');
+                    Requirements::block('goldfinch/silverstripe-grouped-cms-menu:client/dist/css/GroupedCmsMenu.css');
                 }
 
                 if (BuildHelper::isProduction())
@@ -94,8 +94,8 @@ class EnchantmentAssetsExtension extends Extension
                         }
                     }
 
-                    // symbiote/silverstripe-grouped-cms-menu
-                    if (InstalledVersions::isInstalled('symbiote/silverstripe-grouped-cms-menu'))
+                    // goldfinch/silverstripe-grouped-cms-menu
+                    if (InstalledVersions::isInstalled('goldfinch/silverstripe-grouped-cms-menu'))
                     {
                         Requirements::css('goldfinch/enchantment:client/dist/enchantment/assets/GroupedCmsMenu.css');
                     }
