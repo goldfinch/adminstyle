@@ -879,6 +879,11 @@ input[type=radio] {
   position: relative !important;
 }
 
+input[type=radio].selector {
+  bottom: -6px !important;
+  position: relative !important;
+}
+
 // colorpalette
 
 .colorpalette li input:checked + label {
