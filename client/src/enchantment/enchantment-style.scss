@@ -875,6 +875,9 @@ form table.grid-field__table thead tr td.sortablerowsheading label {
   background-color: rgba(var(--bs-secondary-rgb),var(--bs-bg-opacity))!important;
 }
 
+input[type=radio] {
+  position: relative !important;
+}
 
 // colorpalette
 
