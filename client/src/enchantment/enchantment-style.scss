@@ -939,3 +939,9 @@ input[type=radio].selector {
 .iti.iti--allow-dropdown input[type="tel"] {
   padding-left: 52px;
 }
+
+// ryanpotter/silverstripe-color-field
+
+.color.field .c-color-picker__input {
+  padding: 7px 10px !important;
+}
