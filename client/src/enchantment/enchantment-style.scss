@@ -933,3 +933,9 @@ input[type=radio].selector {
   font-size: 22px !important;
   color: #fff !important;
 }
+
+// innoweb/silverstripe-international-phone-number-field
+
+.iti.iti--allow-dropdown input[type="tel"] {
+  padding-left: 52px;
+}
