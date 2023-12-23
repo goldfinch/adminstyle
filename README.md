@@ -33,7 +33,7 @@ You might need to do a page hard-refresh after enabling/disabling it.
 
 The icons are come with the module. Go and use it for your needs:
 
-[icons.getbootstrap.com](https://icons.getbootstrap.com/){:target="_blank" rel="noopener"}
+[icons.getbootstrap.com](https://icons.getbootstrap.com/)
 
 ```php
 class MyAwesomeAdmin extends ModelAdmin
