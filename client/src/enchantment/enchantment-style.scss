@@ -949,3 +949,12 @@ input[type=radio].selector {
 .silverstripe-brand .silverstripe-cms-logo .text {
   fill: #fff !important;
 }
+
+#Form_ItemEditForm_RequiresPasswordChangeOnNextLogin_Holder .form__field-holder.form-check {
+  margin-top: 10px;
+}
+
+#Form_ItemEditForm_Password_Holder .showOnClick > a {
+  margin-bottom: 10px;
+  display: inline-block;
+}
