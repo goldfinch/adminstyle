@@ -21,11 +21,13 @@ SS_THEME_ENCHANTMENT=true
 
 ## Usage
 
+#### Enable/Disable
+
 The new interface is controlled by a switcher in *admin/settings*, for you to easily go back to the original theme if you need to. Go and do that in Settings to see the magic 🧙‍♂️ ✨✨✨
 
 You might need to do a page hard-refresh after enabling/disabling it.
 
-#### 
+#### Icons
 
 **Bootstrap Icons** are included. Go and use it for your needs:
 
