@@ -5,7 +5,7 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/goldfinch/enchantment.svg?labelColor=333&color=F8C630&label=Downloads)](https://packagist.org/packages/spatie/schema-org)
 [![License](https://img.shields.io/packagist/l/goldfinch/enchantment.svg?labelColor=333&color=F8C630&label=License)](https://packagist.org/packages/spatie/schema-org)
 
-Restyled and 🪄 enhanced admin interface for Silverstripe based on Bootstrap 5. 🔮
+Restyled and 🪄 enhanced admin interface for Silverstripe based on Bootstrap 5 🔮
 
 ## Install
 
