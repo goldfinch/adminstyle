@@ -1,16 +1,20 @@
 {
     "name": "goldfinch/enchantment",
-    "description": "",
+    "description": "Customly styled admin theme for Silverstripe, based on Bootstrap 5",
     "type": "silverstripe-vendormodule",
     "keywords": [
-        "silverstripe"
+        "silverstripe",
+        "silverstripe-admin-theme",
+        "admin-theme",
+        "silverstripe-bootstrap5",
+        "admin-bootstrap5",
+        "ss-admin"
     ],
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Artem Karasev"
-        }
-    ],
+    "authors": [{
+        "name": "Art Karasev",
+        "email": "art.karasev@proton.me"
+    }],
     "require": {
         "php": ">=8.0",
         "silverstripe/framework": "^5.0",
