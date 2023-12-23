@@ -30,13 +30,17 @@ body {
 
 .typography p a {
   color: #6a8dd0;
+
+  &:hover, &:focus {
+    color: darken(#6a8dd0, 10%);
+  }
 }
 
-.mce-content-body p,
-.mce-content-body div {
-  line-height: 1.8 !important;
-  margin-bottom: 1.5rem !important;
-}
+// .mce-content-body p,
+// .mce-content-body div {
+//   line-height: 1.8 !important;
+//   margin-bottom: 1.5rem !important;
+// }
 
 .mce-content-body a {
   color: $admin-primary;
