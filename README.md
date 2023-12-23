@@ -57,6 +57,10 @@ class MyAwesomeAdmin extends ModelAdmin
 #### Page Settings
 ![Page Settings screenshot](screenshots/page-settings.jpeg)
 
+## Recommendation
+
+This module plays nicely with dashboard [goldfinch/dashboard](https://github.com/goldfinch/dashboard)
+
 ## License
 
 The MIT License (MIT)
