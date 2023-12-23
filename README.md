@@ -33,7 +33,7 @@ You might need to do a page hard-refresh after enabling/disabling it.
 
 **Bootstrap Icons** are included. Go and use it for your needs:
 
-https://icons.getbootstrap.com/
+[icons.getbootstrap.com](https://icons.getbootstrap.com/)
 
 ```php
 class MyAwesomeAdmin extends ModelAdmin
