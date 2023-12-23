@@ -29,11 +29,11 @@ The new interface is controlled by a switcher in *admin/settings*, for you to ea
 
 You might need to do a page hard-refresh after enabling/disabling it.
 
-#### Icons
+#### Bootstrap Icons
 
-**Bootstrap Icons** are included. Go and use it for your needs:
+The icons are come with the module. Go and use it for your needs:
 
-[icons.getbootstrap.com](https://icons.getbootstrap.com/)
+[icons.getbootstrap.com](https://icons.getbootstrap.com/){:target="_blank" rel="noopener"}
 
 ```php
 class MyAwesomeAdmin extends ModelAdmin
