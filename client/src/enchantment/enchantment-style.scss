@@ -958,3 +958,10 @@ input[type=radio].selector {
   margin-bottom: 10px;
   display: inline-block;
 }
+
+.cms-menu__list li.current a {
+
+  &:before {
+    opacity: 1 !important;
+  }
+}
