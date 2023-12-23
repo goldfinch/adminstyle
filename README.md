@@ -25,6 +25,19 @@ The new interface is controlled by a switcher in *admin/settings*, for you to ea
 
 You might need to do a page hard-refresh after enabling/disabling it.
 
+#### 
+
+**Bootstrap Icons** are included. Go and use it for your needs:
+
+https://icons.getbootstrap.com/
+
+```php
+class MyAwesomeAdmin extends ModelAdmin
+{
+    private static $menu_icon_class = 'bi-fire';
+}
+```
+
 ## Previews
 
 #### Login page
