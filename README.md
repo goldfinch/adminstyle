@@ -7,6 +7,8 @@
 
 Restyled and 🪄 enhanced admin interface for Silverstripe based on Bootstrap 5 🔮
 
+This module does not modify any JavaScript components. It's purely replacing CSS only.
+
 ## Install
 
 ```
