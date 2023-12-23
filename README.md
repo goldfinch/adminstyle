@@ -23,16 +23,20 @@ SS_THEME_ENCHANTMENT=true
 
 To enable new interface, go to *admin/settings* and use **Enchant admin theme**. Hard-refresh the page.
 
-#### Previews
+## Previews
 
-<p>
-  <img src="screenshots/login.jpeg" alt="Login" style="max-width: 50px">
-  <img src="screenshots/lost-password.jpeg" alt="Lost password" style="max-width: 50px">
-  <img src="screenshots/page-tree.jpeg" alt="Page tree" style="max-width: 50px">
-  <img src="screenshots/page.jpeg" alt="Page" style="max-width: 50px">
-  <img src="screenshots/assets.jpeg" alt="Assets" style="max-width: 50px">
-  <img src="screenshots/page-settings.jpeg" alt="Page settings" style="max-width: 50px">
-</p>
+#### Login page
+![Login screenshot](screenshots/login.jpeg)
+#### Lost password page
+![Lost Password screenshot](screenshots/lost-password.jpeg)
+#### Page tree
+![Page Tree screenshot](screenshots/page-tree.jpeg)
+#### Page
+![Page screenshot](screenshots/page.jpeg)
+#### Assets
+![Assets screenshot](screenshots/assets.jpeg)
+#### Page Settings
+![Page Settings screenshot](screenshots/page-settings.jpeg)
 
 ## License
 
