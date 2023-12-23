@@ -21,7 +21,9 @@ SS_THEME_ENCHANTMENT=true
 
 ## Usage
 
-To enable the new interface, go to *admin/settings*. 🧙‍♂️ to see the magic do a hard-refresh ✨✨✨
+The new interface is controlled by a switcher in *admin/settings*, for you to easily go back to the original theme if you need to. Go and do that in Settings to see the magic 🧙‍♂️ ✨✨✨
+
+You might need to do a page hard-refresh after enabling/disabling it.
 
 ## Previews
 
