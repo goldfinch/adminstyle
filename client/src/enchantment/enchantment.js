@@ -1,3 +1,3 @@
 (function ($) {
-  $('body').addClass('enchanted')
+  $('body').addClass('enchanted');
 })(jQuery);

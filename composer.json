@@ -13,10 +13,12 @@
         "ss-admin"
     ],
     "license": "MIT",
-    "authors": [{
-        "name": "Art Karasev",
-        "email": "art.karasev@proton.me"
-    }],
+    "authors": [
+        {
+            "name": "Art Karasev",
+            "email": "art.karasev@proton.me"
+        }
+    ],
     "require": {
         "php": ">=8.0",
         "silverstripe/framework": "^5.0",
@@ -24,9 +26,7 @@
         "goldfinch/extra-assets": "^1.0"
     },
     "extra": {
-        "expose": [
-            "client/dist"
-        ]
+        "expose": ["client/dist"]
     },
     "autoload": {
         "psr-4": {

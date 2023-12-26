@@ -1,15 +1,14 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/variables-dark';
+@import '~bootstrap/scss/maps';
 
-@import "~bootstrap/scss/functions";
-@import "~bootstrap/scss/variables";
-@import "~bootstrap/scss/variables-dark";
-@import "~bootstrap/scss/maps";
+@import '~bootstrap/scss/mixins/breakpoints';
+@import '~bootstrap/scss/mixins/utilities';
 
-@import "~bootstrap/scss/mixins/breakpoints";
-@import "~bootstrap/scss/mixins/utilities";
+@import '~bootstrap/scss/vendor/rfs';
 
-@import "~bootstrap/scss/vendor/rfs";
-
-@import "~bootstrap/scss/utilities";
+@import '~bootstrap/scss/utilities';
 
 // Only use the utilities we need
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -27,13 +26,13 @@ $utilities: map-get-multiple(
     // "align-items",
     // "align-content",
     // "align-self",
-    "margin",
-    "margin-x",
-    "margin-y",
-    "margin-top",
-    "margin-end",
-    "margin-bottom",
-    "margin-start",
+    'margin',
+    'margin-x',
+    'margin-y',
+    'margin-top',
+    'margin-end',
+    'margin-bottom',
+    'margin-start',
     // "negative-margin",
     // "negative-margin-x",
     // "negative-margin-y",
@@ -41,14 +40,14 @@ $utilities: map-get-multiple(
     // "negative-margin-end",
     // "negative-margin-bottom",
     // "negative-margin-start",
-    "padding",
-    "padding-x",
-    "padding-y",
-    "padding-top",
-    "padding-end",
-    "padding-bottom",
-    "padding-start",
+    'padding',
+    'padding-x',
+    'padding-y',
+    'padding-top',
+    'padding-end',
+    'padding-bottom',
+    'padding-start'
   )
 );
 
-@import "~bootstrap/scss/utilities/api";
+@import '~bootstrap/scss/utilities/api';

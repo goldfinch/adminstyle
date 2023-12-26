@@ -1,11 +1,11 @@
 ---
 Before:
-  - '#login-forms'
+  - "#login-forms"
 ---
 SilverStripe\LoginForms\EnablerExtension:
   login_themes:
-    - '$default'
-    - 'goldfinch/enchantment:login-forms'
+    - "$default"
+    - "goldfinch/enchantment:login-forms"
 
 SilverStripe\Security\Security:
   enable_dark_mode: false

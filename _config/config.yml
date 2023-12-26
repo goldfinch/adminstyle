@@ -1,10 +1,9 @@
 ---
 Name: goldfinch-enchantment
 After:
-  - '#goldfinch-basement'
-  - '#goldfinch-seo'
+  - "#goldfinch-basement"
+  - "#goldfinch-seo"
 ---
-
 SilverStripe\SiteConfig\SiteConfig:
   extensions:
     - Goldfinch\Enchantment\Extensions\SiteConfigExtension
@@ -15,4 +14,4 @@ SilverStripe\Admin\LeftAndMain:
 
 SilverStripe\Forms\HTMLEditor\TinyMCEConfig:
   editor_css:
-    - 'goldfinch/enchantment:client/dist/enchantment/assets/enchantment-wysiwyg.css'
+    - "goldfinch/enchantment:client/dist/enchantment/assets/enchantment-wysiwyg.css"
