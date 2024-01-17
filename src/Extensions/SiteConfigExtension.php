@@ -3,10 +3,10 @@
 namespace Goldfinch\Enchantment\Extensions;
 
 use SilverStripe\Forms\FieldList;
+use SilverStripe\Core\Environment;
 use SilverStripe\ORM\DataExtension;
 use SilverStripe\Forms\CheckboxField;
 use SilverStripe\ORM\ValidationResult;
-use SilverStripe\Core\Environment;
 
 class SiteConfigExtension extends DataExtension
 {

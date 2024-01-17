@@ -4,8 +4,8 @@ namespace Goldfinch\Enchantment\Extensions;
 
 use Composer\InstalledVersions;
 use SilverStripe\Core\Extension;
-use SilverStripe\View\Requirements;
 use SilverStripe\Core\Environment;
+use SilverStripe\View\Requirements;
 use SilverStripe\SiteConfig\SiteConfig;
 use Goldfinch\Enchantment\Helpers\BuildHelper;
 
