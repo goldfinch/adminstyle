@@ -1100,3 +1100,11 @@ input[type='radio'].selector {
   height: 38px !important;
   padding-top: 8px !important;
 }
+
+// autocompleter extension
+.grid-field .add-existing-autocompleter {
+  height: 35.99px;
+}
+.cms .grid-field .add-existing-autocompleter button.action_gridfield_relationadd {
+  padding-top: 5px !important;
+}
