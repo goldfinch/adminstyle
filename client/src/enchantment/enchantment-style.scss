@@ -1108,3 +1108,12 @@ input[type='radio'].selector {
 .cms .grid-field .add-existing-autocompleter button.action_gridfield_relationadd {
   padding-top: 5px !important;
 }
+
+.field.holder-error .alert {
+  margin-top: 20px !important;
+  margin-bottom: 0 !important;
+}
+
+form.validationerror .panel > .alert.alert-danger {
+  padding: 15px 20px 19px !important;
+}
