@@ -11,7 +11,7 @@ This module does not modify any JavaScript components. It's purely replacing CSS
 
 ## Install
 
-```
+```bash
 composer require goldfinch/enchantment
 ```
 
