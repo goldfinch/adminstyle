@@ -1121,7 +1121,7 @@ form.validationerror .panel > .alert.alert-danger {
 
 .ui-dialog {
   border-radius: 0;
-  border: 0;
+  border: 0 !important;
 }
 
 .ui-dialog .ui-dialog-content {
@@ -1141,6 +1141,4 @@ form.validationerror .panel > .alert.alert-danger {
   }
 }
 
-.ui-dialog .ui-dialog-titlebar-close span {
-  display: none;
-}
+.ui-dialog .ui-dialog-titlebar-close span {}
