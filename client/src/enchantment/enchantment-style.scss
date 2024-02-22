@@ -1118,3 +1118,29 @@ input[type='radio'].selector {
 form.validationerror .panel > .alert.alert-danger {
   padding: 15px 20px 19px !important;
 }
+
+.ui-dialog {
+  border-radius: 0;
+  border: 0;
+}
+
+.ui-dialog .ui-dialog-content {
+  padding: 0;
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+  width: 30px;
+  height: 30px;
+  margin: -30px -30px 0;
+  right: 0;
+  box-shadow: 0 0 30px 10px rgb(163 163 163 / 36%);
+
+  &:focus, &:active {
+    border: 1px solid #cccccc;
+    background: #ededed;
+  }
+}
+
+.ui-dialog .ui-dialog-titlebar-close span {
+  display: none;
+}
