@@ -1133,12 +1133,18 @@ form.validationerror .panel > .alert.alert-danger {
   height: 30px;
   margin: -30px -30px 0;
   right: 0;
-  box-shadow: 0 0 30px 10px rgb(163 163 163 / 36%);
+  box-shadow: none;
+  background: transparent;
+  border: 0;
 
   &:focus, &:active {
-    border: 1px solid #cccccc;
-    background: #ededed;
+    border: 0;
+    background: transparent;
   }
 }
 
 .ui-dialog .ui-dialog-titlebar-close span {}
+
+.ui-dialog.loading {
+  background: url('#{$enchantment_images}loading.svg') no-repeat center #fff;
+}
