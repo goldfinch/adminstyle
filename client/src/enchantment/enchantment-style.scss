@@ -1153,3 +1153,11 @@ form.validationerror .panel > .alert.alert-danger {
 .ui-dialog.loading {
   background: url('#{$enchantment_images}loading.svg') no-repeat center #fff;
 }
+
+.validationerror .panel--padded .ui-tabs-nav {
+  margin-top: -20px !important;
+}
+
+.CompositeField.composite .form__field-holder {
+  margin-bottom: 6px;
+}
