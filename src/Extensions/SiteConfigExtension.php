@@ -20,7 +20,7 @@ class SiteConfigExtension extends DataExtension
 
     public function updateCMSFields(FieldList $fields)
     {
-        if (Environment::getEnv('SS_THEME_ENCHANTMENT')) {
+        if (Environment::getEnv('SS_THEME_ENCHANTMENT') && (!Environment::hasEnv('SS_THEME_ENCHANTMENT_SETTINGS') || Environment::getEnv('SS_THEME_ENCHANTMENT_SETTINGS') != false)) {
             $fields->addFieldsToTab('Root.Main', [
                 CheckboxField::create(
                     'ThemeEnchantment',

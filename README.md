@@ -19,6 +19,7 @@ composer require goldfinch/enchantment
 
 ```
 SS_THEME_ENCHANTMENT=true
+SS_THEME_ENCHANTMENT_SETTINGS=true # display checkbox in settings (on/off)
 ```
 
 ## Usage
