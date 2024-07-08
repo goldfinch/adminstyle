@@ -26,7 +26,7 @@
         <% end_if %>
         <% require javascript("silverstripe/login-forms: client/dist/js/bundle.js") %>
     </head>
-    <body <% if $darkModeIsEnabled() %>class="dark-mode-enabled"<% end_if %>>
+    <body style="background-color: #00322f" <% if $darkModeIsEnabled() %>class="dark-mode-enabled"<% end_if %>>
         <% include AppHeader %>
 
         <main class="login-form">
