@@ -25,8 +25,38 @@
             <% end_if %>
         <% end_if %>
         <% require javascript("silverstripe/login-forms: client/dist/js/bundle.js") %>
+        <style>
+          input:-webkit-autofill,
+          input:-webkit-autofill:hover,
+          input:-webkit-autofill:focus,
+          input:-webkit-autofill:active  {
+            color : black !important;
+            -webkit-text-fill-color: black !important;
+            -webkit-box-shadow: 0 0 0 1000px white inset !important;
+            -webkit-background-clip: text !important;
+            background-clip: text !important;
+          }
+
+          .login-form__message--warning, .message.warning {
+            color: var(--bs-danger) !important;
+            font-weight: bold;
+          }
+          .btn-success, .btn-primary, input[type=submit] {
+            background-color: #85ffa2 !important;
+            outline-color: #85ffa2 !important;
+            color: #00322f !important;
+            font-weight: bold;
+          }
+          input {
+            color: #00322f !important;
+          }
+          a, .login-form {
+            color: #00322f !important;
+          }
+        </style>
+
     </head>
-    <body style="background-color: #00322f" <% if $darkModeIsEnabled() %>class="dark-mode-enabled"<% end_if %>>
+    <body style="background-color: #00322f; overflow-y: scroll; height: auto; padding: 80px 0; justify-content: flex-start;" <% if $darkModeIsEnabled() %>class="dark-mode-enabled"<% end_if %>>
         <% include AppHeader %>
 
         <main class="login-form">
@@ -55,6 +85,6 @@
         <footer class="silverstripe-brand">
             <% include SilverStripeLogo %>
         </footer>
-        <% include BackgroundAnimation %>
+        <%-- include BackgroundAnimation --%>
     </body>
 </html>
