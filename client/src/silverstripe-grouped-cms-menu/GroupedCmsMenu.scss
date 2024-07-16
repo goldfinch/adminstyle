@@ -89,7 +89,7 @@
   min-height: auto;
   position: relative;
   transition: background-color .3s ease-in-out;
-  background-color: lighten($brand-primary, 40);
+  background-color: #f3f3f3;
 }
 
 .cms-menu__list li.children ul li a span.text {
@@ -106,23 +106,23 @@
 }
 
 .cms-menu__list li.children.opened .current a {
-  background-color: lighten($brand-primary, 35);
+  background-color: #efefef;
 }
 
 .cms-menu__list li.children.opened .current.opened a {
-  background-color: lighten($brand-primary, 35);
+  background-color: #efefef;
 }
 
 .cms-menu__list li.children.link > a:hover {
-  background-color: lighten($brand-primary, 40);
+  background-color: #f3f3f3;
 }
 
 .cms-menu__list li.children.opened a:hover {
-  background-color: lighten($brand-primary, 40);
+  background-color: #f3f3f3;
 }
 
 .cms-menu__list li.children.opened:not(.current) > a {
-  background-color: lighten($brand-primary, 35);
+  background-color: #efefef;
 
   &:before {
     opacity: .1;
@@ -132,14 +132,14 @@
 .cms-menu__list li.children.opened:not(.current) > ul li a {
 
   &:hover {
-    background-color: lighten($brand-primary, 35);
+    background-color: #efefef;
   }
 }
 
 .cms-menu__list li.children.opened.current > ul li a {
 
   &:hover {
-    background-color: lighten($brand-primary, 35);
+    background-color: #efefef;
   }
 }
 

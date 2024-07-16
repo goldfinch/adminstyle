@@ -1189,3 +1189,16 @@ form.validationerror .panel > .alert.alert-danger {
 .grid-field__col-compact:not(.action-menu) {
   display: table-cell;
 }
+
+.page-icon, a .jstree-pageicon,
+.element-editor-header__icon-container {
+  color: $brand-primary !important;
+}
+
+.element-editor-summary__content {
+  color: $brand-primary !important;
+}
+.btn-primary {
+  color: #fff !important;
+}
+

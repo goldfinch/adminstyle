@@ -50,7 +50,7 @@
 //
 
 $white:     #fff !default; // bootstrap default
-$gray-700:  #43536d !default;
+$gray-700:  #00322f !default;
 $gray-100:  lighten($gray-700, 60%) !default; // #eef0f4
 $gray-200:  lighten($gray-700, 50%) !default; // #ced5e1
 $gray-300:  lighten($gray-700, 40%) !default; // #aebace
@@ -73,8 +73,8 @@ $grays: (
   900: $gray-900
 ) !default;
 
-$blue:     #43536d; // custom
-$mid-blue: #2c78af; // custom
+$blue:     #00322f; // custom
+$mid-blue: #00322f; // custom
 $indigo:   #6610f2 !default; // bootstrap default
 $purple:   #6f42c1 !default; // bootstrap default
 $pink:     #e83e8c !default; // bootstrap default
@@ -83,7 +83,7 @@ $orange:   #fd7e14 !default; // bootstrap default
 $yellow:   #f6b145 !default; // bootstrap default
 $green:    #00322f !default; // custom
 $teal:     #20c997 !default; // bootstrap default
-$cyan:     #778da9 !default; // custom
+$cyan:     #00322f !default; // custom
 
 $colors: (
   "blue": $blue,
@@ -172,7 +172,7 @@ $body-color: $gray-700; // eg. Text, labels, iconography
 //
 // Style anchor elements.
 
-$link-color: #538bb3;
+$link-color: $blue;
 //$link-decoration:       none !default;
 $link-hover-color: darken($link-color, 5%);
 //$link-hover-decoration: underline !default;
