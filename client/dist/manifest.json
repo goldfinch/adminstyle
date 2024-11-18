@@ -14,13 +14,13 @@
     "isEntry": true,
     "src": "enchantment/enchantment.js"
   },
-  "node_modules/chosen-js/chosen-sprite.png": {
+  "node_modules/.pnpm/chosen-js@1.8.7/node_modules/chosen-js/chosen-sprite.png": {
     "file": "enchantment/assets/chosen-sprite.png",
-    "src": "node_modules/chosen-js/chosen-sprite.png"
+    "src": "node_modules/.pnpm/chosen-js@1.8.7/node_modules/chosen-js/chosen-sprite.png"
   },
-  "node_modules/chosen-js/chosen-sprite@2x.png": {
+  "node_modules/.pnpm/chosen-js@1.8.7/node_modules/chosen-js/chosen-sprite@2x.png": {
     "file": "enchantment/assets/chosen-sprite@2x.png",
-    "src": "node_modules/chosen-js/chosen-sprite@2x.png"
+    "src": "node_modules/.pnpm/chosen-js@1.8.7/node_modules/chosen-js/chosen-sprite@2x.png"
   },
   "silverstripe-admin/client/src/styles/bundle-silverstripe-admin.scss": {
     "file": "enchantment/assets/bundle-silverstripe-admin.css",

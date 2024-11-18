@@ -18,30 +18,60 @@ class EnchantmentAssetsExtension extends Extension
 
             if ($cfg->ThemeEnchantment) {
                 // silverstripe-admin
-                Requirements::block(
-                    'silverstripe/admin: client/dist/styles/bundle.css',
-                );
-                // Requirements::css('silverstripe/admin: dist/css/LeftAndMain_printable.css');
+                if (
+                    InstalledVersions::isInstalled(
+                        'silverstripe/admin',
+                    )
+                ) {
+                    Requirements::block(
+                        'silverstripe/admin: client/dist/styles/bundle.css',
+                    );
+                    // Requirements::css('silverstripe/admin: dist/css/LeftAndMain_printable.css');
+                }
 
                 // silverstripe-cms
-                Requirements::block(
-                    'silverstripe/cms: client/dist/styles/bundle.css',
-                );
+                if (
+                    InstalledVersions::isInstalled(
+                        'silverstripe/cms',
+                    )
+                ) {
+                    Requirements::block(
+                        'silverstripe/cms: client/dist/styles/bundle.css',
+                    );
+                }
 
                 // silverstripe-session-manager
-                Requirements::block(
-                    'silverstripe/session-manager: client/dist/styles/bundle.css',
-                );
+                if (
+                    InstalledVersions::isInstalled(
+                        'silverstripe/session-manager',
+                    )
+                ) {
+                    Requirements::block(
+                        'silverstripe/session-manager: client/dist/styles/bundle.css',
+                    );
+                }
 
                 // silverstripe-versioned-admin
-                Requirements::block(
-                    'silverstripe/versioned-admin:client/dist/styles/bundle.css',
-                );
+                if (
+                    InstalledVersions::isInstalled(
+                        'silverstripe/versioned-admin',
+                    )
+                ) {
+                    Requirements::block(
+                        'silverstripe/versioned-admin:client/dist/styles/bundle.css',
+                    );
+                }
 
                 // silverstripe-asset-admin
-                Requirements::block(
+                if (
+                    InstalledVersions::isInstalled(
+                        'silverstripe/asset-admin',
+                    )
+                ) {
+                    Requirements::block(
                     'silverstripe/asset-admin:client/dist/styles/bundle.css',
-                );
+                    );
+                }
 
                 // silverstripe/campaign-admin
                 if (
